@@ -1,19 +1,33 @@
+<!-- Example call for 112 Operator -->
 <data>
-  <conversations>
-	<conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable">
-	<scene>
-		<witness id="caller;" texten="Elderly Woman" elementProperties="hp=100; sex=W;" emotions="Woman, 50-60 years old, nervous" />
-	</scene>
-	<dialog>
-		<DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" operator="Operator" />
-		
-		<DialogOption id="reminder" texten="Text" operator="Caller" />
-		<DialogOption id="reminder2" texten="Text" operator="Caller" />
-		<DialogOption id="back" texten="Back Error" operator="Operator" />
-	</dialog>
-	<aar>
-		<reportElement id="aar" texten="Text" />
-	</aar>
-	</conversation>
+	<conversations>
+		<conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable">
+		<scene>
+			<witness id="caller;" texten="Elderly Woman" elementProperties="hp=100; sex=W;" emotions="Woman, 50-60 years old, nervous" />
+		</scene>
+		<dialog>
+			<DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" operator="Operator" />
+			<DialogOption id="2" texten="" elementProperties="" operator="Caller" />
+
+		<!-- reminder, reminder2 and back are required -->
+			<DialogOption id="reminder" texten="Are you there?" operator="Caller" />
+			<DialogOption id="reminder2" texten="Hello?" operator="Caller" />
+			<DialogOption id="back" texten="Back Error" operator="Operator" />
+		</dialog>
+		<aar>
+		<!-- Maximum of 10 reportElements -->
+			<reportElement id="aar0" texten="Text" />
+			<reportElement id="aar1" texten="Text" />
+			<reportElement id="aar2" texten="Text" />
+			<reportElement id="aar3" texten="Text" />
+			<reportElement id="aar4" texten="Text" />
+			<reportElement id="aar5" texten="Text" />
+			<reportElement id="aar6" texten="Text" />
+			<reportElement id="aar7" texten="Text" />
+			<reportElement id="aar8" texten="Text" />
+			<reportElement id="aar9" texten="Text" />
+		</aar>
+		</conversation>
 	</conversations>
 </data>
+<!-- Call created by Soharic for JutsuGames -->
