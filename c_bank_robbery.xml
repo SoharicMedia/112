@@ -1,0 +1,19 @@
+<data>
+  <conversations>
+	<conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable">
+	<scene>
+		<witness id="caller;" texten="Elderly Woman" elementProperties="hp=100; sex=W;" emotions="Woman, 50-60 years old, nervous" />
+	</scene>
+	<dialog>
+		<DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" operator="Operator" />
+		
+		<DialogOption id="reminder" texten="Text" operator="Caller" />
+		<DialogOption id="reminder2" texten="Text" operator="Caller" />
+		<DialogOption id="back" texten="Back Error" operator="Operator" />
+	</dialog>
+	<aar>
+		<reportElement id="aar" texten="Text" />
+	</aar>
+	</conversation>
+	</conversations>
+</data>
