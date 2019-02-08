@@ -1,90 +1,53 @@
-<!-- Example call for 112 Operator -->
 <data>
-	<conversations>
-		<conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable">
-		<scene>
-		<!-- caller -->
-			<caller id="caller" texten="Caller" elementProperties="hp=100; sex=W;" emotions="Woman, 50-60 years old, nervous" />
-		<!-- hostages -->
-			<witness id="customer1" texten="" elementProperties="" />
-			<witness id="customer2" texten="" elementProperties="" />
-			<witness id="customer3" texten="" elementProperties="" />
-			<witness id="customer4" texten="" elementProperties="" />
-			<witness id="customer5" texten="" elementProperties="" />
-			<witness id="customer6" texten="" elementProperties="" />
-			<witness id="customer7" texten="" elementProperties="" />
-			<witness id="customer8" texten="" elementProperties="" />
-			<witness id="bankclerk1" texten="Bank Clerk" elementProperties="" />
-			<witness id="bankclerk2" texten="Bank Clerk" elementProperties="" />
-			<witness id="bankmanager" texten="Bank Manager" elementProperties="" />
-		<!-- robbers -->
-			<criminal id="robber1" texten="Armed Robber" elementProperties="" />
-			<criminal id="robber2" texten="Armed Robber" elementProperties="" />
-			<criminal id="robber3" texten="Armed Robber" elementProperties="" />
-			<criminal id="robber4" texten="Armed Robber" elementProperties="" />
-			<criminal id="robber5" texten="Armed Robber" elementProperties="" />
-			<criminal id="robber6" texten="Armed Robber" elementProperties="" />
-		<!-- vehicles -->
-			<tech id="van" texten="Get away vehicle" elementProperties="work=120; icon=OnSitePic_Van;" />
-		</scene>
-		<dialog>
-		<!-- opening interaction -->
-			<DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2; option=3;" operator="Operator" />
-			<DialogOption id="" texten="Hello? There's a robbery in progress, come quickly." elementProperties="chance=0.50; option=getlocation1; option=x" operator="Caller" emotions="nervous, but steady. almost whispering" />
-			<DialogOption id="" texten="Hello, the bank, it's being robbed." operator="" elementProperties="chance=0.50; option=getlocation2; option=x;" />
-			
-		<!-- when -->
-			<DialogOption id="when" texten="{ROBBERY?} Are the thieves still there?" elementProperties="" operator="Operator" />
-			<DialogOption id="certain" texten="{CERTAIN?} Are you sure of this?" elementProperties="" operator="Operator" />
-			
-		<!-- who -->
-			<DialogOption id="" texten="Do you have a view of the thieves?" elementProperties="" operator="Operator" />
-			<DialogOption id="" texten="" elementProperties="" operator="" />
-			<DialogOption id="" texten="" elementProperties="" operator="" />
-			<DialogOption id="" texten="" elementProperties="" operator="" />
-			<DialogOption id="" texten="" elementProperties="" operator="" />
-			
-			
-		<!-- location -->
-			<DialogOption id="getlocation1" texten="{WHERE?} Where you ma'am?" elementProperties="" operator="Operator" />
-			<DialogOption id="getlocation2" texten="{WHERE?} Which bank?" elementProperties="" operator="Operator" />
-			<DialogOption id="getlocation3" texten="{WHERE?}" elementProperties="" operator="Operator" />
-			
-			<DialogOption id="location1" texten="" elementProperties="" operator="Caller" />
-			<DialogOption id="location2" texten="" elementProperties="" operator="Caller" />
-			<DialogOption id="location3" texten="" elementProperties="" operator="Caller" />
-			
-		<!-- escape -->
-			<DialogOption id="escape" texten="" elementProperties="" actionOnEnd="speed=70;" operator="Caller" />
-			
-		<!-- required -->
-			<DialogOption id="reminder" texten="Are you there?" operator="Caller" />
-			<DialogOption id="reminder2" texten="Hello?" operator="Caller" />
-			<DialogOption id="back" texten="Back Error" operator="Operator" />
-		<!-- x; used for testing missing id links -->
-			<DialogOption id="x" texten="Missing Option Error" operator="Operator" />
-		</dialog>
-		<aar>
-		<!-- Maximum of 10 reportElements active in AAR -->
-			<reportElement id="aar0" texten="Text" />
-			<reportElement id="aar1" texten="Text" />
-			<reportElement id="aar2" texten="Text" />
-			<reportElement id="aar3" texten="Text" />
-			<reportElement id="aar4" texten="Text" />
-			<reportElement id="aar5" texten="Text" />
-			<reportElement id="aar6" texten="Text" />
-			<reportElement id="aar7" texten="Text" />
-			<reportElement id="aar8" texten="Text" />
-			<reportElement id="aar9" texten="Text" />
-			<reportElement id="aar10" texten="Text" />
-			<reportElement id="aar11" texten="Text" />
-			<reportElement id="aar12" texten="Text" />
-			<reportElement id="aar13" texten="Text" />
-			<reportElement id="aar14" texten="Text" />
-			<reportElement id="aar15" texten="Text" />
-			<reportElement id="aar9" texten="Text" />
-		</aar>
-		</conversation>
-	</conversations>
+  <conversations>
+    <conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable;" version="18.27">
+      <scene elementProperties="poi=bank;">
+        <witness id="caller" texten="Caller" elementProperties="hp=100;sex=W;" addToAAR="" blockedBy="" />
+        <witness id="customer1" texten="Customer" addToAAR="" blockedBy="" />
+        <witness id="customer2" texten="Customer" addToAAR="" blockedBy="" />
+        <witness id="customer3" texten="Customer" addToAAR="" blockedBy="" />
+        <witness id="customer4" texten="Customer" addToAAR="" blockedBy="" />
+        <witness id="customer5" texten="Customer" addToAAR="" blockedBy="" />
+        <injured id="customer6" texten="Customer" addToAAR="" blockedBy="" />
+        <injured id="customer7" texten="Customer" addToAAR="" blockedBy="" />
+        <injured id="customer8" texten="Customer" addToAAR="" blockedBy="" />
+        <witness id="bankclerk1" texten="Bank Clerk" addToAAR="" blockedBy="" />
+        <injured id="bankclerk2" texten="Bank Clerk" addToAAR="" blockedBy="" />
+        <injured id="bankmanager" texten="Bank Manager" addToAAR="" blockedBy="" />
+        <injured id="security1" texten="Security Officer" addToAAR="" blockedBy="" />
+        <dead id="security2" texten="Security Officer" addToAAR="" blockedBy="" />
+        <suspect id="robber1" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <suspect id="robber2" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <suspect id="robber3" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <suspect id="robber4" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <suspect id="robber5" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <suspect id="robber6" texten="Armed Robber" addToAAR="" blockedBy="" />
+        <tech id="van" texten="Van" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=initial1;option=initial2;option=initial3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="initial1" texten="Hello, the bank, it's being robbed." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="initial2" texten="" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="initial3" texten="" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="whocalm" texten="{WHO?} I need you to speak clearly ma'am. What is your name?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="aar1" texten="" />
+        <reportElement id="aar2" texten="" />
+        <reportElement id="aar3" texten="" />
+        <reportElement id="aar4" texten="" />
+        <reportElement id="aar5" texten="" />
+        <reportElement id="aar6" texten="" />
+        <reportElement id="aar7" texten="" />
+        <reportElement id="aar8" texten="" />
+        <reportElement id="aar9" texten="" />
+        <reportElement id="aar10" texten="" />
+        <reportElement id="aar11" texten="" />
+        <reportElement id="aar12" texten="" />
+        <reportElement id="aar13" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
 </data>
-<!-- Call created by Soharic for JutsuGames -->
