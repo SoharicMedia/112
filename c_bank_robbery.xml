@@ -2,7 +2,7 @@
   <conversations>
     <conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable;" version="18.27">
       <scene elementProperties="poi=bank;">
-        <witness id="caller" texten="Caller" elementProperties="hp=100;sex=W;" addToAAR="" blockedBy="" />
+        <witness id="caller" texten="Caller" elementProperties="hp=100;sex=W;" addToAAR="" blockedBy="" emotions="female, 50-60 years old" />
         <witness id="customer1" texten="Customer" addToAAR="" blockedBy="" />
         <witness id="customer2" texten="Customer" addToAAR="" blockedBy="" />
         <witness id="customer3" texten="Customer" addToAAR="" blockedBy="" />
@@ -25,16 +25,21 @@
         <tech id="van" texten="Van" addToAAR="" blockedBy="" />
       </scene>
       <dialog>
-        <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=initial1;option=initial2;option=initial3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=initial1;option=initial2;option=initial3;" addToAAR="initial" operator="Operator" emotions="" />
         <DialogOption id="initial1" texten="Hello, the bank, it's being robbed." elementProperties="" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="initial2" texten="" elementProperties="" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="initial3" texten="" elementProperties="" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
-        <DialogOption id="whocalm" texten="{WHO?} I need you to speak clearly ma'am. What is your name?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="who" texten="" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="whocalm" texten="{WHO?} I need you to speak clearly ma'am. What is your name?" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="what" texten="{WHAT?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten={WHERE?} elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="how" texten="{HOW?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
+        <DialogOption id="end" texten="EMPTY ID: end" operator="Operator" />
       </dialog>
       <aar>
-        <reportElement id="aar1" texten="" />
+        <reportElement id="initial" texten="Caller was witnessing a bank robbery in progress. She was in the toilets when the robbery started. Hostages are involved." />
         <reportElement id="aar2" texten="" />
         <reportElement id="aar3" texten="" />
         <reportElement id="aar4" texten="" />
