@@ -2,7 +2,7 @@
   <conversations>
     <conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable;" version="18.27">
       <scene elementProperties="poi=bank;">
-        <witness id="caller" texten="Caller" elementProperties="hp=100;sex=W;" addToAAR="" blockedBy="" emotions="female, 50-60 years old" />
+        <witness id="caller" texten="Caller" elementProperties="hp=100;sex=W;" addToAAR="" blockedBy="" />
         <witness id="customer1" texten="Customer" addToAAR="" blockedBy="" />
         <witness id="customer2" texten="Customer" addToAAR="" blockedBy="" />
         <witness id="customer3" texten="Customer" addToAAR="" blockedBy="" />
@@ -27,25 +27,25 @@
       <dialog>
         <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=initial1;option=initial2;option=initial3;option=olivia;" addToAAR="initial" operator="Operator" emotions="" />
         <DialogOption id="initial1" texten="Hello, the bank, it's being robbed." elementProperties="chance=0.31;option=whocalm;option=what;option=where;option=when;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="initial2" texten="" elementProperties="chance=0.32;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="initial3" texten="" elementProperties="chance=0.32;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="olivia" texten="Armed thieves, they're in the bank. Please help us!" elementProperties="chance=0.05;option=oliviaanx1;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="oliviaanx1" texten="Weapons, they have weapons. What can I use in here to protect myself? . . . No, no, no. Must find something. . . . Fire extinguisher, yes, that will do." elementProperties="" addToAAR="" operator="Caller" emotions="anixious, on the edge of a panic attack" />
-        <DialogOption id="who" texten="" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="initial2" texten="Please come quickly, we really need help." elementProperties="chance=0.32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="initial3" texten="They they've got guns." elementProperties="chance=0.32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="olivia" texten="Armed thieves, they're in the bank. Please help us!" elementProperties="chance=0.05;option=olivia-a1;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="whocalm" texten="{WHO?} I need you to speak clearly ma'am. What is your name?" elementProperties="option=mia;option=lola;option=clare;option=sophia;option=anna;option=diane;option=arianna;" addToAAR="" operator="Operator" emotions="" />
-        <DialogOption id="mia" texten="" elementProperties="chance=0.15;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="lola" texten="" elementProperties="chance=0.15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="olivia-a1" texten="Weapons, they have weapons. What can I use in here to protect myself? . . . No, no, no. Must find something. . . . Fire extinguisher, yes, that will do." elementProperties="" addToAAR="" operator="Caller" emotions="anixious, on the edge of a panic attack" />
+        <DialogOption id="who" texten="" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="mia" texten="Mia, my name's Mia. Please come quickly." elementProperties="chance=0.15;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="lola" texten="I'm Lola. " elementProperties="chance=0.15;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="clare" texten="" elementProperties="chance=0.14;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="sophia" texten="" elementProperties="chance=0.14;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="anna" texten="" elementProperties="chance=0.14;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="diane" texten="" elementProperties="chance=0.14;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="arianna" texten="" elementProperties="chance=0.14;" addToAAR="" operator="Caller" emotions="" />
-        <DialogOption id="what" texten="{WHAT?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
-        <DialogOption id="where" texten={WHERE?} elementProperties="" addToAAR="" operator="Operator" emotions="" />
-        <DialogOption id="when" texten="{WHEN?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="how" texten="{HOW?}" elementProperties="" addToAAR="" operator="Operator" emotions="" />
-        <DialogOption id="back" texten="EMPTY ID: back" operator="Operator" />
-        <DialogOption id="end" texten="EMPTY ID: end" operator="Operator" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="EMPTY ID: end" elementProperties="" addToAAR="" operator="Operator" emotions="" />
       </dialog>
       <aar>
         <reportElement id="initial" texten="Caller was witnessing a bank robbery in progress. She was in the toilets when the robbery started. Hostages are involved." />
