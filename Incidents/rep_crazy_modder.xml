@@ -1,0 +1,20 @@
+<incidentTypes id="general_incidents">
+	<incident id="rep_crazy_modder"
+        	  properties="type=crime; popularity=1; stage = 1; tag+=night{+2}; tag+=rain{+3};">
+		<scene id="house"
+			   poi="BUILDING"
+			   background="HouseBackground"
+			   properties="timeToReact=600;">
+			<suspect id="modder"
+       				 properties="aggressiveness = 0.5; weapon = [0.5:e_baseball | 0.5:e_pistol]; prison=1; personBuilder.sex=MALE; personBuilder.photoId = crazy_modder; personBuilder.hatType = NONE; personBuilder.name = Martin; spawnArea=inside; isActive=1;"
+       				 actionOnEnd="opinionOnSuccess+=1;"
+       				 actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"/>
+			<policeWork id="pc"
+          				properties="workAmount=[200,300];icon=OnSitePic_PC; spawnArea=insideRear;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=pcDone;"/>
+		</scene>
+		<aar>
+			<reportElement id="pcDone"/>
+		</aar>
+	</incident>
+</incidentTypes>

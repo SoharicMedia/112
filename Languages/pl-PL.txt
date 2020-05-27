@@ -1,4 +1,10 @@
 {
   "text.names.ve_poltandem": "Policyjny tandem",
-  "text.descriptions.ve_poltandem": "Prawie jak dwa rowery... ale lepszy."
+  "text.descriptions.ve_poltandem": "Prawie jak dwa rowery... ale lepszy.",
+  
+  "incident.rep_crazy_modder.rep_crazy_modder": "SZALONY MODDER",
+  "incident.rep_crazy_modder.description": "KTOŚ ZGŁOSIŁ MĘŻCZYZNĘ, WYSYŁAJĄCEGO OGROMNĄ LICZBĘ MODÓW DO WARSZTATU OPERATORA 112",
+  "incident.rep_crazy_modder.house.modder": "Szalony modder",
+  "incident.rep_crazy_modder.house.pc": "PC",
+  "incident.rep_crazy_modder.aar.pcDone": "Komputer moddera został zabezpieczony",
 }
