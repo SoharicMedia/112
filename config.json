@@ -1,0 +1,15 @@
+{
+    "title": "European Response Package (ERP) [ALPHA]",
+    "desc": "A mod for 112 Operator building on the legacy of On the Line (a previous mod for 911 Operator).",
+    "language": "",
+    "visibility": "private",
+    "itemId": 2110834081,
+    "modTypes": [
+        "CALLS",
+		"FACES",
+        "INCIDENTS",
+        "LANGUAGES",
+		"MOD PACK",
+        "VEHICLES"
+    ]
+}
