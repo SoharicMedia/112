@@ -1,0 +1,60 @@
+<data><conversations>
+<conversation elementProperties="type=generable;" id="otl21" texten="Car Collision">
+ <scene>
+ <suspect elementProperties="fightRisk = 0; sex=M; type=White;" id="caller" operator="Caller:" emotions="male, 30 yo, calm" texten="Caller" />
+ <criminal elementProperties="isActive = false; prisonChance = 0.5; fightRisk = 0.1;" id="driver" texten="Driver" />
+ <injuried elementProperties="isActive = false; hp = 80; " id="injuriedA" texten="Passenger" />
+ <injuried elementProperties="isActive = false; hp = 80; " id="injuriedB" texten="Passenger" />
+ <work elementProperties="isActive = false; work=100;  icon=OnSitePic_Car" id="car1" texten="Smashed car" />
+ <work elementProperties="isActive = false; work=100; icon=OnSitePic_Car" id="car2" texten="Smashed car" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911, what's your emergency?" default="2" actionOnEnd="opinionEffect = 1;" />
+ <dialogOption id="2" operator="Caller:" emotions="nervous, but steady" texten="Hello, there was a car collision." default="address" option2="when" option3="injured" />
+ <dialogOption id="address" operator="Operator:" texten="{WHERE?} Where did the collision happen?" default="addressa0" />
+ <dialogOption id="addressa0" operator="Caller:" texten="Around [[ADDRESS]]" default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="addressa1" operator="Caller:" texten="Around 135 1st street" default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="addressa2" operator="Caller:" texten="Around 246 2nd avenue" default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="addressa3" operator="Caller:" texten="Around 389 Pine street" default="back" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="when" operator="Operator:" texten="{WHEN?} When did it happen?" default="wheny" option2="whenm" option3="whenh" />
+ <dialogOption elementProperties="chance=0.16;" id="wheny" operator="Caller:" texten="Yesterday evening." default="wheny2" actionOnEnd="injuries-&gt;active = false; injured-&gt;active = false; opinionEffect = -1;" addToAAR="yesterday" />
+ <dialogOption id="whenm" operator="Caller:" texten="Just a moment ago." default="back" option2="who" option3="cars" />
+ <dialogOption id="whenh" operator="Caller:" texten="5 minutes ago." default="back" option2="who" option3="cars" />
+ <dialogOption id="wheny2" operator="Operator:" texten="Sir, you don't call 911 for an accident that happened yesterday." default="wheny3" />
+ <dialogOption id="wheny3" operator="Caller:" texten="But the car is crashed and bumper is off...." default="wheny4" />
+ <dialogOption id="wheny4" operator="Operator:" texten="Sir, please contact your body shop or go to the nearest police station if you have any complaints." default="wheny5" />
+ <dialogOption id="wheny5" operator="Caller:" texten="Ok... bye." actionOnEnd="actionHangup" />
+ <dialogOption id="injured" operator="Operator:" texten="{ANY INJURED?} Are there any injured?" default="injured0" option2="injured1" option3="injured2" />
+ <dialogOption id="injured0" operator="Caller:" texten="No, no one." default="back" actionOnEnd="injuries-&gt;active = false;" />
+ <dialogOption id="injured1" operator="Caller:" texten="Yes, one person is injured." default="injuries" option2="address" option3="back" actionOnEnd="injuriedA.isActive = true; wheny-&gt;active = false; opinionEffect += 1;" addToAAR="injur" />
+ <dialogOption id="injured2" operator="Caller:" texten="Yes, two people have some injuries." default="injuries" option2="address" option3="back" actionOnEnd="injuries-&gt;active = false; wheny-&gt;active = false; injuriedA.isActive = true; injuriedB.isActive = true; opinionEffect += 2;" addToAAR="injur2" />
+ <dialogOption id="injuries" operator="Operator:" texten="Can you tell what kind of injuries they have?" default="injuriesa1" option2="injuriesa2" option3="injuriesa3" />
+ <dialogOption id="injuriesa1" operator="Caller:" texten="Just some scratches." default="when" option2="address" option3="cars" />
+ <dialogOption id="injuriesa2" operator="Caller:" texten="I think one of the passengers broke his leg." default="injuries2" actionOnEnd="injuriedA.hpChange = -0.1;" />
+ <dialogOption id="injuriesa3" operator="Caller:" texten="One of the passengers says his stomach hurts really bad." default="injuries2" actionOnEnd="injuriedA.hpChange = -0.2; opinionEffect += 1;" />
+ <dialogOption id="injuries2" operator="Operator:" texten="Ok, just make sure they won't move until an ambulance arrives." default="injuries3" />
+ <dialogOption id="injuries3" operator="Caller:" texten="Sure..." default="when" option2="address" option3="cars" />
+ <dialogOption id="who" operator="Operator:" texten="{WHO DID IT?} Who has caused the accident?" default="whoduno" option2="whoi" option3="whoother" />
+ <dialogOption id="whoduno" operator="Caller:" texten="We are still arguing about that, can you send a policeman to figure it out?" default="back" option2="cars" />
+ <dialogOption id="whoi" operator="Caller:" texten="I did..." default="back" option2="cars" actionOnEnd="caller.bill = 2000; caller.prisonChance=0.2;" />
+ <dialogOption id="whoother" operator="Caller:" texten="The other driver, he's obviously drunk." default="back" option2="cars" actionOnEnd="driver.isActive = true; driver.bill = 5000;" addToAAR="drunken" />
+ <dialogOption id="cars" operator="Operator:" texten="{IS THE ROAD BLOCKED?} Are any of the vehicles blocking traffic?" default="carsno" option2="cars1" option3="cars2" />
+ <dialogOption id="carsno" operator="Caller:" texten="No, they are not." default="back" />
+ <dialogOption id="cars1" operator="Caller:" texten="Yes, one of them cannot be moved." default="back" actionOnEnd="car1.isActive = true;" addToAAR="blocking" />
+ <dialogOption id="cars2" operator="Caller:" texten="Yeah, both of them are completely crashed." default="back" actionOnEnd="car1.isActive = true; car2.isActive = true; opinionEffect += 1;" addToAAR="blocking2" />
+ <dialogOption id="end" operator="Operator:" texten="All right sir, please wait for the emergency services to arrive." default="enda" />
+ <dialogOption id="enda" operator="Caller:" texten="Ok, thank you!" actionOnEnd="actionHangup" />
+ <dialogOption id="reminder" operator="Caller:" texten="Are you there?" />
+ <dialogOption id="reminder2" operator="Caller:" texten="Hello?" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
+ </dialog>
+ <aar>
+ <reportElement id="yesterday" texten="The accident took place yesterday and there was no need of intervention." />
+ <reportElement id="injur" texten="One person was injured in the result of the car crash." />
+ <reportElement id="injur2" texten="Two people was injured in the result of the car crash." />
+ <reportElement id="blocking" texten="One of crashed vehicles was blocking traffic." />
+ <reportElement id="blocking2" texten="Crashed vehicles were blocking traffic." />
+ <reportElement id="drunken" texten="A driver who caused a collision was under influence of alcohol." />
+ </aar>
+ </conversation>
+</conversations></data>

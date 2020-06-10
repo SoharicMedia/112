@@ -1,0 +1,62 @@
+<data>
+  <conversations>
+    <conversation id="otl18" texten="Shot by Uber Driver" elementProperties="type=generableonce;">
+      <scene>
+        <injured id="sceneElem_1" texten="Injured passanger" elementProperties="sex=m;hp=30;hpchange=-0.5;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Uber Driver" elementProperties="weapon=e_pistol;hp=100;fightRisk=0.5;prisonChance=1;isActive=false;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="(cough) Hello? I've been shot by my Uber driver!" elementProperties="option=what;option=where;option=who;option=when;" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Where did this happen?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} What's your name?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did it happen?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="My... My Uber driver, robbed me, then shot me and pushed me out of the car!" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="I'm laying in the street at [[ADDRESS]]" elementProperties="option=back;option=6;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="(cough) My names Jake... Jake Donavon" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="They.. They just shot me a few seconds ago... " elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="6" texten="Where have you been shot?" elementProperties="option=7;option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="In the chest and in the leg" elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="In my stomach!" elementProperties="option=24;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="Do you have a belt?" elementProperties="option=10;option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="24" texten="Can you rip your shirt or use some cloth to cover up the wound? You need to put pressure on it to try and stop the bleeding." elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="10" texten="Yes... I have a belt. Ahhh fuck it hurts..." elementProperties="option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="11" texten="Nooo I don't... ahhh" elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="25" texten="Okay. . . Ahh. . .  Done." elementProperties="option=26;" addToAAR="" operator="Caller" emotions="Cloth ripping" />
+        <DialogOption id="12" texten="I need you to wrap your belt tight about 2 inchs above the gunshot wound on your leg. That will stop most of the bleeding." elementProperties="option=13;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="14" texten="I need you to rip your shirt or use some cloth to tie a tourniquet around your leg." elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="26" texten="Did you see what direction the driver went?" elementProperties="option=27;option=28;option=29;option=30;option=31;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Okay. . . Ahhh. . . Alright, done." elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="15" texten="Okay. . . Ahh. . . Done." elementProperties="option=21;" addToAAR="" operator="Caller" emotions="Cloth ripping" />
+        <DialogOption id="27" texten="No I uh... I didn't see where they went." elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="28" texten="They went north I think." elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="29" texten="South, maybe?" elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="30" texten="I don't know, uhh East?" elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="31" texten="I think they went West!" elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Are you breathing okay? Is there a lot of blood coming from your chest?" elementProperties="option=17;option=18;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="Are you breathing okay? Is there a lot of blood coming from your chest?" elementProperties="option=22;option=23;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="32" texten="Do you know what type of car it was? And what color it was?" elementProperties="option=33;option=34;option=35;option=36;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Helloooo? I.. I need help." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Is anyone there?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="17" texten="I'm.. I am having a little difficulty breathing... And yes there is a lot of blood.." elementProperties="option=19;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="No.. I am breathing fine. But there is a lot of blood." elementProperties="option=19;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="I'm.. I am having a little difficulty breathing... And yes there is a lot of blood.." elementProperties="option=20;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="23" texten="No.. I am breathing fine. But there is a lot of blood." elementProperties="option=20;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="33" texten="They were driving a red Ford F250?" elementProperties="option=37;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="34" texten="They were driving a silver Scion." elementProperties="option=37;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="35" texten="They were driving a blue Chevy Cruze?" elementProperties="option=37;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="36" texten="They were driving a white GMC Acadia." elementProperties="option=37;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="19" texten="I need you to rip your shirt and use it to cover up the wound. You need to try and stop the bleeding." elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="20" texten="Can your rip your shirt again to cover up the wound? You need to put pressure on it to stop the bleeding." elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="37" texten="I need you to stay calm, emergency services are on their way." elementProperties="option=38;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="38" texten="Please have them hurry! I might pass out!" elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="An Uber driver shot and robbed their rider." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

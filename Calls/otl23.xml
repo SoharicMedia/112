@@ -1,0 +1,44 @@
+<data><conversations>
+<conversation elementProperties="type=generable;" id="otl23" texten="Gun Accident">
+ <scene >
+ <witness elementProperties="type=Children;
+sex=W;" id="sister" emotions="little girl, ~10, crying, shouting" texten="Crying girl (caller)" />
+ <injuried elementProperties="weapon = e_pistol;
+type=Children;
+sex=M;
+hpChange=-0.5;
+hp=50;" id="brother" texten="Heavily injured brother" addToAAR="suicide" />
+ <witness elementProperties="type=Children;
+sex=W;" id="sister2" texten="Child" />
+ </scene>
+ <dialog>
+ <dialogOption id="1" operator="Operator:" texten="911 what's your emergency?" default="2" actionOnEnd="opinionEffect = 4;" addToAAR="story" />
+ <dialogOption elementProperties="option=address" id="2" operator="Caller:" texten="Help me my brother is hurt!!" default="name" option2="what" option3="alone" actionOnEnd="actionSetLocation;" />
+ <dialogOption id="address" operator="Operator:" texten="{ADDRESS?} Where are you calling from?" default="address1" />
+ <dialogOption id="address1" operator="Caller:" texten="[[ADDRESS]]... Get someone here really quick!" default="back" option2="stay" />
+ <dialogOption id="name" operator="Operator:" texten="{YOUR NAME?} What is your name?" default="name1" />
+ <dialogOption id="name1" operator="Caller:" texten="Jessy..." default="what" option2="alone" option3="address" />
+ <dialogOption id="what" operator="Operator:" texten="{WHAT HAPPENED?} What do you mean by your brother is hurt?" default="shot" />
+ <dialogOption id="shot" operator="Caller:" texten="He shot himself!" default="alone" option2="when" option3="how" />
+ <dialogOption id="alone" operator="Operator:" texten="{ARE YOU ALONE?} Are you home alone?" default="sister" />
+ <dialogOption id="sister" operator="Caller:" texten="I'm home alone with my sister!" default="old" option2="when" option3="address" />
+ <dialogOption id="old" operator="Operator:" texten="{HOW OLD IS SHE?} How old is she?" default="old1" />
+ <dialogOption id="old1" operator="Caller:" texten="Five..." default="when" option2="stay" option3="how" />
+ <dialogOption id="when" operator="Operator:" texten="{WHEN DID IT HAPPEN?} Did you just find him?" default="when1" />
+ <dialogOption id="when1" operator="Caller:" texten="Yeah and now he is gonna die..." default="stay" option2="how" option3="address" />
+ <dialogOption id="stay" operator="Operator:" texten="{STAY WITH ME!} Stay on the phone with me ok?" default="end" />
+ <dialogOption id="end" operator="Caller:" emotions="screaming" texten=". . . . . . . . . . . oh why did you do it!" actionOnEnd="actionHangup;" />
+ <dialogOption id="how" operator="Operator:" texten="{HOW?} How did he do it?" default="how1" />
+ <dialogOption id="how1" operator="Caller:" texten="With a gun!" default="stay" option2="notouch" option3="address" />
+ <dialogOption id="notouch" operator="Operator:" texten="{DON'T TOUCH IT} Just do not touch the gun ok?" default="notouch1" actionOnEnd="opinionEffect+=1;" />
+ <dialogOption id="notouch1" operator="Caller:" texten="I won't touch it!!!" default="stay" />
+ <dialogOption id="reminder" operator="Caller:" emotions="[crying]" texten="[crying]" />
+ <dialogOption id="reminder2" operator="Caller:" emotions="[crying]" texten="Help me!" />
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
+ </dialog>
+ <aar>
+ <reportElement id="story" texten="Male teenager shot himself in his own house. Bullet caused loss of consciousness and massive bleeding. His two little sisters have been in the house during an accident. Older girl (10 years old) called 911." />
+ <reportElement id="suicide" texten="Police is investigating the case. Detectives suspect that it was rather an accident than a suicide attempt." />
+ </aar>
+ </conversation>
+</conversations></data>
