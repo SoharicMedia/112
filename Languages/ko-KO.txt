@@ -7,4 +7,11 @@
   "incident.rep_crazy_modder.house.modder": "Crazy modder",
   "incident.rep_crazy_modder.house.pc": "PC",
   "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
+
+  "text.names.ve_nightfurypol": "경찰관 알파",
+  "text.descriptions.ve_nightfurypol": "투슬리스가 브래스와 함께 당신을 도와줍니다. 걱정마세요. 당신이 잘못한게 없다면 그 커다란 불꽃을 날릴일은 없을겁니다. =D"
+  "text.names.ve_nightfuryfire": "소방관 알파",
+  "text.descriptions.ve_nightfuryfire": "투슬리스가 소방전문장비와 함께 당신을 도와줍니다. 물론 가끔은, 물동이에 물고기가 있을지도 모릅니다. XD"
+  "text.names.ve_nightfurymedic": "구급요원 알파",
+  "text.descriptions.ve_nightfurymedic": "투슬리스가 빠른 움직임으로 당신을 도와줍니다. 투슬리스가 사람들을 위한 응급처치를 배울 순 없습니다. 하지만 환자들을 빠르게 옮겨줄수는 있죠!"
 }

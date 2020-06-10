@@ -8801,4 +8801,11 @@
   "incident.rep_crazy_modder.house.modder": "Crazy modder",
   "incident.rep_crazy_modder.house.pc": "PC",
   "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
+
+  "text.names.ve_nightfurypol": "Police officer Alpha",
+  "text.descriptions.ve_nightfurypol": "Toothless assist you with flame. Don't worry. If you don't do anything wrong, he won't blow the flames to you. =D"
+  "text.names.ve_nightfuryfire": "Firefighter Alpha",
+  "text.descriptions.ve_nightfuryfire": "Toothless assist you with professional fire equipment. Sometimes, may be fish in the bucket. XD"
+  "text.names.ve_nightfurymedic": "Ambulance Alpha",
+  "text.descriptions.ve_nightfurymedic": "Toothless assist you with fast move. he can't learn first aid for human. but he can help to move patients quickly!"
 }
