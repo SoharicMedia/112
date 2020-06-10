@@ -8792,4 +8792,13 @@
   "incident.c_911_unconscious_gen.dialog.id42id": "{救急車を送ります} 救急車を向かわせています。",
   "text.descriptions.Label_Controls_Controls_GraphAudioControls_UIRoot (Settings)14": "ズームイン",
   "text.descriptions.Label_Controls_Controls_GraphAudioControls_UIRoot (Settings)15": "ズームアウト"
+
+  "text.names.ve_poltandem": "Police tandem",
+  "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
+  
+  "incident.rep_crazy_modder.rep_crazy_modder": "CRAZY MODDER",
+  "incident.rep_crazy_modder.description": "SOMEONE REPORTED A MAN WHO SENDS A HUGE NUMBER OF MODS TO THE 112 OPERATOR WORKSHOP",
+  "incident.rep_crazy_modder.house.modder": "Crazy modder",
+  "incident.rep_crazy_modder.house.pc": "PC",
+  "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
 }
