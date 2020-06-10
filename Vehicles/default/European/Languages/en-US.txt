@@ -1,0 +1,38 @@
+{
+  "text.names.ve_heavytruck": "Heavy fire truck",
+  "text.descriptions.ve_heavytruck": "A heavy fire truck is good for fighting even the biggest fires thanks to the water cannon mounted on the roof."
+  "text.names.ve_prisonvan": "Prison Van",
+  "text.descriptions.ve_prisonvan": "Can carry more criminals."
+  "text.names.ve_polcar2": "Riot vehicle",
+  "text.descriptions.ve_polcar2": "Riot vehicle is adapted to support during all protests, as well as to ordinary patrols with two officers of the prevention unit. The police car is much faster for its size. In addition to policemen, the vehicle will also carry preventive equipment, including protective helmets, shields."
+  "text.names.ve_polptrl": "Police transporter",
+  "text.descriptions.ve_polptrl": "It's great not only for transporting criminals, but also for patrolling the city."
+  "text.names.ve_ladder": "Fire ladder",
+  "text.descriptions.ve_ladder": "Fire ladder is just right, but sometimes it can fail."
+  "text.names.ve_ladder2": "Advanced fire ladder",
+  "text.descriptions.ve_ladder2": "Advanced fire ladder is ideal for work at height. It is certainly more efficient than a regular fire ladder and can hold more water"
+  "text.names.ve_polsuv": "Police SUV",
+  "text.descriptions.ve_polsuv": "Police SUV is useful to drive in hard-to-reach places."
+  "text.names.ve_polcar3": "Police car ",
+  "text.descriptions.ve_polcar3": "Basic police vehicle. It can quickly reach random places and serve to transport suspects."
+  "text.names.ve_medmdn": "Modern ambulance",
+  "text.descriptions.ve_medmdn": "This ambulance is much better than a regular ambulance, its equipment is very rich in medical equipment."
+  "text.names.ve_onfootpatrol": "Foot patrol",
+  "text.descriptions.ve_onfootpatrol": "Foot patrol. It is useful in hard-to-reach places for cars. Can catch someone in the act."
+  "text.names.ve_unmarked2": "Undercover police car",
+  "text.descriptions.ve_unmarked2": "This police car is unmarked and especially useful when you want to liquidate a criminal group and want to do it quietly. The vehicle is fast and has room for 4 policemen, but there are no places for criminals. "
+  "text.names.ve_firebigtank": "Large fire tank",
+  "text.descriptions.ve_firebigtank": "A large fire tank holds huge amounts of water needs for large fires, but is unfortunately very slow."
+  "text.names.ve_drone": "Police drone",
+  "text.descriptions.ve_drone": "A police drone helps in searching over huge areas."
+  "text.names.ve_unmarkedvan": "Unmarked police van",
+  "text.descriptions.ve_unmarkedvan": "This van works similar to a undercover police car. But the van has one place for criminals and is more armored."
+  "text.names.ve_hazmat": "Chemical rescue vehicle",
+  "text.descriptions.ve_hazmat": "The chemical rescue vehicle is equipped with a lot of specialized equipment for pumping, cutting, decontamination, sealing and liquidation of leaks and neutralization of chemical substances."
+  "text.names.ve_firetruck2": "Modern fire truck",
+  "text.descriptions.ve_firetruck2": "This fire engine is intended for fires as well as for technical tasks. It is equipped with new equipment."
+  "text.names.ve_techtruck2": "Heavy technical vehicle",
+  "text.descriptions.ve_techtruck2": "The heavy technical vehicle is equipped with the best equipment for technical tasks. It performs much better than a usual technical vehicle."
+}
+
+<!--mod by='BartussX'-->
