@@ -1,3 +1,10 @@
 {
-
+  "text.names.ve_poltandem": "Polizei Tandem",
+  "text.descriptions.ve_poltandem": "Wie zwei normale Fahrräder... aber besser.",
+  
+  "incident.rep_crazy_modder.rep_crazy_modder": "VERRÜCKTER MODDER",
+  "incident.rep_crazy_modder.description": "JEMAND MELDETE EINEN MANN, DER EINE RIESIGE ANZAHL VON MODS AN DEN 112 OPERATOR WORKSHOP SENDET",
+  "incident.rep_crazy_modder.house.modder": "Verrückter Modder",
+  "incident.rep_crazy_modder.house.pc": "PC",
+  "incident.rep_crazy_modder.aar.pcDone": "Modder's PC wurde gesichert",
 }
