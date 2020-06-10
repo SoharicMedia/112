@@ -1,0 +1,26 @@
+{
+  "text.names.ve_heavytruck": "Ciężki wóz strażacki",
+  "text.descriptions.ve_heavytruck": "Ciężki wóz strażacki jest dobry na walkę nawet z największymi pożarami dzięki armatce wodnej zamontowanej na dachu."
+  "text.names.ve_prisonvan": "Furgonetka Więzienna",
+  "text.descriptions.ve_prisonvan": "Może przewozić więcej przestępców."
+  "text.names.ve_polcar2": "Pojazd prewencji",
+  "text.descriptions.ve_polcar2": "Pojazd prewencji jest przystosowany do wsparcia podczas wszelakich protestów, jak i do zwykłych patroli z dwoma funkjonariuszami oddziału prewencji. Radiowóz jest znacznie szybki jak na swoją wielkość. Oprócz policjantów pojazdem będzie przewożony również sprzęt prewencyjny m.in. kaski ochronne, tarcze. "
+  "text.names.ve_polptrl": "Transporter policyjny",
+  "text.descriptions.ve_polptrl": "Świetnie nadaje się nie tylko na transportu przestępców, lecz również do zwykłego patrolowania miasta."
+  "text.names.ve_ladder": " Zwykła drabina strażacka",
+  "text.descriptions.ve_ladder": "Drabina strażacka jest w sam raz na wysokie budynki, lecz czasem potrafi zawieść i być zbędna."
+  "text.names.ve_ladder2": "Podnośnik strażacki",
+  "text.descriptions.ve_ladder2": "Podnośnik strażacki jest idealny do pracy na wysokościach. Jest na pewno bardziej wydajny od drabiny strażackiej i mieści więcej wody."
+  "text.names.ve_polsuv": "Policyjny SUV",
+  "text.descriptions.ve_polsuv": "Policyjny SUV jest przydatny, aby jeździć w trudno dostępnych miejscach."
+  "text.names.ve_polcar3": "Radiowóz",
+  "text.descriptions.ve_polcar3": "Podstawowy pojazd policyjny. Może szybko dotrzeć do miejsca zdarzenia i służyc do transportu podejrzanych."
+  "text.names.ve_medmdn": "Nowoczesny ambulans",
+  "text.descriptions.ve_medmdn": "Ten ambulans jest znacznie lepszy od zwykłej karetki, jego wyposażenie jest bardzo bogate w sprzęt medyczny."
+  "text.names.ve_unmarked2": "Tajny radiowóz",
+  "text.descriptions.ve_unmarked2": "Ten radiowóz jest nieoznakowany oraz szczególnie przydatny gdy chcesz zlikwidować jakąś grupę przestępczą i chcesz zrobić to po cichu. Pojazd jest szybki i mieści 4 policjantów, ale niestety bez miejsc dla przestępców."
+  "text.names.ve_onfootpatrol": "Patrol pieszy",
+  "text.descriptions.ve_onfootpatrol": "Patrol pieszy. Jest przydatny w trudno dostępnych miejscach dla samochodów. Potrafi złapać kogoś na gorącym uczynku, ale niestety nie jest tak szybki."
+}
+
+<!--mod by='BartussX'-->
