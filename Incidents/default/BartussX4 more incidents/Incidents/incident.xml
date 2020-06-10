@@ -1,0 +1,1397 @@
+<incidentTypes id="general_incidents"> <!--mod by='BartussX'-->
+	<incident id="rep_theft_escape"
+        	  properties="type=crime; popularity=1; stage = 1; tag+=night{+2}; tag+=rain{+3};">
+		<scene id="chata"
+			   poi="BUILDING"
+			   background="HouseBackground"
+			   properties="timeToReact=900;">
+			<suspect id="okradziony"
+       				 properties="personBuilder.sex=[0.5:MALE | 0.5:FEMALE]; spawnArea=inside; isActive=1; personBuilder.hatType = NONE;"
+       				 actionOnEnd="opinionOnSuccess+=1;"
+       				 actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"/>
+			<policeWork id="skradzione"
+          				properties="workAmount=[200,300]; spawnArea=insideRear;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=raport;"/>
+		</scene>
+		<aar>
+			<reportElement id="raport"/>
+		</aar>
+	</incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_pershoot" properties="type=crime;
+        popularity=1;
+        visibility=0.1;
+        stage = 1;
+        tag+=night{+1};
+        tag+=day{+3};
+         "  >
+      <scene id="miejsce" properties="timeToReact=650;
+             " actionOnEnd="AAR+=caught;"  
+			 poi="ROAD"
+			   background="ParkingBackground">
+        <suspect id="podejrzany" properties="prison=1;
+           aggressiveness=0.8;
+           weapon=[0.2:e_pistol | 0.1:e_shotgun | 0.3: e_knife | 0.2: e_fist | 0.2: e_baseball];
+           personBuilder.sex=MALE;
+           personBuilder.age=ADULT;" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=3;
+           opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_schoolshooter" properties="type=crime;
+	    type+=medical;
+        popularity=1;
+        visibility=0.5;
+        stage = 1;
+        tag+=night{0};
+"  >
+      <scene id="szkola"
+       poi="BUILDING" 
+	   background="HouseBackground" 
+	   properties="timeToReact=1000;"  >
+        <suspect id="strzelec1" 
+		properties="aggressiveness = 0.7;
+        weapon=e_pistol;
+        prison=1;
+        personBuilder.sex=MALE;
+        spawnArea=inside;
+
+        isActive=1;" actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="strzelec2" properties="aggressiveness = 0.9;
+            weapon = [0.6: e_rifle | 0.4: e_shotgun];
+            prison=1;
+            personBuilder.sex=MALE;
+            spawnArea=inside;
+            isActive=1;" 
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2; opinionOnIgnore+=-2;"  />
+        <suspect id="nauczyciel" properties="aggressiveness = 0.0;
+            personBuilder.sex=MALE;
+            spawnArea=[0.5:inside | 0.5:infront];
+			isActive=0.5;" 
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2; opinionOnIgnore+=-2;"  />
+        <injured id="wozny" properties="aggressiveness = 0.0;
+            hp=[50, 80];
+            personBuilder.sex=MALE;
+            needsHospital=false;
+            spawnArea=[0.5:inside | 0.5:infront];
+			isActive=0.5;"
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2; opinionOnIgnore+=-2;"/>
+        <injured id="nauczyciel2" 
+            properties="hp=[90, 80];
+            personBuilder.sex=FEMALE;
+            spawnArea=infront;
+            needsHospital=false;
+            isActive=0.5;"
+			actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <injured id="uczen1" properties="isActive=1;
+            hp=[50, 80];
+            blockedBy+=strzelec1;
+            blockedBy+=strzelec2;
+            needsHospital=true;
+            personBuilder.age=CHILD;
+            spawnArea=insideRear;" actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1;opinionOnIgnore+=-1;"  />
+        <injured id="uczen2" properties="isActive=1;
+            hp=[10, 30];
+            blockedBy+=strzelec1;
+            blockedBy+=strzelec2;
+            needsHospital=true;
+            personBuilder.age=CHILD;
+            spawnArea=insideRear;
+            personBuilder.isCriminal = false;" 
+			actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+<injured id="uczen3" properties="isActive=1;
+hp=[20, 30];
+blockedBy+=strzelec1;
+blockedBy+=strzelec2;
+needsHospital=true;
+personBuilder.age=CHILD;
+spawnArea=insideRear;
+personBuilder.isCriminal = false;" actionOnEnd="opinionOnSuccess+=1;
+" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+<injured id="uczen4" properties="isActive=1;
+hp=[10, 20];
+blockedBy+=strzelec1;
+blockedBy+=strzelec2;
+needsHospital=true;
+personBuilder.age=CHILD;
+spawnArea=insideRear;
+personBuilder.isCriminal = false;" actionOnEnd="opinionOnSuccess+=1;
+" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+<injured id="uczen5" properties="isActive=1;
+hp=[40, 80];
+blockedBy+=strzelec1;
+blockedBy+=strzelec2;
+needsHospital=true;
+personBuilder.age=CHILD;
+spawnArea=insideRear;
+personBuilder.isCriminal = false;" actionOnEnd="opinionOnSuccess+=1;
+" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+<dead id="uczen6" properties="hp=0;" actionOnEnd="opinionOnIgnore+=2; personBuilder.age=CHILD;"  />
+
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_forestfire" properties="type=fire;
+popularity=1.5;
+visibility=0.1;
+stage = 2;
+tag+=hot{+0.5};
+tag+=snow{0};
+tag+=cold{0};
+tag+=rain{0};"  >
+      <scene id="las" poi="PARK" background="ParkBackground" properties="timeToReact=850;
+opinionOnSuccess=15;
+opinionOnIgnore=-10"  >
+        <fireWork id="pozar1" properties="workAmount=1500;
+workChange=2;
+spawnArea=fireWork;"  />
+        <fireWork id="pozar2" properties="workAmount=1100;
+workChange=2;
+spawnArea=nearTree;"  />
+        <fireWork id="pozar3" properties="workAmount=1450;
+		isActive=0.25;
+        workChange=2;
+        spawnArea=nearTree;"  />
+		<fireWork id="pozar4" properties="workAmount=1250;
+		isActive=0.20;
+        workChange=2;
+        spawnArea=onTree;"  />
+		<fireWork id="pozar5" properties="workAmount=1250;
+		isActive=0.20;
+        workChange=2;
+        spawnArea=onTree;"  />
+		<techWork id="sprzatanie" properties="workAmount=1000;
+		icon=las;
+spawnArea=nearTree;" actionOnEnd="AAR+=koniec;
+blockedBy+=pozar1;
+blockedBy+=pozar2;  "/>
+      </scene>
+	   <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_sootfire" properties="type=fire;
+popularity=3;
+visibility=1;
+stage = 1;
+tag+=cold{+3};
+tag+=snow{0};
+tag+=rain{0};
+tag+=hot{0};"> 
+      <scene id="pozarsadzy" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;"  >
+        <fireWork id="fire" properties="workAmount=50;
+workChange=0.5;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_collbuilding" properties="type+=medical;
+type+=technical;
+popularity=1;
+visibility=1;
+stage = 3;
+tag+=night{+1}; 
+tag+=wind{+3};
+tag+=event_tornado{10};
+tag+=event_blackout_1{10};"  >
+      <scene id="budynek" poi="TALL_BUILDING" background="HouseCollapseBackground" properties="timeToReact=1000;
+opinionOnSuccess=25;
+roadBlock=0.9;
+opinionOnIgnore=-20;"  >
+        <techWork id="blok1" properties="workAmount=3000;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+<techWork id="blok2" properties="workAmount=3000;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+<techWork id="blok3" properties="workAmount=500;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+        <injured id="ranny1" properties="hp=[20,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+        <injured id="ranny2" properties="hp=[20,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.9;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+        <injured id="ranny3" properties="hp=[10,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.8;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny4" properties="hp=[30,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+isActive=0.9;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny5" properties="hp=[40,50];
+blockedBy+=blok1;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny6" properties="hp=[20,60];
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny7" properties="hp=[20,80];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.5;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<dead id="zgon1" properties="hp=0;
+isActive=0.5;
+personBuilder.sex=MALE;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<dead id="zgon2" properties="hp=0;
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=FEMALE;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+      </scene>
+      <aar  >
+        <reportElement id="skonczonarobota"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_collbuilding2" properties="type+=medical;
+type+=technical;
+popularity=1;
+visibility=1;
+stage = 3;
+tag+=night{+1}; 
+tag+=wind{+1};
+tag+=event_tornado{10};
+tag+=event_blackout_1{10};"  >
+      <scene id="budynek" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=25;
+roadBlock=0.5;
+opinionOnIgnore=-20;"  >
+        <techWork id="blok1" properties="workAmount=3000;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+<techWork id="blok2" properties="workAmount=3000;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+<techWork id="blok3" properties="workAmount=500;
+spawnArea=rubbleWork;
+icon=OnSitePic_Rubble;" actionOnEnd="AAR+=skonczonarobota;
+opinionOnIgnore+=2;"  />
+        <injured id="ranny1" properties="hp=[20,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+        <injured id="ranny2" properties="hp=[20,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.9;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+        <injured id="ranny3" properties="hp=[10,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.8;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny4" properties="hp=[30,40];
+blockedBy+=blok1;
+blockedBy+=blok2;
+isActive=0.9;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny5" properties="hp=[40,50];
+blockedBy+=blok1;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny6" properties="hp=[20,60];
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=MALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<injured id="ranny7" properties="hp=[20,80];
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=0.5;
+personBuilder.sex=FEMALE;
+needsHospital=true;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<dead id="zgon1" properties="hp=0;
+isActive=0.5;
+personBuilder.sex=MALE;
+spawnArea=inside;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+<dead id="zgon2" properties="hp=0;
+blockedBy+=blok1;
+blockedBy+=blok2;
+blockedBy+=blok3;
+isActive=1;
+personBuilder.sex=FEMALE;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+      </scene>
+      <aar  >
+        <reportElement id="skonczonarobota"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_factoryfire" properties="type=fire;
+        popularity=1;
+        visibility=1;
+        stage = 1;
+        tag+=hot{+2};
+        tag+=rain{-1};
+    tag+=event_blackout_1{30};
+tag+=event_blackout_2{100};"  >
+      <scene id="fabryka" poi="BUILDING" background="IndustrialBackground" properties="timeToReact=900;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <techWork id="robota" properties="workAmount=400;
+spawnArea=work;
+icon=OnSitePic_Decontamination;" actionOnEnd="opinionOnIgnore+=2;
+fire.workChange=0.2;"  />
+        <fireWork id="pozar" properties="workAmount=30;
+workChange=4;
+spawnArea=fire;" actionOnEnd="opinionOnIgnore+=3;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_animalabuse" properties="type+=crime;
+popularity=1;
+visibility=1;
+stage = 1;"  >
+      <scene 
+	    id="dom" 
+	    poi="BUILDING" 
+		background="HouseBackground" 
+		properties="timeToReact=1200;
+        opinionOnSuccess=2;
+        opinionOnIgnore=-3;"  >
+        <suspect id="zjeb" properties="personBuilder.sex=MALE; 
+            prison=1;
+	        personBuilder.sex=MALE;
+            spawnArea=inside;
+            aggressiveness = 0.2;
+            weapon=e_dogbite;"
+            actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="animal" properties="isActive=1;
+personBuilder.randomizeSurname = false;
+personBuilder.name='Alex';
+personBuilder.photoId = dog;
+personBuilder.sex=MALE;
+personBuilder.hatType = NONE;
+spawnArea=inside;
+faction = NATURE" actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_aggressive_personshop" properties="type=crime;
+popularity=3;
+visibility=0.7;
+stage = 2;
+tag+=event_concert{1};
+tag+=event_protest_peacefull{1};
+tag+=event_protest_aggressive{2};
+tag+=event_protest_dontknow{1};"  >
+      <scene id="sklep" 
+	    poi="BUILDING" 
+		background="HouseBackground" 
+		properties="timeToReact=1200;
+        opinionOnSuccess=2;
+        opinionOnIgnore=-3;"  >
+        <suspect id="atakujacy" 
+		    properties="bill=[1000,1500];
+            aggressiveness=0.8;
+            weapon=e_knife;
+            spawnArea=inside;
+            prison=1;
+            personBuilder.sex=MALE;
+            personBuilder.age=[0.8: ADULT | 0.2: TEEN];
+            isActive=1;" 
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="kasjerka" properties="
+personBuilder.sex=FEMALE;" actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;
+spawnArea=inside;"  />
+<suspect id="swiadek" properties="
+personBuilder.sex=FEMALE; spawnArea=inside;" actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_aggressive_persongas" properties="type=crime;
+popularity=3;
+visibility=0.6;
+stage = 2;
+tag+=event_concert{1};
+tag+=event_protest_peacefull{1};
+tag+=event_protest_aggressive{2};
+tag+=event_protest_dontknow{1};"  >
+      <scene id="stacjabenzynowa" 
+	    poi="BUILDING" 
+	  background="HouseBackground" 
+	  properties="timeToReact=1200;
+      opinionOnSuccess=1;
+      opinionOnIgnore=-3;"  >
+        <suspect id="atakujacy" properties="bill=[1000,1500];
+            aggressiveness=0.8;
+            weapon=[0.5: e_knife | 0.5: e_fist];
+            prison=1;
+            spawnArea=inside;
+            personBuilder.sex=MALE;
+            personBuilder.age=ADULT;
+            isActive=1;" 
+			actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="kasjerka" 
+		    properties="
+            personBuilder.sex=FEMALE;
+            spawnArea=inside;" 
+		    actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="swiadek" 
+		    properties="
+            personBuilder.sex=FEMALE; 
+			spawnArea=inside;" 
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;" />
+   </scene>
+   </incident>
+   <!--mod by='BartussX'-->
+   <incident id="rep_bonfire" properties="type=fire;
+popularity=1;
+visibility=0.2;
+stage = 1;
+tag+=snow{0};
+tag+=rain{0};
+tag+=cold{-5};
+tag+=hot{+1};">
+      <scene id="las" poi="PARK"
+background="ParkBackground" properties="timeToReact=1000;
+opinionOnSuccess=2;
+opinionOnIgnore=0;"  >
+        <fireWork id="ognisko" properties="workAmount=5;
+workChange=0;"  />
+      <suspect id="ktos1" properties="isActive=1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[500,1000];
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];"  />
+      <suspect id="ktos2" properties="isActive=1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[500,1000];
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];"  />
+      <suspect id="ktos3" properties="isActive=1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[500,1000];
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];"  />
+<suspect id="ktos4" properties="isActive=0.4;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[500,1000];
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];"  />
+<suspect id="ktos5" properties="isActive=0.8;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[500,1000];
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_oilleak" properties="type=technical;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=rain{0}; 
+tag+=snow{0};"  >
+      <scene id="parking" poi="ROAD" background="ParkingBackground" properties="timeToReact=1000;
+opinionOnSuccess=3;
+roadBlock=0.1;
+opinionOnIgnore=-3;"  >
+        <techWork id="plama" properties="workAmount=300; icon=olej;" actionOnEnd="AAR+=zrobione;"  />
+      </scene>
+      <aar>
+        <reportElement id="zrobione"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_fakemoney" properties="type=crime;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=night{0};"  >
+      <scene id="sklep" poi="BUILDING" background="HouseBackground" properties="timeToReact=900;"  >
+        <suspect id="hajsownik" properties="bill=[3000,4000];
+prison=0.7;
+aggressiveness=0.3;
+weapon=e_fist;
+spawnArea=inside;
+personBuilder.isCriminal=0.2;" actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="kasjer" properties="
+spawnArea=inside;" actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+           <policeWork id="hajs"
+          				properties="workAmount=[200,300]; spawnArea=insideRear;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=zabezpieczenie;"/>
+		</scene>
+		<aar>
+			<reportElement id="zabezpieczenie"/>
+		</aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_unconsciouschild" properties="type=medical;
+popularity=2;
+visibility=1;
+stage=1;">
+      <scene id="dziecko" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=4;
+opinionOnIgnore=-5;"  >
+        <injured id="dziecko" properties="hp=90;
+hpchange=-0.01;
+needsHospital=true;
+spawnArea=inside;
+personBuilder.age=CHILD;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_sawwound" properties="type=medical;
+popularity=2;
+visibility=1;
+stage=1;">
+      <scene id="miejsce" properties="timeToReact=900;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[40,50];
+personBuilder.sex=MALE;
+needsHospital=true;
+personBuilder.age=[0.2: SENIOR | 0.8: ADULT];"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_allergicreaction" properties="type=medical;
+popularity=3;
+visibility=1;
+tag+=snow{0};
+            tag+=cold{0};
+            tag+=rain{-8};
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=900;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[40,60];
+personBuilder.sex=MALE;
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	<incident id="rep_gasleakagetall" properties="type=technical;
+        popularity=2;
+        visibility=1;
+        stage = 1;
+        tag+=wind{-3};"  >
+      <scene id="blok" poi="TALL_BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <techWork id="gaz" properties="workAmount=1500;" actionOnEnd="AAR+=koniec;;"  />
+      </scene>
+	  <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_gasleakage" properties="type=technical;
+        popularity=1.5;
+        visibility=1;
+        stage = 1;
+        tag+=wind{-3};"  >
+      <scene id="blok" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <techWork id="gaz" properties="workAmount=1500;" actionOnEnd="AAR+=koniec;"  />
+      </scene>
+	  <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_pedophile" properties="type=crime;
+        popularity=1;
+        visibility=0.1;
+        stage = 1;
+        tag+=day{+1.2};
+         "  >
+      <scene id="miejsce" properties="timeToReact=650;"  
+			 poi="BUILDING"
+			   background="ParkingBackground">
+        <suspect id="pedofil" properties="prison=0.3;
+           aggressiveness=0.1;
+           personBuilder.sex=MALE;
+           personBuilder.age=[0.2: SENIOR | 0.8: ADULT];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=3;
+           opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_stomachache" properties="type=medical;
+popularity=3;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=80;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+needsHospital=0.3;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_stoner" properties="type=drugs;
+        popularity=1;
+        visibility=0.1;
+        stage = 1;
+        tag+=night{+3};
+        tag+=day{+1};
+         "  >
+      <scene id="miejsce" properties="timeToReact=1000;"  
+			 poi="ROAD"
+			   background="ParkingBackground">
+        <suspect id="podejrzany" properties="prison=1;
+           aggressiveness=0.8;
+           weapon=[ 0.5: e_knife | 0.5: e_fist ];
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+           personBuilder.age=[0.5:TEEN| 0.5:ADULT];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_refusal" properties="type=crime;
+popularity=2;
+visibility=0.9;
+stage = 1;
+tag+=day{+1};
+tag+=night{0};"  >
+
+      <scene id="miejsce" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;"  >
+        <suspect id="odmawiajacy" properties="isActive=1;
+bill=1000;
+prison=0.1;
+reprimandWork=[100,250];
+spawnArea=[0.5:inside | 0.4:insideRear | 0.1: infront];
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];" actionOnEnd="opinionOnIgnore+=2;"  />
+        <suspect id="pracownik" properties="isActive=1;;
+spawnArea=[0.5:inside | 0.4:insideRear | 0.1: infront];
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_electricshock" properties="type=medical;
+popularity=3;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=3;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=50;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_shop_robbery" properties="type=crime;
+popularity=3;
+visibility=0.8;
+stage = 1;
+tag+=night{-5};
+tag+=event_protest_aggressive{6};"  >
+      <scene id="sklep" poi="BUILDING" background="HouseBackground" properties="timeToReact=600;
+opinionOnSuccess=1;
+opinionOnIgnore=-1;"  >
+        <suspect id="napadajacy" properties="bill=[1500,2000];
+prison=0.85;
+aggressiveness=0.8;
+weapon=[0.1: e_rifle | 0.1: e_shotgun | 0.8: e_pistol];
+reprimandWork=[50,100];
+spawnArea=inside;
+personBuilder.age=[0.5: ADULT | 0.5: TEEN];
+personBuilder.isCriminal=0.5;" actionOnEnd="
+opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"  />
+        <suspect id="kasjer" properties="reprimandWork=[50,100];
+		blockedBy+=napadajacy;"  />
+		<suspect id="klient" properties="reprimandWork=[50,200];" actionOnEnd="opinionOnIgnore+=1;
+		blockedBy+=napadajacy;"  />
+		<suspect id="klient2" properties="reprimandWork=[50,200];" actionOnEnd="opinionOnIgnore+=1;
+		blockedBy+=napadajacy;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_stuck_in_swamps" properties="type+=medical;
+type+=technical;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=night{+1};"  >
+      <scene id="bagna" poi="PARK" properties="timeToReact=1000;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <techWork id="bagno" properties="workAmount=1000;
+icon=bagno;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny" properties="hp=[50,60];
+blockedBy+=bagno;
+personBuilder.sex=MALE;
+needsHospital=0.5;
+spawnArea=infront;" actionOnEnd="
+opinionOnIgnore+=1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_disappearanceintheforest" properties="type=search;
+popularity=2;
+visibility=1;
+tag+=night{+3};
+stage=2;"  >
+      <scene id="miejsce_szukania" poi="PARK" properties="searchWork=50;
+searchArea=3;
+timeToReact=3000;
+searchSceneId=child_scene;
+opinionOnSuccess=3;
+opinionOnIgnore=-4;
+iconMap=medical_search;"  >
+      </scene>
+      <scene id="las" properties="delayedSpawn=true;
+opinionOnSuccess=1;
+opinionOnIgnore-1"  >
+        <injured id="zaginiony" properties="hp=90;" actionOnEnd="AAR+=odnaleziono;"  />
+      </scene>
+      <aar  >
+        <reportElement id="odnaleziono"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_littering" properties="type=road;
+popularity=1.5;
+visibility=1;
+stage = 1;
+tag+=night{+1};"  >
+      <scene id="miesjce" properties="
+timeToReact=1500;
+opinionOnSuccess=2;
+opinionOnIgnore=0;"  >
+        <suspect id="smieciarz" properties="bill=[500,1000];
+spawnArea=leftof;" actionOnEnd="AAR+=caught;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_shortnessofbreath" properties="type=medical;
+popularity=3;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=3;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=70;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.8: SENIOR | 0.2: ADULT];
+needsHospital=0.8;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_drug_plantation" properties="type=drugs;
+popularity=3;
+visibility=0.5;
+stage = 1;
+tag+=night{0};"  >
+      <scene id="miejsce" poi="BUILDING" background="HouseBackground" properties="timeToReact=900;"  >
+        <suspect id="diler" properties="bill=[3000,4000];
+prison=1;
+aggressiveness=0.5;
+weapon=e_fist;
+spawnArea=inside;
+personBuilder.isCriminal=0.2;" actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+           <policeWork id="narkotyki"
+          				properties="workAmount=[800,1000]; spawnArea=insideRear; icon=plantacja;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=zabezpieczenie;"/>
+		</scene>
+		<aar>
+			<reportElement id="zabezpieczenie"/>
+		</aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_arsonist" properties="type=fire;
+popularity=1.5;
+visibility=0.1;
+stage = 2;
+tag+=hot{+1};
+tag+=snow{0};
+tag+=cold{0};
+tag+=rain{0};"  >
+      <scene id="miesjce" poi="BUILDING" background="HouseBackground" properties="timeToReact=850;
+opinionOnSuccess=15;
+opinionOnIgnore=-10"  >
+        <fireWork id="pozar1" properties="workAmount=50;
+workChange=0.5;
+isActive=0.5;"  />
+        <fireWork id="pozar2" properties="workAmount=40;
+workChange=2;"  />
+        <fireWork id="pozar3" properties="workAmount=110;
+		isActive=0.5;
+        workChange=1;"  />
+		<suspect id="podpalacz" properties="bill=[5000,6000];
+prison=1;
+aggressiveness=0.5;
+weapon=e_fist;
+spawnArea=inside;" actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_bigcrash" properties="popularity=1;
+visibility=1;
+type+=medical;
+type+=technical;
+stage = 3;
+tag+=night{0}; tag+=snow{+1}; tag+=rain{+1};"  >
+      <scene id="droga" poi="ROAD" background="CarBumpBackground" properties="timeToReact=1000;
+roadBlock=0.07;
+opinionOnSuccess=15;
+opinionOnIgnore=-20;
+SetBackgroundElement(car, 1);"  >
+        <suspect id="osoba1" properties="bill=[100,1000];
+reprimandWork=[150,300];
+spawnArea=leftof;"  />
+        <suspect id="osoba2" properties="bill=[100,1000];
+reprimandWork=[150,300];
+spawnArea=leftof;"  />
+        <injured id="inj1" properties="isActive=0.5;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+        <injured id="inj2" properties="isActive=1;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+        <injured id="inj3" properties="isActive=1;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+        <injured id="inj4" properties="isActive=1;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+        <injured id="inj5" properties="isActive=1;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"   />
+<injured id="inj6" properties="isActive=1;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+<injured id="inj7" properties="isActive=1;
+
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+<injured id="inj8" properties="isActive=0.5;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+<injured id="inj9" properties="isActive=0.5;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+<injured id="inj10" properties="isActive=0.5;
+hp=80;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.4: ADULT | 0.4: TEEN | 0.1: CHILD | 0.1: OLD];" actionOnEnd="opinionOnSuccess=3;
+opinionOnIgnore+=1;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+<techWork id="samochod" properties="workAmount=[800,1600];
+spawnArea=workCar;
+icon=OnSitePic_Wan;" actionOnEnd="opinionOnIgnore+=2;" actionOnIgnore="opinionOnIgnore+=-1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_burningvancar" properties="type+=fire;
+type+=crime;
+type+=vandalism;
+popularity=1;
+visibility=1;
+stage = 1;
+tag+=rain{0};
+tag+=event_concert{5};
+tag+=event_protest_aggressive{15};
+tag+=event_protest_dontknow{5};
+tag+=event_vandals{15};"  >
+      <scene id="miejsce" poi="ROAD" background="CarBackground" properties="timeToReact=700;
+opinionOnSuccess=4;
+opinionOnIgnore=-4;"  >
+        <fireWork id="plonacydostawczak" properties="workAmount=100;
+workChange=[1,2];
+spawnArea=engine;
+icon=plonacyvan;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_blockofflatsfire" properties="type+=fire;
+type+=medical;
+popularity=1.5;
+visibility=1;
+stage = 3;"  >
+      <scene id="blok" poi="TALL_BUILDING" background="HouseBackground" properties="timeToReact=900;
+opinionOnSuccess=8;
+opinionOnIgnore=-8;"  >
+        <injured id="ranny1" properties="hp=[50,70];
+blockedBy+=praca;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=1;"  />
+        <injured id="ranny2" properties="hp=[50,70];
+blockedBy+=praca;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=1;"  />
+        <injured id="ranny3" properties="hp=[20,40];
+blockedBy+=praca;
+needsHospital=true;
+spawnArea=insideRear;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+isActive=0.5;
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny4" properties="isActive=0.5;
+hp=[20,40];
+blockedBy+=praca;
+needsHospital=true;
+spawnArea=insideRear;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+isActive=0.5;
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny5" properties="isActive=0.5;
+hp=[20,40];
+blockedBy+=praca;
+needsHospital=true;
+spawnArea=insideRear;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+isActive=0.5;
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <fireWork id="ogien" properties="workAmount=10;
+workChange=4;
+blockedBy+=praca;
+spawnArea=insideWork;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <techWork id="praca" properties="workAmount=100;
+spawnArea=doorWork;
+icon=OnSitePic_EvacuationArea;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_vacancy" properties="type=fire;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=hot{+3};
+tag+=day{-3};
+tag+=rain{-1};
+tag+=event_blackout_1{30};
+tag+=event_blackout_2{100};"  >
+      <scene id="miejsce" poi="BUILDING" properties="timeToReact=1000;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <fireWork id="ogien" properties="workAmount=60;
+workChange=4;
+icon=pustostan;" actionOnEnd="opinionOnIgnore+=3;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_slaughterhouse_fire" properties="type+=fire;
+type+=medical;
+popularity=2;
+visibility=1;
+stage = 2;"  >
+      <scene id="masarnia" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=6;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny1" properties="hp=[50,70];
+blockedBy+=praca;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+needsHospital=1;" actionOnEnd="opinionOnIgnore+=1;"  />
+        <injured id="ranny2" properties="hp=[50,70];
+blockedBy+=praca;
+spawnArea=inside;
+personBuilder.sex=[0.5: MALE | 0.5: FEMALE];
+personBuilder.age=[0.6: ADULT | 0.1: OLD | 0.1: CHILD | 0.2: TEEN];
+needsHospital=0.3;" actionOnEnd="opinionOnIgnore+=1;"  />
+        <fireWork id="ogien" properties="workAmount=30;
+workChange=1.5;
+blockedBy+=praca;
+spawnArea=insideWork;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <techWork id="praca" properties="workAmount=100;
+spawnArea=doorWork;
+icon=OnSitePic_EvacuationArea;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_garage_fire" properties="type+=fire;
+popularity=3;
+visibility=1;
+stage = 1;
+tag+=rain{0};"  >
+      <scene id="miejsce" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=4;
+opinionOnIgnore=-4;"  >
+        <fireWork id="garaz" properties="workAmount=40;
+workChange=[1,1.5];
+spawnArea=engine;
+icon=garaz;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_forest_litter_fire" properties="type=fire;
+popularity=2.5;
+visibility=1;
+stage = 2;
+tag+=hot{+2};
+tag+=snow{0};
+tag+=rain{0};"  >
+      <scene id="las" poi="PARK" background="ParkBackground" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-8"  >
+        <fireWork id="pozar1" properties="workAmount=300;
+workChange=[1,1.5];
+icon=sciolka;
+spawnArea=fireWork;"  />
+        <fireWork id="pozar2" properties="workAmount=100;
+workChange=[1,2];
+icon=sciolka;
+spawnArea=nearTree;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_garden_fire" properties="type=fire;
+popularity=1.5;
+visibility=1;
+stage = 1;
+tag+=hot{+1};
+tag+=snow{0};
+tag+=cold{0};
+tag+=rain{0};"  >
+      <scene id="ogrod" poi="BUILDING" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5"  >
+        <fireWork id="pozar1" properties="workAmount=100;
+workChange=[1,1.5];;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_bower_fire" properties="type=fire;
+popularity=1.5;
+visibility=1;
+stage = 1;
+tag+=hot{+2};
+tag+=snow{0};
+tag+=cold{0};
+tag+=rain{0};"  >
+      <scene id="altana" poi="BUILDING" properties="timeToReact=1000;
+opinionOnSuccess=3;
+opinionOnIgnore=-3"  >
+        <fireWork id="pozar1" properties="workAmount=40;
+workChange=1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_substance" properties="type=technical;
+popularity=2;
+visibility=1;
+stage = 1;"  >
+      <scene id="miejsce" poi="ROAD" properties="timeToReact=1000;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+        <techWork id="pojemniki" properties="workAmount=300; icon=pojemniki;" actionOnEnd="AAR+=koniec;"  />
+      </scene>
+      <aar>
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_tree_limb" properties="type=technical;
+popularity=1.5;
+visibility=1;
+stage = 1;
+tag+=rain{+1}; 
+tag+=wind{+2};
+tag+=snow{+1};"  >
+      <scene id="drzewo" poi="ROAD" background="PowerDownBackground" properties="timeToReact=1000;
+opinionOnSuccess=3;
+roadBlock=0.01;
+opinionOnIgnore=-3;"  >
+        <techWork id="drzewo" properties="workAmount=300; icon=drzewo;" actionOnEnd="AAR+=koniec;"  />
+		<techWork id="linia" properties="workAmount=300; icon=linia; blockedBy+=drzewo;" />
+      </scene>
+      <aar>
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_destruction_of_property"
+        	  properties="type=crime; popularity=3; stage = 1; tag+=night{0}; tag+=event_concert{10};
+tag+=event_protest_aggressive{10};
+tag+=event_protest_dontknow{1}; ">
+		<scene id="parking"
+			   poi="ROAD"
+			   background="ParkingBackground"
+			   properties="timeToReact=1200;">
+			<suspect id="wlasciciel"
+       				 properties="personBuilder.sex=[0.5:MALE | 0.5:FEMALE]; spawnArea=inside; isActive=1; personBuilder.hatType = NONE;"
+       				 actionOnEnd="opinionOnSuccess+=1;"
+       				 actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"/>
+			<policeWork id="zniszczone"
+          				properties="workAmount=[50,100]; icon=zniszczony; spawnArea=car;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=raport;"/>
+		</scene>
+		<aar>
+			<reportElement id="raport"/>
+		</aar>
+	</incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_minor" properties="type=crime;
+        popularity=2;
+        visibility=0;
+        stage = 1;
+        tag+=day{+1};
+		tag+=night{+2};"  >
+      <scene id="miejsce" poi="ROAD" properties="timeToReact=1000;">  	 
+        <suspect id="nieletni" properties="prison=0.8;
+		bill=[1000,1500];
+           aggressiveness=0.5;
+           personBuilder.sex=[0.5:MALE | 0.5:FEMALE];
+           personBuilder.age=TEEN;" 
+		   actionOnEnd="opinionOnSuccess+=1;"
+       				 actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"/>
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_fraud"
+        	  properties="type=crime; popularity=3; stage = 1; tag+=night{0}; ">
+		<scene id="domek"
+			   poi="BUILDING" 
+			   background="HouseBackground"
+			   properties="timeToReact=1200;">
+			<suspect id="oszukany"
+       				 properties="personBuilder.sex=[0.5:MALE | 0.5:FEMALE]; spawnArea=inside; isActive=1;" 
+       				 actionOnEnd="opinionOnSuccess+=1;"
+       				 actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"/>
+			<policeWork id="notatka"
+          				properties="workAmount=[200,300]; spawnArea=inside;"
+          				actionOnEnd="opinionOnIgnore+=2;opinionOnSuccess+=2;AAR+=raport;"/>
+		</scene>
+		<aar>
+			<reportElement id="raport"/> 
+		</aar>
+	</incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_vomiting_blood" properties="type=medical;
+popularity=2.5;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=900;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[40,60];
+personBuilder.sex=[0.5:MALE | 0.5:FEMALE];
+spawnArea=inside;
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_medicines_overdose" properties="type=medical;
+popularity=2.5;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=600;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[20,40];
+personBuilder.sex=[0.5:MALE | 0.5:FEMALE];
+spawnArea=inside;
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_high_altitude" properties="type=medical;
+popularity=2;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=750;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[20,40];
+personBuilder.sex=[0.5:MALE | 0.5:FEMALE];
+spawnArea=infront;
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_not_waking_up" properties="type=medical;
+popularity=2;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=750;
+opinionOnSuccess=5;
+opinionOnIgnore=-7;"  >
+        <injured id="ranny" properties="hp=[80,90];
+personBuilder.sex=[0.5:MALE | 0.5:FEMALE];
+spawnArea=inside;
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_abduction" properties="type=crime;
+popularity=1;
+visibility=0.5;
+stage = 1;"  >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="
+timeToReact=600;"  >
+        <suspect id="pajac" properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_knife | 0.7: e_pistol];
+spawnArea=inside;
+personBuilder.isCriminal=0.5;" actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="uprowadzony" properties="hp=[50,60];
+blockedBy=pajac;
+spawnArea=inside;
+SendMail(mail_mother);
+personBuilder.age=CHILD;" 
+actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+      </scene>
+    </incident>
+    <!--mod by='BartussX'-->
+	<incident id="rep_tower" properties="type=fire;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=snow{+2};
+tag+=rain{0};
+tag+=hot{0};"  >
+      <scene id="wieza" properties="timeToReact=1500;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;"  >
+        <fireWork id="pozar" properties="workAmount=20;
+		icon=wieza;
+workChange=1;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+		<incident id="rep_christmas_tree" properties="type=fire;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=snow{+2};
+tag+=rain{0};
+tag+=hot{0};"  >
+      <scene id="chata" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=1500;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;"  >
+        <fireWork id="pozar" properties="workAmount=5;
+		icon=choinka;
+		spawnArea=inside;
+workChange=1;"  />
+      </scene>
+    </incident>
+</incidentTypes>
