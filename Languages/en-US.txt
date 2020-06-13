@@ -33,7 +33,7 @@
   "call.c_erp_home_invasion.scene.sceneElem_2": "",
   "call.c_erp_home_invasion.scene.sceneElem_3": "",
   "call.c_erp_home_invasion.scene.sceneElem_4": "",
-  "call.c_erp_home_invasion.dialog.1": "911, what's your emergency?",
+  "call.c_erp_home_invasion.dialog.1": "112, what's your emergency?",
   "call.c_erp_home_invasion.dialog.2": "They've invaded my house!",
   "call.c_erp_home_invasion.dialog.what": "{WHAT?} What happened?",
   "call.c_erp_home_invasion.dialog.where": "{WHERE?} What's your adress?",

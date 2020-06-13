@@ -8,7 +8,7 @@
         <suspect id="sceneElem_4" texten="" elementProperties="fightRisk=1;weapon=e_pistol;prisonChance=1;sex=M;type=AfAm;isActive=true;" addToAAR="" blockedBy="" />
       </scene>
       <dialog>
-        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="2" texten="They've invaded my house!" elementProperties="option=what;option=where;option=hurt;" addToAAR="" operator="Caller" emotions="" />
         <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
         <DialogOption id="where" texten="{WHERE?} What's your adress?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
