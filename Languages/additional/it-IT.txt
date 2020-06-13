@@ -19,6 +19,7 @@
   "lang.sr-RS": "Српски",
   "lang.tr-TR": "Türk",
   "lang.zh-CN": "中文",
+
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
   
