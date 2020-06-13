@@ -19,6 +19,7 @@
   "lang.sr-RS": "Српски",
   "lang.tr-TR": "Türk",
   "lang.zh-CN": "中文",
+
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
   
@@ -27,6 +28,27 @@
   "incident.rep_crazy_modder.house.modder": "Crazy modder",
   "incident.rep_crazy_modder.house.pc": "PC",
   "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
+
+  "call.c_erp_home_invasion.title": "House Invasion",
+  "call.c_erp_home_invasion.scene.sceneElem_1": "",
+  "call.c_erp_home_invasion.scene.sceneElem_2": "",
+  "call.c_erp_home_invasion.scene.sceneElem_3": "",
+  "call.c_erp_home_invasion.scene.sceneElem_4": "",
+  "call.c_erp_home_invasion.dialog.1": "112, what's your emergency?",
+  "call.c_erp_home_invasion.dialog.2": "They've invaded my house!",
+  "call.c_erp_home_invasion.dialog.what": "{WHAT?} What happened?",
+  "call.c_erp_home_invasion.dialog.where": "{WHERE?} What's your adress?",
+  "call.c_erp_home_invasion.dialog.hurt": "{HURT?}Are you hurt?",
+  "call.c_erp_home_invasion.dialog.3": "I was getting ready to sleep and they broke the entrance door! I ran to the toilet and locked myself here!",
+  "call.c_erp_home_invasion.dialog.addressa0": "My home is at [[ADDRESS]]",
+  "call.c_erp_home_invasion.dialog.5": "I passed out for a while I guess... but... I am fine",
+  "call.c_erp_home_invasion.dialog.back": "EMPTY ID: back",
+  "call.c_erp_home_invasion.dialog.who": "{WHO?} Who has invaded your house?",
+  "call.c_erp_home_invasion.dialog.6": "I don't know. They are searching for something, there are at least 3 men here! ... Oh no, they heard me! *Gunshot*",
+  "call.c_erp_home_invasion.dialog.end": "... *Hang up*",
+  "call.c_erp_home_invasion.dialog.reminder": "Please, reply me!",
+  "call.c_erp_home_invasion.dialog.reminder2": "Hello?",
+  "call.c_erp_home_invasion.aar.story_1": "A woman's house was invaded by at least 3 men with guns. She's trapped in the toilet.",
 
   "text.names.ve_nightfurypol": "Police officer Alpha",
   "text.descriptions.ve_nightfurypol": "Toothless assist you with flame. Don't worry. If you don't do anything wrong, he won't blow the flames to you. =D"
