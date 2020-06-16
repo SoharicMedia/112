@@ -20,7 +20,7 @@
   "lang.tr-TR": "Türk",
   "lang.zh-CN": "中文",
 
-  "text.names.ve_poltandem": "Police tandem",
+  "text.names.ve_poltandem": "Bicicleta Tándem de Policía",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
   
   "incident.rep_crazy_modder.rep_crazy_modder": "EL MODDER LOCO",
