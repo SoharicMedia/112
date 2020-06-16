@@ -23,11 +23,11 @@
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
   
-  "incident.rep_crazy_modder.rep_crazy_modder": "CRAZY MODDER",
-  "incident.rep_crazy_modder.description": "SOMEONE REPORTED A MAN WHO SENDS A HUGE NUMBER OF MODS TO THE 112 OPERATOR WORKSHOP",
-  "incident.rep_crazy_modder.house.modder": "Crazy modder",
-  "incident.rep_crazy_modder.house.pc": "PC",
-  "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
+  "incident.rep_crazy_modder.rep_crazy_modder": "EL MODDER LOCO",
+  "incident.rep_crazy_modder.description": "Alguien informa sobre un modder que esta subiendo muchos mods al workshop de 112 Operator",
+  "incident.rep_crazy_modder.house.modder": "Modder loco",
+  "incident.rep_crazy_modder.house.pc": "Ordenador",
+  "incident.rep_crazy_modder.aar.pcDone": "El ordenador del Modder ha sido asegurado",
 
   "call.c_erp_bank_robbery1.title": "Bank Hostage",
   "call.c_erp_bank_robbery1.scene.sceneElem_1": "Caller",
