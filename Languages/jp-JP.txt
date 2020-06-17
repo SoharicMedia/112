@@ -8805,7 +8805,7 @@
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
   "text.names.ve_med_cart_ESB": "Medical Golf Cart",
-  "text.descriptions.ve_heavytruck": "A Golf Cart specially equipped for medical purposes. Would be great in parks and forests.",
+  "text.descriptions.ve_med_cart_ESB": "A Golf Cart specially equipped for medical purposes. Would be great in parks and forests.",
   
   "incident.rep_crazy_modder.rep_crazy_modder": "CRAZY MODDER",
   "incident.rep_crazy_modder.description": "SOMEONE REPORTED A MAN WHO SENDS A HUGE NUMBER OF MODS TO THE 112 OPERATOR WORKSHOP",
