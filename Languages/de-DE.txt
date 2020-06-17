@@ -34,6 +34,16 @@
   "text.descriptions.ve_poltandem": "Wie zwei normale Fahrräder... aber besser.",
   "text.names.ve_med_cart_ESB": "Medical Golf Cart",
   "text.descriptions.ve_med_cart_ESB": "A Golf Cart specially equipped for medical purposes. Would be great in parks and forests.",
+  "text.names.ve_firehosp": "Mobile Hospital",
+  "text.descriptions.ve_firehosp": "A mobile medical station to allow your firefighters to help the injured, not a replacement for actual medical units."
+  "text.names.ve_medquad": "Medical Quad",
+  "text.descriptions.ve_medquad": "It's small, but good for offroad actions."
+  "text.names.ve_polhmmwv": "Military Truck",
+  "text.descriptions.ve_polhmmwv": "Offers excellent protection in fights, but lacks space to transport suspects"
+  "text.names.ve_prisont": "Police Transport",
+  "text.descriptions.ve_prisont": "Large and well armoured, but without space for officers."
+  "text.names.ve_medbike2": "Rapid Response Motorcycle",
+  "text.descriptions.ve_medbike2": "High speed and high cost, able to transport medical aid fast with no delays for take-off.",
   
   "incident.rep_crazy_modder.rep_crazy_modder": "VERRÜCKTER MODDER",
   "incident.rep_crazy_modder.description": "JEMAND MELDETE EINEN MANN, DER EINE RIESIGE ANZAHL VON MODS AN DEN 112 OPERATOR WORKSHOP SENDET",
