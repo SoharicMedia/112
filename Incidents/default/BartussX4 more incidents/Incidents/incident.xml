@@ -1,3 +1,4 @@
+<!--You do not have permission to publish!-->
 <incidentTypes id="general_incidents"> <!--mod by='BartussX'-->
 	<incident id="rep_theft_escape"
         	  properties="type=crime; popularity=1; stage = 1; tag+=night{+2}; tag+=rain{+3};">
@@ -448,6 +449,7 @@ opinionOnIgnore+=-1;"  />
       </scene>
     </incident>
 	<!--mod by='BartussX'-->
+	<!--You do not have permission to publish!-->
 	<incident id="rep_aggressive_personshop" properties="type=crime;
 popularity=3;
 visibility=0.7;
@@ -815,17 +817,17 @@ visibility=1;
 tag+=night{+3};
 stage=2;"  >
       <scene id="miejsce_szukania" poi="PARK" properties="searchWork=50;
-searchArea=3;
+searchArea=4;
 timeToReact=3000;
-searchSceneId=child_scene;
+searchSceneId=las;
 opinionOnSuccess=3;
 opinionOnIgnore=-4;
 iconMap=medical_search;"  >
       </scene>
-      <scene id="las" properties="delayedSpawn=true;
+      <scene id="las" poi="PARK" properties="delayedSpawn=true; 
 opinionOnSuccess=1;
 opinionOnIgnore-1"  >
-        <injured id="zaginiony" properties="hp=90;" actionOnEnd="AAR+=odnaleziono;"  />
+        <injured id="zaginiony" properties="hp=90; personBuilder.age=[0.8: OLD | 0.2: ADULT];" actionOnEnd="AAR+=odnaleziono;"  />
       </scene>
       <aar  >
         <reportElement id="odnaleziono"  />
@@ -883,6 +885,7 @@ opinionOnIgnore+=-2;"  />
 		</aar>
     </incident>
 	<!--mod by='BartussX'-->
+	<!--You do not have permission to publish!-->
 	<incident id="rep_arsonist" properties="type=fire;
 popularity=1.5;
 visibility=0.1;
@@ -1130,7 +1133,6 @@ opinionOnSuccess=4;
 opinionOnIgnore=-4;"  >
         <fireWork id="garaz" properties="workAmount=40;
 workChange=[1,1.5];
-spawnArea=engine;
 icon=garaz;"  />
       </scene>
     </incident>
@@ -1259,6 +1261,7 @@ tag+=event_protest_dontknow{1}; ">
       </scene>
 	  </incident>
 	  <!--mod by='BartussX'-->
+	  <!--You do not have permission to publish!-->
 	  <incident id="rep_fraud"
         	  properties="type=crime; popularity=3; stage = 1; tag+=night{0}; ">
 		<scene id="domek"
@@ -1394,4 +1397,282 @@ opinionOnIgnore=-2;"  >
 workChange=1;"  />
       </scene>
     </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_impersonating" properties="type=crime;
+popularity=1.5;
+visibility=0.7;
+stage = 1;"  >
+      <scene id="miejsce" 
+	    poi="BUILDING" 
+		background="HouseBackground" 
+		properties="timeToReact=1200;
+        opinionOnSuccess=2;
+        opinionOnIgnore=-3;"  >
+        <suspect id="policjant" 
+		    properties="bill=[3000,3500];
+            aggressiveness=0.8;
+            spawnArea=inside;
+			personBuilder.hatType = POLICE;
+            prison=0.8;
+            personBuilder.sex=MALE;
+            personBuilder.age=ADULT;
+            isActive=1;" 
+			actionOnEnd="opinionOnSuccess+=2;" actionOnIgnore="opinionOnSuccess+=1; opinionOnIgnore+=-1;"  />
+        <suspect id="swiadek" properties="
+personBuilder.sex=FEMALE;
+personBuilder.age=[0.9: SENIOR | 0.1: ADULT];" actionOnEnd="opinionOnSuccess+=1;" actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;
+spawnArea=inside;"  />
+      </scene>
+	  </incident>
+	  <!--mod by='BartussX'-->
+	  <incident id="rep_snake" properties="type=technical;
+popularity=2;
+visibility=1;
+stage = 1;"  >
+      <scene id="miejsce" properties="timeToReact=1200;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+        <techWork id="waz" properties="workAmount=300; icon=waz;" actionOnEnd="AAR+=koniec;"  />
+      </scene>
+      <aar>
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_dangerous_driving" properties="type=road;
+popularity=2;
+visibility=0.8;
+stage = 1;
+tag+=night{+4};
+tag+=snow{-2};
+tag+=rain{-2};
+tag+=wind{-2};"  >
+      <scene id="miejsce" background="CarBackground" properties="onMove=1.5;
+timeToReact=600;
+avoidPolice=0.5;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+        <suspect id="kierowca" properties="bill=[3000,4000];
+prison=1;
+aggressiveness=0.1;
+weapon=[0.6: e_fist | 0.3: e_knife];
+spawnArea=leftof;
+personBuilder.isCriminal=0.4;" actionOnEnd="AAR+koniec;
+opinionOnSuccess+=2;
+" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+      </scene>
+      <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_animal_transport_accident" properties="type=road;
+popularity=2;
+visibility=1;
+stage = 3;
+tag+=night{-3};
+tag+=snow{+4};
+tag+=rain{+3};
+tag+=event_tornado{3};
+tag+=event_blackout_1{100};
+tag+=event_blackout_2{50};"  >
+      <scene id="miejsce" poi="ROAD" background="CarBumpBackground" properties="timeToReact=1200;
+roadBlock=1;
+opinionOnSuccess=9;
+opinionOnIgnore=-9;"  >
+        <techWork id="praca" properties="isActive=0.5;
+workAmount=200;
+spawnArea=cardoor;
+icon=OnSitePic_Car;" actionOnEnd="AAR+=koniec;"  />
+        <injured id="ranny1" properties="blockedBy+=praca;
+hp=20;
+needsHospital=true;
+spawnArea=trapped1;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny2" properties="hp=50;
+hpchange=[-0.25, -0.1];
+needsHospital=true;
+spawnArea=trapped2;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <techWork id="praca2" properties="workAmount=1200;
+spawnArea=engine;
+icon=OnSitePic_Car;" actionOnEnd="opinionOnIgnore+=2;"  />
+<techWork id="praca3" properties="isActive=1;
+workAmount=300;
+spawnArea=cardoor;
+icon=przyczepakoni;" actionOnEnd="AAR+=koniec;"  />
+<techWork id="zwierze1" properties="blockedBy+=praca3;
+icon=kon;
+spawnArea=trapped1;" actionOnEnd="opinionOnIgnore+=2;"  />
+<techWork id="zwierze2" properties="blockedBy+=praca3;
+icon=kon;
+spawnArea=trapped1;" actionOnEnd="opinionOnIgnore+=2;"  />
+<techWork id="zwierze3" properties="blockedBy+=praca3;
+isActive=0.3;
+icon=kon;
+spawnArea=trapped1;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+      <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<!--You do not have permission to publish!-->
+	<incident id="rep_rollercoaster_accident" properties="type=road;
+popularity=1;
+visibility=1;
+stage = 3;
+tag+=night{0};
+tag+=snow{0};
+tag+=rain{0};
+tag+=event_blackout_1{100};
+tag+=event_blackout_2{50};"  >
+      <scene id="park" properties="timeToReact=1200;
+opinionOnSuccess=9;
+opinionOnIgnore=-9;"  >
+        <techWork id="praca" properties="
+workAmount=200;
+icon=rollercoaster1;" actionOnEnd="AAR+=koniec;"  />
+        <injured id="ranny1" properties="blockedBy+=praca;
+hp=20;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny2" properties="hp=30;
+hpchange=[-0.25, -0.1];
+blockedBy+=praca;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <injured id="ranny3" properties="hp=20;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <dead id="martwy" properties="hp=0;" actionOnEnd="opinionOnIgnore+=1;"  />
+<injured id="ranny4" properties="hp=80;
+hpchange=[-0.5, -0.2];
+blockedBy+=praca2;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny5" properties="hp=60;
+hpchange=[-0.1, -0.2];
+blockedBy+=praca3;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny6" properties="hp=90;
+hpchange=[-0.25, -0.3];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny7" properties="hp=50;
+hpchange=[-0.1, -0.2];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+        <techWork id="praca2" properties="workAmount=1200;
+icon=rollercoaster2;" actionOnEnd="opinionOnIgnore+=2;"  />
+	  <techWork id="praca3" properties="workAmount=1200;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnIgnore+=2;"  />
+	  <techWork id="praca4" properties="workAmount=1200;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+      <aar  >
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_atmfire" properties="type=fire;
+popularity=1.5;
+visibility=1;
+stage = 1;"  >
+      <scene id="bankomat" properties="timeToReact=1000;
+opinionOnSuccess=6;
+opinionOnIgnore=-2;"  >
+        <fireWork id="pozar" properties="workAmount=1;
+workChange=1;
+icon=bankomat;"  />
+<injured id="ranny1" properties="
+hp=40;
+hpchange=[-0.1, -0.2];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny2" properties="
+hp=30;
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_avalanche" properties="type=fire;
+popularity=0;
+visibility=1;
+tag+=snow{+5};
+tag+=hot{0};
+tag+=cold{+2};
+tag+=rain{0};
+stage = 1;"  >
+      <scene id="droga" poi="ROAD" properties="timeToReact=1000;
+	  roadBlock=2.5;
+opinionOnSuccess=7;
+opinionOnIgnore=-8;"  >
+        <techWork id="lawina" properties="workAmount=600;
+icon=lawina;"  />
+<injured id="ranny1" properties="
+blockedBy+=lawina;
+isActive=0.5;
+hp=60;
+hpchange=[-0.2, -0.3];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny2" properties="
+blockedBy+=lawina;
+isActive=0.8;
+hp=50;
+hpchange=[-0.1, -0.2];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_corpse" properties="type=medical;
+popularity=2;
+visibility=1;
+stage=1;">
+      <scene id="miejsce" poi="BUILDING" background="HouseBackground" properties="timeToReact=2000;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+<techWork id="drzwi" properties="workAmount=50;
+spawnArea=doorWork;
+icon=OnSitePic_Door;"  />
+        <dead id="martwy" properties="hp=0;
+personBuilder.sex=MALE;
+spawnArea=inside;
+blockedBy+=drzwi;
+personBuilder.age=ADULT;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_shop_fire" properties="type+=fire;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=rain{0};"  >
+      <scene id="sklep" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=8;
+opinionOnIgnore=-4;"  >
+        <fireWork id="sklep" properties="workAmount=200;
+workChange=[1.5,2];
+icon=sklep;"  />
+<injured id="ranny1" properties="
+isActive=0.8;
+hp=40;
+hpchange=[-0.1, -0.2];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+<injured id="ranny2" properties="
+blockedBy+=sklep;
+isActive=0.7;
+hp=40;
+hpchange=[-0.1, -0.2];
+needsHospital=true;" actionOnEnd="opinionOnIgnore+=2;"  />
+      </scene>
+    </incident>
+	<!--mod by='BartussX'-->
+	<incident id="rep_substance2" properties="type=technical;
+popularity=2;
+visibility=1;
+stage = 1;"  >
+      <scene id="miejsce" properties="timeToReact=1300;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+        <techWork id="substancja" properties="workAmount=700; icon=OnSitePic_Decontamination;" actionOnEnd="AAR+=koniec"  />
+      </scene>
+      <aar>
+        <reportElement id="koniec"  />
+      </aar>
+    </incident>
+	<!--You do not have permission to publish!-->
 </incidentTypes>

@@ -1,0 +1,632 @@
+<!-- DO NOT MODIFY THIS FILE DIRECTLY, imported by JutsuXmlImporter -->
+<!--   source: wjvkEc -->
+  <mails id="mailTypes_missions"  >
+    <mail id="mail_vandals_media" properties="priority=3;
+chance=100;
+important=0;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_firsthelp_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_moreunits_start" properties="priority=3;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_career_startok_freegame" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_career_startok_campaign" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_vandals_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_vandals_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_shootout_start" properties="priority=3;
+chance=100;
+
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_shootout_media" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_heat_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_bigfire_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_bigfire_finish" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialnews" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialcatch" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialnews2" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialpanic" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_seriallooks" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialend_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_serialend_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_planecrashcongrats" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_planecrashmedia" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_firsthelp_start_2" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_firsthelp_completed" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_firsthelp_fail" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_high_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_high_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_high_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_heat_coolinggates" properties="priority=3;
+chance=100;
+important=1;
+iconId=city_icon;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_areafire_warning" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_arsonist_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_arsonist_media" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_arsonist_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_arsonist_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_blackout_finish" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_after_earthq_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_after_earthq_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_sm_search_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_sm_search_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_sm_search_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_ontime_start" properties="priority=1;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_ontime_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_ontime_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_concert_incoming" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_weathertornado" properties="priority=3;
+chance=100;
+important=1;
+iconId=weather_center_icon;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_blizzard_incoming" properties="priority=3;
+chance=100;
+important=1;
+iconId=weather_center_icon;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_weather_during" properties="priority=3;
+chance=100;
+important=1;
+iconId=weather_center_icon;"  >
+      <from id="instytut meteorologii i gospodarki wodnej"  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_hidden_antique_media" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_hidden_antique_finish_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_hidden_antique_finish_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_tornadosurvive" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_tornadoend" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_moreunits_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory1" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory_threats" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory_school" properties="priority=3;
+chance=100;
+career=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory_media" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory_neighbor" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mainstory_after" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_promote_3stage" properties="priority=3;
+chance=100;
+career=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_promote_chief" properties="priority=3;
+chance=100;
+career=1;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_promote_5stage" properties="priority=3;
+chance=100;
+career=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_drugsfight_start" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_drugsfight_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_drugsfight_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_newoperator_success" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_newoperator_fail" properties="priority=3;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_wife" properties="priority=3;
+chance=100;
+career=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+      <option1 actionOnSend="[[skip one duty]]"  />
+      <option2 actionOnSend="sendasreply( mail_wiferep, 3)"  />
+    </mail>
+    <mail id="mail_mayor" properties="priority=3;
+chance=100;
+career=1;
+iconId=city_icon; "  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_op_bigfire_start" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_op_vip_start" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_newyear_start" properties="priority=3;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_summit_pre" properties="priority=3;
+chance=100;
+career=1;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_summit_preprotests" properties="priority=3;
+chance=100;
+career=1;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_summit_reminder" properties="priority=3;
+chance=100;
+career=1;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_summit_notend" properties="priority=3;
+chance=100;
+career=1;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+  </mails>

@@ -1,12 +1,12 @@
 {
   "incident.rep_theft_escape.rep_theft_escape": "THEFT",
-  "incident.rep_theft_escape.description": "THEFT HAS BEEN REPORTED, THIEVES HAVE ESCAPED",
+  "incident.rep_theft_escape.description": "THEFT WAS REPORTED, THIEVES HAVE ESCAPED",
   "incident.rep_theft_escape.chata.okradziony": "Robbed person",
   "incident.rep_theft_escape.chata.skradzione": "List of stolen items",
   "incident.rep_theft_escape.aar.raport": "List of stolen items was written",
   
   "incident.rep_pershoot.rep_pershoot": "MAN IS ATTACKING PEOPLE",
-  "incident.rep_pershoot.description": "CALLER NOTIFIED THAT SOMEONE IS ATTACKING PEOPLE TO THE STREET. JESZCZE NIE MA PODEJRZANYCH",
+  "incident.rep_pershoot.description": "CALLER NOTIFIED THAT SOMEONE IS ATTACKING PEOPLE TO THE STREET.",
   "incident.rep_pershoot.miejsce.podejrzany": "Shooter",
 
   "incident.rep_schoolshooter.rep_schoolshooter": "SCHOOL SHOOTOUT",
@@ -132,7 +132,7 @@
    "incident.rep_pedophile.miejsce.pedofil": "Pedophile",
 
 "incident.rep_stomachache.rep_stomachache": "STOMACHACHE",
-   "incident.rep_stomachache.description": "Unbearable stomach pain has been reported.",
+   "incident.rep_stomachache.description": "Unbearable stomach pain was reported.",
    "incident.rep_stomachache.miejsce.ranny": "Injured person",
 
 "incident.rep_stoner.rep_stoner": "STONER",
@@ -155,9 +155,9 @@
 "incident.rep_shop_robbery.sklep.klient": "Customer",
 "incident.rep_shop_robbery.sklep.klient2": "Customer",
 
-"incident.rep_stuck_in_swamps.rep_stuck_in_swamps": "STUCK IN THE SWAPS.",
-   "incident.rep_stuck_in_swamps.description": "STUCK IN SWAPS.",
-  "incident.rep_stuck_in_swamps.bagna.bagno": "Swaps",
+"incident.rep_stuck_in_swamps.rep_stuck_in_swamps": "STUCK IN THE SWAMPS.",
+   "incident.rep_stuck_in_swamps.description": "STUCK IN SWAMPS.",
+  "incident.rep_stuck_in_swamps.bagna.bagno": "Swamps",
   "incident.rep_stuck_in_swamps.bagna.ranny": "Stuck in the swamps",
 
 "incident.rep_disappearanceintheforest.rep_disappearanceintheforest": "LOST IN THE FOREST",
@@ -165,12 +165,19 @@
 "incident.rep_disappearanceintheforest.las.zaginiony": "Missing person",
 "incident.rep_disappearanceintheforest.aar.odnalezniono": "Missing person found",
 
+"incident.rep_disappearanceintheforest.rep_disappearanceintheforest": "LOST IN THE FOREST",
+   "incident.rep_disappearanceintheforest.description": "LOST IN THE FOREST.",
+"incident.rep_disappearanceintheforest.las.zaginiony": "Missing person",
+"incident.rep_disappearanceintheforest.las.las": "MISSING PERSON",
+"incident.rep_disappearanceintheforest.miejsce_szukania.miejsce_szukania": "LOST IN THE FOREST",
+"incident.rep_disappearanceintheforest.aar.odnalezniono": "Missing person found",
+
 "incident.rep_littering.rep_littering": "LITTERING",
    "incident.rep_littering.description": "Littering has been reported.",
   "incident.rep_littering.miesjce.smieciarz": "A littering person",
 
 "incident.rep_shortnessofbreath.rep_shortnessofbreath": "SHORTNESS OF BREATH",
-   "incident.rep_shortnessofbreath.description": "Shortness of breath has been reported",
+   "incident.rep_shortnessofbreath.description": "Shortness of breath was reported",
   "incident.rep_shortnessofbreath.miejsce.ranny": "Injured person",
 
 "incident.rep_drug_plantation.rep_drug_plantation": "DRUG PLANTATION",
@@ -245,7 +252,7 @@
   "incident.rep_bower_fire.altana.pozar1": "Fire",
 
 "incident.rep_substance.rep_substance": "UNKNOWN SUBSTANCE IN CONTAINERS",
-  "incident.rep_substance.description": "CONTAINERS WITH UNKNOWN SUBSTANCE REPORTED.",
+  "incident.rep_substance.description": "CONTAINERS WITH UNKNOWN SUBSTANCE WAS REPORTED.",
   "incident.rep_substance.miejsce.pojemniki": "Containers",
  "incident.rep_substance.aar.koniec": "Containers removed",
 
@@ -256,7 +263,7 @@
  "incident.rep_tree_limb.aar.koniec": "Tree bough has been removed",
 
 "incident.rep_destruction_of_property.rep_destruction_of_property": "DESTRUCTION OF PROPERTY",
-  "incident.rep_destruction_of_property.description": "CAR DESTRUCTION REPORTED. THE PERPETRATORS ESCAPED.",
+  "incident.rep_destruction_of_property.description": "CAR DESTRUCTION WAS REPORTED. THE PERPETRATORS ESCAPED.",
   "incident.rep_destruction_of_property.parking.wlasciciel": "Car owner",
 "incident.rep_destruction_of_property.parking.zniszczone": "Destroyed car",
  "incident.rep_destruction_of_property.aar.raport": "A memo was drawn up",
@@ -266,21 +273,21 @@
   "incident.rep_minor.miejsce.nieletni": "Minor under the influence of alcohol",
 
 "incident.rep_fraud.rep_fraud": "FRAUD",
-  "incident.rep_fraud.description": "INTERNET FRAUD HAS BEEN REPORTED.",
+  "incident.rep_fraud.description": "INTERNET FRAUD WAS REPORTED.",
   "incident.rep_fraud.domek.oszukany": "Tricked person",
 "incident.rep_fraud.domek.zniszczone": "Evidence of fraud",
  "incident.rep_fraud.aar.raport": "A memo was drawn up",
 
 "incident.rep_vomiting_blood.rep_vomiting_blood": "VOMITING BLOOD",
-   "incident.rep_vomiting_blood.description": "CONSTANT VOMITING OF BLOOD HAS BEEN REPORTED.",
+   "incident.rep_vomiting_blood.description": "CONSTANT VOMITING OF BLOOD WAS REPORTED.",
   "incident.rep_vomiting_blood.miejsce.ranny": "Injured person",
 
 "incident.rep_medicines_overdose.rep_medicines_overdose": "MEDICINES OVERDOSE",
-   "incident.rep_medicines_overdose.description": "OVERDOSE OF MEDICINES REPORTED. THE PERSON IS UNCONSCIOUS.",
+   "incident.rep_medicines_overdose.description": "OVERDOSE OF MEDICINES WAS REPORTED. THE PERSON IS UNCONSCIOUS.",
   "incident.rep_medicines_overdose.miejsce.ranny": "Injured person",
 
 "incident.rep_high_altitude.rep_high_altitude": "FALL FROM A LARGE HEIGHT",
-   "incident.rep_high_altitude.description": "FALLING FROM ANY FLOOR OF THE BUILDING HAS BEEN REPORTED. URGENT MEDICAL INTERVENTION REQUIRED.",
+   "incident.rep_high_altitude.description": "FALLING FROM ANY FLOOR OF THE BUILDING WAS REPORTED. URGENT MEDICAL INTERVENTION REQUIRED.",
   "incident.rep_high_altitude.miejsce.ranny": "Injured person",
 
 "incident.rep_not_waking_up.rep_not_waking_up": "DON'T WAKE UP FROM SLEEP",
@@ -299,5 +306,75 @@
 "incident.rep_christmas_tree.rep_christmas_tree": "BURNING CHRISTMAS TREE",
    "incident.rep_christmas_tree.description": "THE LIGHTS IN THE CHRISTMAS TREE HAVE FAILED AND SET ON FIRE",
   "incident.rep_christmas_tree.chata.pozar": "Burning Christmas tree",
+
+"incident.rep_shop_fire.rep_shop_fire": "BURNING SHOP",
+   "incident.rep_shop_fire.description": "A FIRE BROKE OUT IN THE SUPERMARKET. POSSIBLE INJURED PEOPLE.",
+  "incident.rep_shop_fire.sklep.sklep": "Burning shop",
+ "incident.rep_shop_fire.sklep.ranny1": "Burned person",
+"incident.rep_shop_fire.sklep.ranny2": "Burned person",
+
+"incident.rep_substance2.rep_substance2": "HAZARDOUS CHEMICAL SUBSTANCE",
+   "incident.rep_substance2.description": "Hazardous substance reported. It may be dangerous.",
+  "incident.rep_substance2.miejsce.substancja": "Hazardous chemical substance",
+"incident.rep_substance2.aar.koniec": "The substance has been protected",
+
+"incident.rep_impersonating.rep_impersonating": "IMPERSONATING A POLICEMAN",
+   "incident.rep_impersonating.description": "Reported a person impersonating a police officer who imposes mandates and extorts money from people.",
+  "incident.rep_impersonating.miejsce.policjant": "Impersonating policeman",
+ "incident.rep_impersonating.miejsce.świadek": "Witness",
+
+"incident.rep_snake.rep_snake": "A VENOMOUS SNAKE",
+   "incident.rep_snake.description": "SPOTTED A VENOMOUS SNAKE. QUICK INTERVENTION OF SERVICES NEEDED.",
+  "incident.rep_snake.miejsce.waz": "A venomous snake",
+"incident.rep_snake.aar.koniec": "The snake was taken",
+
+"incident.rep_dangerous_driving.rep_dangerous_driving": "DANGEROUS DRIVING",
+   "incident.rep_dangerous_driving.description": "Someone is driving dangerously. Such riding threatens someone's life.",
+  "incident.rep_dangerous_driving.miejsce.kierowca": "Driver",
+
+"incident.rep_animal_transport_accident.rep_animal_transport_accident": "ANIMAL TRANSPORT ACCIDENT",
+   "incident.rep_animal_transport_accident.description": "An accident was reported while transporting animals. ",
+  "incident.rep_animal_transport_accident.miejsce.praca": "Car door",
+"incident.rep_animal_transport_accident.miejsce.praca2": "Car",
+"incident.rep_animal_transport_accident.miejsce.praca3": "Horse trailer",
+ "incident.rep_animal_transport_accident.miejsce.ranny1": "Injured person",
+ "incident.rep_animal_transport_accident.miejsce.ranny2": "Injured person",
+"incident.rep_animal_transport_accident.miejsce.zwierze1": "Injured horse",
+"incident.rep_animal_transport_accident.miejsce.zwierze2": "Injured horse",
+"incident.rep_animal_transport_accident.miejsce.zwierze3": "Injured horse",
+"incident.rep_animal_transport_accident.aar.koniec": "Obstacle removed",
+
+"incident.rep_rollercoaster_accident.rep_rollercoaster_accident": "ROLLER COASTER ACCIDENT",
+   "incident.rep_rollercoaster_accident.description": "Roller coaster accident reported. There are many injured.",
+  "incident.rep_rollercoaster_accident.park.praca": "Damaged roller coaster",
+"incident.rep_rollercoaster_accident.park.praca2": "Damaged roller coaster",
+"incident.rep_rollercoaster_accident.park.praca3": "Rubble",
+"incident.rep_rollercoaster_accident.park.praca4": "Rubble",
+ "incident.rep_rollercoaster_accident.park.ranny1": "Injured person",
+ "incident.rep_rollercoaster_accident.park.ranny2": "Injured person",
+"incident.rep_rollercoaster_accident.park.ranny3": "Injured person",
+"incident.rep_rollercoaster_accident.park.ranny4": "Injured person",
+"incident.rep_rollercoaster_accident.park.ranny5": "Injured person",
+"incident.rep_rollercoaster_accident.park.ranny6": "Injured person",
+"incident.rep_rollercoaster_accident.park.ranny7": "Injured person",
+"incident.rep_rollercoaster_accident.park.martwy": "Accident victim",
+"incident.rep_rollercoaster_accident.aar.koniec": "Obstacle removed",
+
+"incident.rep_atmfire.rep_atmfire": "EXPLODED ATM",
+   "incident.rep_atmfire.description": "An ATM explosion reported during use. Possible injured people.",
+  "incident.rep_atmfire.bankomat.pozar": "Burning ATM",
+ "incident.rep_atmfire.bankomat.ranny1": "Burned person",
+"incident.rep_atmfire.bankomat.ranny2": "Burned person",
+
+"incident.rep_avalanche.rep_avalanche": "A SMALL SNOW AVALANCHE",
+   "incident.rep_avalanche.description": "A SNOW AVALANCHE BLOCKED THE ROAD AND COVERED THE CARS. POSSIBLE INJURED PEOPLE.",
+  "incident.rep_avalanche.droga.lawina": "Snow",
+ "incident.rep_avalanche.droga.ranny1": "A crushed person",
+"incident.rep_avalanche.droga.ranny2": "A crushed person",
+
+"incident.rep_corpse.rep_corpse": "Corpse found",
+   "incident.rep_corpse.description": "REPORTED THE PERSON DID NOT LEAVE THE HOUSE FOR A LONG TIME AND DOES NOT HAVE CONTACT WITH THIS PERSON.",
+  "incident.rep_corpse.miejsce.drzwi": "Door",
+ "incident.rep_corpse.miejsce.martwy": "Dead person",
 }
 mod by BartussX

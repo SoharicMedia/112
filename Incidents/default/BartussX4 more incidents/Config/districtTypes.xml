@@ -51,4 +51,14 @@
 	<incident id="rep_5g" residential="0.2" buisness="0.2" park="2" slums="0.5" />
 	<incident id="rep_christmas_tree" residential="2" buisness="1"/>
 	<incident id="rep_substance" park="0.5" industrial="1.5"  />
+	<incident id="rep_impersonating" residential="1.5" buisness="1" slums="0.6" />
+	<incident id="rep_snake" slums="2" park="2" />
+	<incident id="rep_dangerous_driving" residential="1" buisness="0.5" slums="0.5"/>
+	<incident id="rep_animal_transport_accident" residential="1.2"/>
+	<incident id="rep_rollercoaster_accident" buisness="0.5" />
+	<incident id="rep_atmfire" buisness="1"/>
+	<incident id="rep_avalanche" park="2" slums="2" />
+	<incident id="rep_corpse" residential="2" />
+	<incident id="rep_shop_fire" buisness="2"/>
+	<incident id="rep_substance2" park="0.5" industrial="1.5"  />
   </districtTypes>
