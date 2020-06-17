@@ -13,6 +13,8 @@
   "lang.it-IT": "Italiano",
   "lang.ja-JP": "日本語 (Alternate)",
   "lang.jp-JP": "日本語",
+  "lang.ka-GE": "Georgian",
+  "lang.ka-KA": "Georgian (Alternate)",
   "lang.ko-KO": "한국어",
   "lang.nl-AP": "Nederlands (Alternate)",
   "lang.nl-NL": "Nederlands",
