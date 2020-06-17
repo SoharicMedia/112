@@ -1,0 +1,1517 @@
+<!-- DO NOT MODIFY THIS FILE DIRECTLY, imported by JutsuXmlImporter -->
+<!--   source: OnAqbs -->
+<incidentTypes id="general_incidents">
+	<incident id="rep_house_invade"
+        		properties="type=crime;
+popularity=1;
+visibility=0.2;
+stage = 2;
+tag=event_protest_aggressive{1};
+tag=night{+2};">
+		<scene id="scene1"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=600; 
+">
+			<suspect id="burg1"
+       				properties="aggressiveness = 0.5;
+weapon = [0.5:e_baseball | 0.5:e_pistol];
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="burg2"
+       				properties="aggressiveness = 0.5;
+weapon = [0.5:e_baseball | 0.5:e_pistol];
+prison=1;
+personBuilder.sex=MALE;
+spawnArea=[0.5:inside | 0.5:infront];
+isActive=0.8;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="burg3"
+       				properties="aggressiveness = 0.5;
+weapon = [0.5:e_baseball | 0.5:e_pistol];
+prison=1;
+personBuilder.sex=MALE;
+spawnArea=[0.3:inside | 0.7:infront];
+isActive=0.5;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="burg4"
+       				properties="aggressiveness = 0.5;
+weapon = [0.5:e_baseball | 0.5:e_pistol];
+prison=1;
+personBuilder.sex=MALE;
+spawnArea=[0.2:inside | 0.8:infront];
+isActive=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="owner"
+       				properties="isActive=1;
+hp=90;
+personBuilder.sex=MALE;
+blockedBy+=burg1;
+blockedBy+=burg2;
+blockedBy+=burg3;
+blockedBy+=burg4;
+needsHospital=true;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="wife"
+       				properties="isActive=0.7;
+personBuilder.sex=FEMALE;
+blockedBy+=burg1;
+blockedBy+=burg2;
+blockedBy+=burg3;
+blockedBy+=burg4;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_gun_raid"
+        		properties="type=crime;
+popularity=2;
+visibility=0.5;
+stage = 2;
+tag+=night{0};
+">
+		<scene id="scene_first
+"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=600;
+">
+			<suspect id="attacker1"
+       				properties="aggressiveness = 0.7;
+weapon=e_pistol;
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;
+
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="attacker2"
+       				properties="aggressiveness = 0.7;
+weapon = [0.6: e_rifle | 0.4: e_shotgun];
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;
+
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="attacker3"
+       				properties="aggressiveness = 0.7;
+weapon = [0.5:e_rifle | 0.5:e_pistol];
+personBuilder.age=CHILD;
+prison=1;
+personBuilder.sex=MALE;
+spawnArea=[0.5:inside | 0.5:infront];
+
+isActive=0.5;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="attacker4"
+       				properties="aggressiveness = 0.7;
+weapon = [0.5:e_rifle | 0.5:e_pistol];
+personBuilder.age=CHILD;
+prison=1;
+personBuilder.sex=MALE;
+spawnArea=[0.5:inside | 0.5:infront];
+
+isActive=0.5;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="attacker5"
+       				properties="aggressiveness = 0.5;
+weapon = [0.7:e_shotgun | 0.3:e_pistol];
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;
+
+isActive=0.5;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="witness"
+       				properties="isActive=1;
+blockedBy+=attacker1;
+blockedBy+=attacker2;
+blockedBy+=attacker3;
+blockedBy+=attacker4;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_bank_robbery"
+        		properties="type=crime;
+popularity=2;
+visibility=0.5;
+stage = 3;
+tag+=night{0};">
+		<scene id="scene_first"
+     			poi="BANK"
+     			background="HouseBackground"
+     			properties="timeToReact=600;
+"
+     			actionOnEnd="AAR+=done;">
+			<suspect id="robber1"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_rifle | 0.2: e_shotgun | 0.4: e_pistol];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="robber2"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_rifle | 0.2: e_shotgun | 0.4: e_pistol];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="robber3"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_rifle | 0.2: e_shotgun | 0.4: e_pistol];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=[0.5:inside | 0.5:infront];"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="robber4"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_rifle | 0.2: e_shotgun | 0.4: e_pistol];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=[0.5:inside | 0.5:infront];"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="robber5"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.3: e_rifle | 0.2: e_shotgun | 0.4: e_pistol];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="witness1"
+       				properties="isActive=1;
+hp=[50, 80];
+blockedBy+=robber1;
+blockedBy+=robber2;
+blockedBy+=robber3;
+blockedBy+=robber4;
+blockedBy+=robber5;
+needsHospital=true;
+spawnArea=insideRear;
+personBuilder.isCriminal = false;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="witness2"
+       				properties="isActive=1;
+blockedBy+=robber1;
+blockedBy+=robber2;
+blockedBy+=robber3;
+blockedBy+=robber4;
+blockedBy+=robber5;
+spawnArea=insideRear;
+personBuilder.isCriminal = false;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+		<aar>
+			<reportElement id="done"/>
+		</aar>
+	</incident>
+	<incident id="rep_car_steal"
+        		properties="type=crime;
+popularity=10;
+visibility=0.9;
+stage = 2;
+tag+=event_blackout_1{30};
+tag+=event_blackout_2{150};
+tag+=snow{-2};
+tag+=rain{-2};">
+		<scene id="thiefScene"
+     			background="CarBackground"
+     			properties="onMove=1;
+vehicle=ve_civil_car;
+timeToReact=600;
+avoidPolice=0.7;">
+			<suspect id="carthief"
+       				properties="bill=[1000,1500];
+aggressiveness=[0,1];
+weapon = [0.7:e_fist | 0.3:e_knife];
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;
+spawnArea=leftof;
+isActive=1;"
+       				actionOnEnd="AAR+=caught;
+opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+		<aar>
+			<reportElement id="caught"/>
+		</aar>
+	</incident>
+	<incident id="rep_drunk_driver"
+        		properties="type=road;
+popularity=4;
+visibility=0.8;
+stage = 1;
+tag+=night{+4};
+tag+=event_concert{18};
+tag+=event_new_year{20};
+tag+=snow{-2};
+tag+=rain{-2};
+tag+=wind{-2};">
+		<scene id="drunk"
+     			background="CarBackground"
+     			properties="onMove=1;
+timeToReact=600;
+avoidPolice=0.5;">
+			<suspect id="driver"
+       				properties="bill=[2000,3000];
+prison=0.9;
+aggressiveness=0.1;
+weapon=[0.9: e_fist | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.isCriminal=0.2;
+personBuilder.age=CHILD;"
+       				actionOnEnd="AAR+=caught;
+opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+		<aar>
+			<reportElement id="caught"/>
+		</aar>
+	</incident>
+	<incident id="rep_murder"
+        		properties="type=crime;
+popularity=1;
+visibility=0.7;">
+		<scene id="scene_first"
+     			properties="timeToReact=500;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;">
+			<suspect id="witness"
+       				properties="reprimandWork=[50,200];"
+       				actionOnEnd="opinionOnIgnore+=1;"/>
+			<suspect id="murderer"
+       				properties="prison=1;
+personBuilder.age=CHILD;
+aggressiveness=0.8;
+weapon=[0.4: e_knife | 0.6: e_pistol];
+personBuilder.isCriminal=0.5;"
+       				actionOnEnd="
+opinionOnSuccess+=4;
+opinionOnIgnore+=4;"
+       				actionOnIgnore="opinionOnSuccess+=4;
+opinionOnIgnore+=-4;"/>
+			<dead id="victim"
+    				properties="hp=0;"
+    				actionOnEnd="opinionOnIgnore+=2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_armedassault"
+        		properties="type+=crime;
+type+=terrorist;
+type+=medical;
+popularity=2;
+visibility=0.7;
+stage = 3;
+tag+=event_protest_aggressive{1};
+tag+=event_protest_dontknow{1};">
+		<scene id="scene_first"
+     			background="TrailerFightBackground"
+     			properties="timeToReact=500;
+">
+			<suspect id="suspect1"
+       				properties="prison=1;
+weapon=e_pistol;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+aggressiveness=1;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=3;
+"
+       				actionOnIgnore="opinionOnSuccess+=3;
+opinionOnIgnore+=-3;"/>
+			<suspect id="suspect2"
+       				properties="prison=1;
+weapon=e_pistol;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+aggressiveness=1;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=3;
+"
+       				actionOnIgnore="opinionOnSuccess+=3;
+opinionOnIgnore+=-3;"/>
+			<injured id="injured1"
+       				properties="isActive=1;
+hp=[30,60];
+needsHospital=true;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="injured2"
+       				properties="isActive=0.7;
+hp=[30,60];
+needsHospital=true;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="injured3"
+       				properties="isActive=0.5;
+hp=[30,60];
+needsHospital=true;
+spawnArea=inside;
+personBuilder.age=TEEN;"
+       				actionOnEnd="opinionOnSuccess+=2;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="injured4"
+       				properties="isActive=0.3;
+hp=[30,60];
+needsHospital=false;
+spawnArea=inside;
+personBuilder.age=TEEN;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_shoplifting"
+        		properties="type=crime;
+popularity=10;
+visibility=0.8;
+stage = 1;
+tag+=night{-5};
+tag+=event_concert{5};">
+		<scene id="shoplift"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=600;
+opinionOnSuccess=1;
+opinionOnIgnore=-1;">
+			<suspect id="shoplifter"
+       				properties="bill=[1500,2000];
+prison=0.85;
+aggressiveness=0.2;
+weapon=e_fist;
+reprimandWork=[50,100];
+spawnArea=inside;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.5;"
+       				actionOnEnd="
+opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="cashier"
+       				properties="reprimandWork=[50,100];"/>
+		</scene>
+	</incident>
+	<incident id="rep_masstheft"
+        		properties="type=crime;
+popularity=1;
+visibility=1;
+tag+=night{+2};
+stage = 2;
+tag+=event_protest_aggressive{1};">
+		<scene id="scene_first"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=600;
+">
+			<suspect id="suspect1"
+       				properties="prison=1;
+aggressiveness=0.6;
+weapon=[0.2: e_knife | 0.2: e_pistol | 0.6: e_fist];
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+spawnArea=[0.3:infront | 0.3:inside | 0.3: insideRear];"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect2"
+       				properties="prison=1;
+aggressiveness=0.6;
+weapon=[0.2: e_knife | 0.2: e_pistol | 0.6: e_fist];
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+spawnArea=[0.3:infront | 0.3:inside | 0.3: insideRear];"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect3"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.6;
+weapon=[0.2: e_knife | 0.2: e_pistol | 0.6: e_fist];
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+spawnArea=[0.3:infront | 0.3:inside | 0.3: insideRear];"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect4"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.6;
+weapon=[0.2: e_knife | 0.2: e_pistol | 0.6: e_fist];
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+spawnArea=[0.3:infront | 0.3:inside | 0.3: insideRear];"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect5"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.6;
+weapon=[0.2: e_knife | 0.2: e_pistol | 0.6: e_fist];
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+spawnArea=[0.3:infront | 0.3:inside | 0.3: insideRear];"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_attackedcar"
+        		properties="type=crime;
+type+=vandalism;
+popularity=0;
+visibility=1;
+tag+=night{0};
+tag+=event_protest_aggressive{15};
+tag+=event_protest_dontknow{5};
+tag+=event_vandals{10};">
+		<scene id="scene_first"
+     			poi="ROAD"
+     			background="CarBackground"
+     			properties="timeToReact=750;
+">
+			<suspect id="suspect1"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_fist | 0.5: e_baseball | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect2"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_fist | 0.5: e_baseball | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect3"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_fist | 0.5: e_baseball | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect4"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_fist | 0.5: e_baseball | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect5"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_fist | 0.5: e_baseball | 0.1: e_knife];
+spawnArea=leftof;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="injured1"
+       				properties="hp=[80,90];
+spawnArea=trapped1;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="injured2"
+       				properties="hp=[80,90];
+spawnArea=trapped2;"
+       				actionOnEnd="opinionOnSuccess+=1;
+"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_hiddencriminal"
+        		properties="type+=search;
+type+=crime;
+popularity=2;
+visibility=1;
+stage=3;">
+		<scene id="search_scene"
+     			properties="searchWork=40;
+searchArea=5;
+timeToReact=700;
+searchSceneId=searched_scene;
+opinionOnSuccess=6;
+opinionOnIgnore=-4;
+iconMap=police_search;">
+		</scene>
+		<scene id="searched_scene"
+     			background="HouseBackground"
+     			properties="delayedSpawn=true;
+">
+			<suspect id="suspect_first"
+       				properties="prison=1;
+aggressiveness=0.7;
+weapon=[0.4: e_knife | 0.6: e_pistol];
+personBuilder.age=CHILD;
+spawnArea=insideRear;"
+       				actionOnEnd="
+opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_leftincident"
+        		properties="type+=search;
+type+=road;
+type+=medical;
+popularity=3;
+visibility=1;
+tag+=night{+2};
+tag+=snow{+2};
+tag+=rain{+2};
+stage=3;">
+		<scene id="search_scene"
+     			properties="searchWork=90;
+searchArea=3;
+timeToReact=500;
+searchSceneId=suspectscene;
+opinionOnSuccess=3;
+opinionOnIgnore=-2;
+iconMap=police_search;">
+		</scene>
+		<scene id="suspectscene"
+     			background="CarBackground"
+     			properties="delayedSpawn=true;
+">
+			<suspect id="suspect123"
+       				properties="prison=0.9;
+aggressiveness=0.2;
+weapon=[0.9: e_fist | 0.1: e_knife];
+personBuilder.age=CHILD;
+bill=[1000,1500];
+spawnArea=leftof;"
+       				actionOnEnd="
+opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+		<scene id="victimscene"
+     			poi="ROAD"
+     			properties="Location = Near($search_scene.Location);
+needRestartLocationOnSpawn=true;
+roadBlock=0.2;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;">
+			<injured id="injured1"
+       				properties="hp=80;"/>
+			<injured id="injured2"
+       				properties="hp=60;"/>
+		</scene>
+	</incident>
+	<incident id="rep_druglord_base"
+        		properties="type+=drugs;
+type+=crime;
+popularity=1;
+visibility=0.1;
+stage = 3;">
+		<scene id="scene_first"
+     			background="HouseBackground"
+     			properties="timeToReact=1500;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;">
+			<suspect id="suspect1"
+       				properties="prison=1;
+aggressiveness=0.5;
+weapon=[0.8: e_pistol | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect2"
+       				properties="prison=1;
+aggressiveness=0.5;
+weapon=[0.8: e_pistol | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect3"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.5;
+weapon=[0.8: e_pistol | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect4"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.5;
+weapon=[0.8: e_pistol | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect5"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.5;
+weapon=[0.8: e_pistol | 0.2: e_knife];
+personBuilder.sex=[0.7: FEMALE | 0.3: MALE];
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<policeWork id="drugs"
+          				properties="blockedBy+=suspect1;
+blockedBy+=suspect2;
+blockedBy+=suspect3;
+blockedBy+=suspect4;
+blockedBy+=suspect5;
+workAmount=[200,500];
+spawnArea=insideRear;
+willRun=ALWAYS;"
+          				actionOnEnd="AAR+=secured;
+opinionOnIgnore+=3;"/>
+		</scene>
+		<aar>
+			<reportElement id="secured"/>
+		</aar>
+	</incident>
+	<incident id="rep_atm"
+        		properties="type=crime;
+popularity=0;
+visibility=0.1;
+stage = 2;
+tag+=night{+2};
+">
+		<scene id="atm"
+     			properties="timeToReact=450;
+"
+     			actionOnEnd="AAR+=caught;">
+			<suspect id="suspect1"
+       				properties="prison=1;
+aggressiveness=0.6;
+weapon=[0.4: e_pistol | 0.4: e_shotgun | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect2"
+       				properties="prison=1;
+aggressiveness=0.6;
+weapon=[0.4: e_pistol | 0.4: e_shotgun | 0.2: e_knife];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_mafia"
+        		properties="type=crime;
+popularity=1;
+visibility=0.3;
+stage = 3;">
+		<scene id="mafia"
+     			background="HouseBackground"
+     			properties="timeToReact=1000;
+">
+			<suspect id="mafioso1"
+       				properties="prison=1;
+aggressiveness=0.9;
+weapon=[0.4: e_pistol | 0.3: e_rifle | 0.3: e_shotgun];
+spawnArea=infront;
+personBuilder.age=CHILD;
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=2; SendMail(mail_threats);"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="mafioso2"
+       				properties="isActive=1;
+prison=1;
+aggressiveness=0.9;
+weapon=[0.7: e_pistol | 0.2: e_rifle | 0.1: e_shotgun];
+personBuilder.age=CHILD;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=2; SendMail(mail_threats);"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="mafioso3"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.9;
+weapon=[0.7: e_pistol | 0.2: e_rifle | 0.1: e_shotgun];
+personBuilder.age=CHILD;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="mafioso4"
+       				properties="isActive=0.5;
+prison=1;
+aggressiveness=0.9;
+weapon=[0.7: e_pistol | 0.2: e_rifle | 0.1: e_shotgun];
+personBuilder.age=CHILD;
+spawnArea=insideRear;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_family_abuse"
+        		properties="type=crime;
+popularity=3;
+visibility=0.3;
+stage = 1;
+tag+=event_new_year{10};
+tag+=night{+3};">
+		<scene id="abuse"
+     			background="HouseBackground"
+     			properties="timeToReact=1200;
+opinionOnSuccess=1;
+opinionOnIgnore=-1;">
+			<suspect id="attacker"
+       				properties="prison=1;
+aggressiveness=0.1;
+weapon=[0.9: e_fist | 0.1: e_knife];
+spawnArea=inside;
+personBuilder.age=CHILD;
+isActive=1;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="victim"
+       				properties="hp=[80,100];
+spawnArea=inside;
+personBuilder.age=[0.4: TEEN | 0.5: ADULT | 0.1: CHILD];"/>
+		</scene>
+	</incident>
+	<incident id="rep_hostage"
+        		properties="type=terrorist;
+popularity=1;
+visibility=0;
+stage = 3;">
+		<scene id="scene_first"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=900;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;">
+			<suspect id="terrorist"
+       				properties="prison=1;
+aggressiveness=0.8;
+weapon=[0.5: e_rifle | 0.5: e_shotgun];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=inside;"
+       				actionOnEnd="
+opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="victim"
+       				properties="hp=[60,80];
+blockedBy+=terrorist;
+spawnArea=insideRear;"/>
+		</scene>
+	</incident>
+	<incident id="rep_vandals"
+        		properties="type=crime;
+type+=vandalism;
+popularity=2;
+visibility=0.8;
+stage = 2;
+tag+=night{+2};
+tag+=event_protest_aggressive{10};
+tag+=event_protest_dontknow{4};
+tag+=event_vandals{25};
+tag+=event_new_year{6};">
+		<scene id="vandals"
+     			properties="timeToReact=900;
+">
+			<suspect id="susp1"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=1;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp2"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=1;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp3"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=0.5;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp4"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=0.5;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp5"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=0.5;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp6"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=0.5;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp7"
+       				properties="bill=[2000,3000];
+prison=0.6;
+aggressiveness=0.2;
+isActive=0.5;
+weapon=[0.9: e_fist | 0.1: e_baseball];
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.3;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_beating"
+        		properties="type+=crime;
+type+=medical;
+popularity=2;
+visibility=0.8;
+stage = 3;
+tag+=night{+4};
+tag+=event_concert{18};
+tag+=event_protest_aggressive{10};
+tag+=event_protest_dontknow{1};">
+		<scene id="beating"
+     			properties="timeToReact=600;
+">
+			<suspect id="suspect1"
+       				properties="prison=0.8;
+aggressiveness=0.3;
+weapon=[0.5: e_baseball | 0.5: e_knife  | 0.5: e_fist];
+personBuilder.age=CHILD;
+personBuilder.sex=MALE;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect2"
+       				properties="prison=0.8;
+aggressiveness=0.3;
+weapon=[0.5: e_baseball | 0.5: e_knife  | 0.5: e_fist];
+personBuilder.age=CHILD;
+personBuilder.sex=MALE;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect3"
+       				properties="isActive=0.5;
+prison=0.8;
+aggressiveness=0.3;
+weapon=[0.5: e_baseball | 0.5: e_knife  | 0.5: e_fist];
+personBuilder.age=CHILD;
+personBuilder.sex=MALE;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="suspect4"
+       				properties="isActive=0.5;
+prison=0.8;
+aggressiveness=0.3;
+weapon=[0.5: e_baseball | 0.5: e_knife  | 0.5: e_fist];
+personBuilder.age=CHILD;
+personBuilder.sex=MALE;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="injured"
+       				properties="hp=[50,70];
+needsHospital=1;
+blockedBy+=suspect1;
+personBuilder.age=[0.7: OLD | 0.3: ADULT];
+"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_fight"
+        		properties="type+=crime;
+type+=medical;
+popularity=2;
+visibility=0.9;
+stage = 2;
+tag+=night{+4};">
+		<scene id="fight"
+     			properties="timeToReact=900;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"
+     			actionOnEnd="AAR+=done;">
+			<suspect id="susp1"
+       				properties="isActive=1;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=FRANCISZKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp2"
+       				properties="isActive=1;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=FRANCISZKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp3"
+       				properties="isActive=0.5;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=FRANCISZKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp4"
+       				properties="isActive=1;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=DOMINIKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp5"
+       				properties="isActive=1;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=DOMINIKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="susp6"
+       				properties="isActive=0.5;
+prison=0.9;
+weapon=[0.6: e_fist | 0.2: e_knife | 0.2: e_baseball];
+aggressiveness=0.6;
+faction=DOMINIKANIE;
+personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="injured1"
+       				properties="personBuilder.sex=[0.9: MALE | 0.1: FEMALE];
+personBuilder.age=CHILD;
+hp=0.3;
+needsHospital=true;"/>
+		</scene>
+		<aar>
+			<reportElement id="done"/>
+		</aar>
+	</incident>
+	<incident id="rep_gang_war"
+        		properties="type=crime;
+popularity=1;
+visibility=1;
+stage = 2;
+tag+=night{+1};">
+		<scene id="gang"
+     			properties="timeToReact=1200;">
+			<suspect id="susp1"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=1; faction = BROVE"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp2"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=1; faction = BROVE"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp3"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=1; faction = BROVE"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp4"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=1; faction = GALLAS"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp5"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=1; faction = GALLAS"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp6"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=0.8; faction = GALLAS"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<suspect id="susp7"
+       				properties="prison=1;
+aggressiveness=0.6;
+personBuilder.age=CHILD;
+weapon=[0.2: e_fist | 0.1: e_knife | 0.3: e_pistol | 0.2: e_rifle | 0.2: e_shotgun];
+isActive=0.5; faction = GALLAS"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+			<injured id="inj1"
+       				properties="isActive=1;
+personBuilder.age=CHILD;
+hp=[30,50];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="inj2"
+       				properties="isActive=0.8;
+personBuilder.age=CHILD;
+hp=[30,50];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="inj3"
+       				properties="isActive=0.5;
+personBuilder.age=CHILD;
+hp=[50,80];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="inj4"
+       				properties="isActive=0.3;
+personBuilder.age=CHILD;
+hp=[50,80];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_terrorist_threat"
+        		properties="type=terrorist;
+popularity=3;
+visibility=0.5;
+stage = 1;
+tag+=event_protest_aggressive{1};">
+		<scene id="threat"
+     			properties="timeToReact=600;
+">
+			<suspect id="terrorist"
+       				properties="prison=0.3;
+aggressiveness=0.5;
+weapon=[0.7: e_pistol | 0.3: e_rifle];
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+personBuilder.isCriminal=0.5;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_notickets"
+        		properties="type=crime;
+type+=vandalism;
+popularity=1;
+visibility=1;
+stage = 2;
+tag+=night{+2};
+tag+=event_concert{3};
+tag+=event_protest_aggressive{1};
+tag+=event_vandals{15};">
+		<scene id="main"
+     			poi="ROAD"
+     			properties="timeToReact=600;
+">
+			<suspect id="suspect1"
+       				properties="weapon=e_fist;
+prison=0.4;
+aggressiveness=0.3;
+personBuilder.age=CHILD;
+bill=200;
+reprimandWork=[30,80];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<suspect id="suspect2"
+       				properties="isActive=0.35;
+weapon=e_fist;
+prison=0.4;
+aggressiveness=0.3;
+personBuilder.age=CHILD;
+bill=200;
+reprimandWork=[30,80];"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="inspector"
+       				properties="hp=[30,60];
+blockedBy+=suspect1;
+blockedBy+=suspect2;
+"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_illegalgun"
+        		properties="type=crime;
+popularity=1;
+visibility=1;
+stage = 1;
+tag+=night{0};">
+		<scene id="main"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=900;
+">
+			<suspect id="susp_first"
+       				properties="bill=[3000,4000];
+prison=0.7;
+aggressiveness=0.3;
+weapon=[0.5: e_rifle | 0.5: e_shotgun];
+personBuilder.age=CHILD;
+spawnArea=inside;
+personBuilder.isCriminal=0.2;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_pickpocket"
+        		properties="type=crime;
+popularity=10;
+visibility=0.3;
+stage = 1;
+tag+=event_protest_peacefull{2};
+tag+=event_protest_aggressive{2};
+tag+=event_protest_dontknow{2};
+tag+=snow{-5};
+tag+=rain{-5};
+tag+=wind{-3};">
+		<scene id="scene_first"
+     			properties="timeToReact=300;
+onMove=1;
+vehicle=ve_bicycle;">
+			<suspect id="susp_first"
+       				properties="personBuilder.sex=[0.8: MALE | 0.2: FEMALE];
+prison=1;
+aggressiveness=0.3;
+personBuilder.age=CHILD;
+weapon=e_fist;
+personBuilder.isCriminal=0.5;"
+       				actionOnEnd="
+opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+		</scene>
+	</incident>
+	<incident id="rep_known_terrorist_true"
+        		properties="type=terrorist;
+popularity=0.5;
+visibility=0.5;
+stage = 2;">
+		<scene id="scene_first"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=800;
+">
+			<suspect id="terrorist"
+       				properties="prison=1;
+aggressiveness=1;
+weapon=e_rifle;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;"
+       				actionOnEnd="AAR+=done;
+opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+		<aar>
+			<reportElement id="done"/>
+		</aar>
+	</incident>
+	<incident id="rep_known_terrorist_false"
+        		properties="type=terrorist;
+popularity=0.5;
+visibility=0.5;
+stage = 2;">
+		<scene id="scene_first"
+     			poi="BUILDING"
+     			background="HouseBackground"
+     			properties="timeToReact=800;
+">
+			<suspect id="terrorist"
+       				properties="aggressiveness=0;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+spawnArea=infront;"
+       				actionOnEnd="AAR+=done;
+opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+		<aar>
+			<reportElement id="done"/>
+		</aar>
+	</incident>
+	<incident id="rep_knife_assault"
+        		properties="type=crime;
+popularity=5;
+visibility=0.9;
+stage = 2;
+tag+=event_concert{3};">
+		<scene id="knifeScene"
+     			properties="timeToReact=600;
+">
+			<suspect id="knifeattacker"
+       				properties="bill=[1000,1500];
+aggressiveness=0.8;
+weapon=e_knife;
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=1;"
+       				actionOnIgnore="opinionOnSuccess+=1;
+opinionOnIgnore+=-1;"/>
+			<injured id="victim"
+       				properties="hp=[20,40];
+personBuilder.sex=MALE;
+needsHospital=true;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+	<incident id="rep_bribery"
+        		properties="type=crime;
+popularity=5;
+visibility=0.9;
+stage = 1;">
+		<scene id="briberyScene"
+     			properties="timeToReact=600;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;">
+			<suspect id="briber"
+       				properties="bill=[1000,1500];
+weapon = [0.5:e_pistol | 0.5:e_knife];
+prison=1;
+personBuilder.sex=MALE;
+personBuilder.age=CHILD;
+isActive=1;"/>
+			<suspect id="allegedbribee"/>
+		</scene>
+	</incident>
+	<incident id="rep_butter_knife"
+        		properties="type=crime;
+popularity=0;
+visibility=0.9;
+stage = 2;">
+		<scene id="butterScene"
+     			properties="timeToReact=600;
+">
+			<suspect id="butterknifeperson"
+       				properties="bill=[1000,1500];
+aggressiveness=[0,5];
+weapon = e_knife;
+prison=1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=CHILD;
+isActive=1;"
+       				actionOnEnd="opinionOnSuccess+=2;"
+       				actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"/>
+		</scene>
+	</incident>
+</incidentTypes>

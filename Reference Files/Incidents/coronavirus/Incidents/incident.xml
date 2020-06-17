@@ -1,0 +1,185 @@
+    <!--You do not have permission to publish!-->
+<incidentTypes id="general_incidents"> <!--mod by='BartussX'-->
+	<incident id="rep_symptoms" properties="type=medical;
+popularity=4;
+visibility=1;
+stage=1;" >
+      <scene id="miejsce" poi="BUILDING"
+	   background="HouseBackground" properties="timeToReact=900;
+opinionOnSuccess=3;
+opinionOnIgnore=-5;"  >
+        <injured id="ranny" properties="hp=[70,90];
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+needsHospital=true;"  />
+      </scene>
+	  </incident>
+	  
+	  <incident id="rep_confirmation" properties="type=fire;
+popularity=6;
+visibility=1;
+stage = 1;
+tag+=day{+1};
+tag+=night{0};">
+<scene id="dom" poi="BUILDING"
+background="HouseBackground" properties="timeToReact=100000;
+opinionOnSuccess=3;
+opinionOnIgnore=-5;"  >
+      <suspect id="ktos1" properties="isActive=1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />
+      <suspect id="ktos2" properties="isActive=0.7;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />
+      <suspect id="ktos3" properties="isActive=0.5;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />
+<suspect id="ktos4" properties="isActive=0.3;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />
+<suspect id="ktos5" properties="isActive=0.3;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />     
+<suspect id="ktos6" properties="isActive=0.1;
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+bill=[10000,15000];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />
+<suspect id="ktos7" properties="isActive=0.1;
+bill=[10000,15000];
+personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+personBuilder.age=[0.4: ADULT | 0.2: TEEN | 0.2: CHILD | 0.2: OLD];"  />					
+		</scene>
+		
+    </incident>
+	
+	<incident id="rep_mask" properties="type=crime;
+        popularity=4;
+        visibility=0;
+        stage = 1;
+        tag+=day{+1};
+		tag+=night{0};"  >
+      <scene id="miejsce" properties="timeToReact=800;"  
+			 poi="BUILDING"
+			   background="ParkingBackground">
+        <suspect id="bezmaseczki1" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[300,500];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="bezmaseczki2" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=0.7;
+		   bill=[300,500];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="bezmaseczki3" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=0.5;
+		   bill=[300,500];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="bezmaseczki4" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=0.5;
+		   bill=[300,500];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+	
+	<incident id="rep_place" properties="type=crime;
+        popularity=4;
+        visibility=0.1;
+        stage = 1;
+        tag+=day{+1};
+		tag+=night{0};"  >
+      <scene id="miejsce" properties="timeToReact=650;">
+        <suspect id="1" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[3000,5000];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="2" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[3000,5000];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="3" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[3000,5000];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="4" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[3000,5000];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="5" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=1;
+		   bill=[3000,5000];
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="6" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=0.5;
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+		   <suspect id="7" properties="
+           personBuilder.sex=[0.5:MALE| 0.5:FEMALE];
+		   isActive=0.5;
+           personBuilder.age=[0.3: ADULT | 0.4: TEEN | 0.2: CHILD | 0.1: OLD];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=2;
+           opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+	
+	<incident id="rep_cough" properties="type=crime;
+        popularity=4;
+        visibility=0.1;
+        stage = 1;
+        tag+=day{+1};
+		tag+=night{0};"  >
+      <scene id="miejsce" properties="timeToReact=650;"  
+			 poi="BUILDING"
+			   background="ParkingBackground">
+        <suspect id="kaszlacy" properties="prison=0.5;
+           aggressiveness=0.3;
+		   bill=[1000,3000];
+           personBuilder.sex=MALE;
+           personBuilder.age=[0.2: SENIOR | 0.8: ADULT];" 
+		   actionOnEnd="opinionOnSuccess+=3;" actionOnIgnore="opinionOnSuccess+=3;
+           opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+	
+	<incident id="rep_hospital" properties="type=technical;
+popularity=2;
+visibility=1;
+stage = 1;
+tag+=night{0};"  >
+      <scene id="miejsce" properties="timeToReact=100000;
+opinionOnSuccess=15;
+opinionOnIgnore=-20;"  >
+        <techWork id="szpital" properties="workAmount=3000; icon=szpital;" actionOnEnd="AAR+=zrobione;"  />
+      </scene>
+      <aar>
+        <reportElement id="zrobione"  />
+      </aar>
+    </incident>
+	<!--You do not have permission to publish!-->
+</incidentTypes>
