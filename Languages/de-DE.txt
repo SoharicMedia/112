@@ -44,7 +44,9 @@
   "text.descriptions.ve_prisont": "Large and well armoured, but without space for officers."
   "text.names.ve_medbike2": "Rapid Response Motorcycle",
   "text.descriptions.ve_medbike2": "High speed and high cost, able to transport medical aid fast with no delays for take-off.",
-  
+  "text.names.ve_polsearch": "Police Search Car",
+  "text.descriptions.ve_polsearch": "",
+
   "incident.rep_crazy_modder.rep_crazy_modder": "VERRÜCKTER MODDER",
   "incident.rep_crazy_modder.description": "JEMAND MELDETE EINEN MANN, DER EINE RIESIGE ANZAHL VON MODS AN DEN 112 OPERATOR WORKSHOP SENDET",
   "incident.rep_crazy_modder.house.modder": "Verrückter Modder",

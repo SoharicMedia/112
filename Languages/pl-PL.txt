@@ -44,6 +44,8 @@
   "text.descriptions.ve_prisont": "Large and well armoured, but without space for officers."
   "text.names.ve_medbike2": "Rapid Response Motorcycle",
   "text.descriptions.ve_medbike2": "High speed and high cost, able to transport medical aid fast with no delays for take-off.",
+  "text.names.ve_polsearch": "Police Search Car",
+  "text.descriptions.ve_polsearch": "",
   
   "incident.rep_crazy_modder.rep_crazy_modder": "SZALONY MODDER",
   "incident.rep_crazy_modder.description": "KTOŚ ZGŁOSIŁ MĘŻCZYZNĘ, WYSYŁAJĄCEGO OGROMNĄ LICZBĘ MODÓW DO WARSZTATU OPERATORA 112",
