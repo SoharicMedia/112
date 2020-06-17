@@ -6,24 +6,11 @@
     "itemId": 2110834081,
     "modTypes": [
         "CALLS",
-	"FACES",
+        "FACES",
+        "HATS",
         "INCIDENTS",
         "LANGUAGES",
-	"MOD PACK",
         "VEHICLES"
-    ]
-}
-{
-    "title": "Deutsch Response Package (ERP) [ALPHA]",
-    "desc": "Ein Mod fur 112 Operator.",
-    "language": "Deutsch",
-    "visibility": "private",
-    "modTypes": [
-        "CALLS",
-	"FACES",
-        "INCIDENTS",
-        "LANGUAGES",
-	"MOD PACK",
-        "VEHICLES"
-    ]
+    ],
+    "order": 0
 }
