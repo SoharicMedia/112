@@ -4,7 +4,7 @@ Example: teenagers are turning road signs to mislead drivers (you may write abou
 --->
 <data>
   <conversations>
-	<conversation id="c_sm_vandals1" texten="Vandals" elementProperties="type=generable">
+	<conversation id="c_erp_vandals" texten="Vandals" elementProperties="type=generable">
 	<scene>
 		<witness id="caller;" texten="Person" elementProperties="hp=100; sex=W;" />
 	</scene>
