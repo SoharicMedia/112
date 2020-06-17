@@ -21,6 +21,16 @@
   "text.descriptions.ve_onfootpatrol": "Foot patrol. It is useful in hard-to-reach places for cars. Can catch someone in the act."
   "text.names.ve_unmarked2": "Undercover police car",
   "text.descriptions.ve_unmarked2": "This police car is unmarked and especially useful when you want to liquidate a criminal group and want to do it quietly. The vehicle is fast and has room for 4 policemen, but there are no places for criminals. "
+  "text.names.ve_drone": "Police drone",
+  "text.descriptions.ve_drone": "A police drone helps in searching over huge areas."
+  "text.names.ve_hazmat": "Chemical rescue vehicle",
+  "text.descriptions.ve_hazmat": "The chemical rescue vehicle is equipped with a lot of specialized equipment for pumping, cutting, decontamination, sealing and liquidation of leaks and neutralization of chemical substances."
+  "text.names.ve_polkdog": "Police car for transporting dogs",
+  "text.descriptions.ve_polkdog": "This car is perfect for a police dog, it has place for him in the vehicle."
+  "text.names.ve_mrap": "An armored police van",
+  "text.descriptions.ve_mrap": "This vehicle is well-armored and adapted to various actions with the use of weapons, both in the terrain and on a straigh road. In addition to the armor, the van also has the perfect equipment, but the price is not satisfactory."
+  "text.names.ve_polhummer": "Police hummer",
+  "text.descriptions.ve_polhummer": "Police hummer works great in the terrain."
 }
 
 <!--mod by='BartussX'-->

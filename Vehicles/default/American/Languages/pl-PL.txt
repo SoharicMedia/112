@@ -21,6 +21,16 @@
   "text.descriptions.ve_unmarked2": "Ten radiowóz jest nieoznakowany oraz szczególnie przydatny gdy chcesz zlikwidować jakąś grupę przestępczą i chcesz zrobić to po cichu. Pojazd jest szybki i mieści 4 policjantów, ale niestety bez miejsc dla przestępców."
   "text.names.ve_onfootpatrol": "Patrol pieszy",
   "text.descriptions.ve_onfootpatrol": "Patrol pieszy. Jest przydatny w trudno dostępnych miejscach dla samochodów. Potrafi złapać kogoś na gorącym uczynku, ale niestety nie jest tak szybki."
+  "text.names.ve_drone": "Dron policyjny",
+  "text.descriptions.ve_drone": "Dron policyjny pomaga w poszukiwaniach na ogromnych obszarach."
+  "text.names.ve_hazmat": "Pojazd ratownictwa chemicznego",
+  "text.descriptions.ve_hazmat": "Pojazd ratownictwa chemicznego posiada na wyposażeniu szereg specjalistycznego sprzętu do pompowania, cięcia, rozpierania, transportu, dekontaminacji, uszczelniania i likwidacji wycieków oraz  neutralizacji substancji chemicznych."
+  "text.names.ve_polkdog": "Radiowóz do przewozu psów",
+  "text.descriptions.ve_polkdog": "Ten samochochód jest w sam raz dla psa policyjnego, ma swoje miejsce w pojeździe."
+  "text.names.ve_mrap": "Opancerzona furgonetka policyjna",
+  "text.descriptions.ve_mrap": "Ten pojazd jest świetnie opancerzony i przystosowany do różnych akcji z użyciem broni, zarówno w terenie jak i na prostej drodze. Poza opancerzeniem furgonetka ma też idealny sprzęt, ale cena nie jest zadowalająca."
+  "text.names.ve_polhummer": "Policyjny hummer",
+  "text.descriptions.ve_polhummer": "Policyjny hummer świetnie sprawuje się w terenie."
 }
 
 <!--mod by='BartussX'-->

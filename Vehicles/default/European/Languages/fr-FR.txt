@@ -1,0 +1,38 @@
+{
+  "text.names.ve_heavytruck": "Camion de Pompier Lourd",
+  "text.descriptions.ve_heavytruck": "Un camion de pompier lourd est adapté pour combattre des feux majeurs grâce à sa lance à incendie montée sur le toit."
+  "text.names.ve_prisonvan": "Van de transport de Prisonniers",
+  "text.descriptions.ve_prisonvan": "Un van de transport de prisonniers transporte plus de prisonniers."
+  "text.names.ve_polcar2": "Véhicule anti-émeute",
+  "text.descriptions.ve_polcar2": "Un véhicule anti-émeute est adapté au soutient durant des manifestations, mais également pour des patrouilles normales avec deux officiers des unités de prévention. plutôt rapide pour sa taille, il transporte en plus des policiers, de l'équipement anti-émeute."
+  "text.names.ve_polptrl": "Transport de Police",
+  "text.descriptions.ve_polptrl": "Ce véhicule est adapté non seulement pour le transport de policiers mais aussi pour les patrouilles."
+  "text.names.ve_ladder": "Camion échelle",
+  "text.descriptions.ve_ladder": "Le camion échelle est un bon choix, mais n'est pas toujours efficace."
+  "text.names.ve_ladder2": "Camion échelle avancée",
+  "text.descriptions.ve_ladder2": "Le camion échelle avancé est adapté pour des incendies en hauteur, il est plus fiable que le camion échelle standard et transporte plus d'eau."
+  "text.names.ve_polsuv": "SUV de police",
+  "text.descriptions.ve_polsuv": "Le SUV de police est adapté au tout-terrain et peut atteindre des zones dures à atteindre."
+  "text.names.ve_polcar3": "Voiture de Police",
+  "text.descriptions.ve_polcar3": "Véhicule de police basique, il peut aller un peu partout en plus de transporter des criminels."
+  "text.names.ve_medmdn": "Ambulance modernisée",
+  "text.descriptions.ve_medmdn": "L'Ambulance modernisée offre un plus grand pannel d'outils permettant une plus grande éfficacité de vos médecins."
+  "text.names.ve_onfootpatrol": "Patrouiller à Pieds",
+  "text.descriptions.ve_onfootpatrol": "Une patrouille à pieds peut atteindre des endroits reculés mais n'est pas très mobile."
+  "text.names.ve_unmarked2": "Voiture de Police banalisée",
+  "text.descriptions.ve_unmarked2": "La voiture de police banalisée se confonds avec les véhicules civils, idéal pour les filatures et pour neutraliser un groupe criminel discrètement, il est rapide et peut transporter jusqu'à 4 policiers mais ne peut pas transporter de criminels. "
+  "text.names.ve_firebigtank": "Camion citerne lourd",
+  "text.descriptions.ve_firebigtank": "Un camion citerne lourd peut transporter d'énormes quantités d'eau mais sacrifie pour cela de la mobilité."
+  "text.names.ve_drone": "Drone de police",
+  "text.descriptions.ve_drone": "Un Drone de Police donne un visuel sur une zone vaste."
+  "text.names.ve_unmarkedvan": "Van de Police banalisée",
+  "text.descriptions.ve_unmarkedvan": "Ce van est une alternative blindée à la voiture de police banalisée mais peut transporter un criminel."
+  "text.names.ve_hazmat": "Véhicule d'intervention chimique",
+  "text.descriptions.ve_hazmat": "Le véhicule d'intervention chimique est équipé d'un pannel d'équipements spécialisés pour neutraliser les fuites de produits chimique et décontaminer les zones affectées."
+  "text.names.ve_firetruck2": "Camion de pompier modernisé",
+  "text.descriptions.ve_firetruck2": "Ce camion de pompier est adapté aux tâches d'extinction de feu et aux missiosn techniques."
+  "text.names.ve_techtruck2": "Camion technique lourd",
+  "text.descriptions.ve_techtruck2": "Le camion technique lourd est adapté à toutes les taches téchniques et se débrouille mieux que son homologue standard"
+}
+
+<!--mod by='BartussX'-->
