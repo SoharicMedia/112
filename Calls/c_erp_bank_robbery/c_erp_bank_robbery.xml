@@ -7,7 +7,7 @@ Try to leave the place / Try to fight (bad option) / Try to turn on the alarm / 
 --->
 <data>
   <conversations>
-    <conversation id="c_bank_robbery" texten="Bank Robbery" elementProperties="type=generable;" version="18.27">
+    <conversation id="c_erp_bank_robbery" texten="Bank Robbery" elementProperties="type=generable;" version="18.27">
       <scene elementProperties="poi=bank;">
         <witness id="olivia" texten="Olivia" elementProperties="hp=100;sex=W;isActive=false;" addToAAR="initial" blockedBy="" />
         <witness id="mia" texten="Mia" elementProperties="hp=100;sex=W;isActive=false;" addToAAR="initial" blockedBy="" />
