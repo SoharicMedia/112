@@ -32,6 +32,9 @@
 
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
+
+  "text.names.ve_erp_poltowtruck": "Police Tow Truck",
+  "text.descriptions.ve_erp_poltowtruck": "Useful for road traffic accidents.",
   
   "incident.rep_crazy_modder.rep_crazy_modder": "CRAZY MODDER",
   "incident.rep_crazy_modder.description": "SOMEONE REPORTED A MAN WHO SENDS A HUGE NUMBER OF MODS TO THE 112 OPERATOR WORKSHOP",
