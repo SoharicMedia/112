@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<ArrayOfVehicletype>
+    
+    <!-- Don't set offroadSpeedModif to 0 -->
+    
+    <!-- FIRE UNITS -->
+    <Vehicletype id="ve_firetruck" type="FIRE" bonuses="FIRE=0.5" price="80000" visibility="1" armour="0" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.6" trafficSpeedModif="0" teammembersSeats="4" transportSeats="0" upkeep="8000" terrain="road" patrols="false" waterCapacity="10" spawnChance="1" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_techtruck" type="FIRE" bonuses="TECH=0.5" price="60000" visibility="1" armour="0" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.6" trafficSpeedModif="0" teammembersSeats="4" transportSeats="0" upkeep="10000" terrain="road" patrols="false" waterCapacity="2" spawnChance="0.5" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_fireheli" type="FIRE" bonuses="FIRE=0.75,SEARCH=0.5,TALL=1" price="300000" visibility="1" armour="0" maxSpeed="250" acceleration="10" immobilizedBy="Wind=15" offroadSpeedModif="1" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="30000" terrain="air" patrols="false" waterCapacity="5" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_ladder" type="FIRE" bonuses="TALL=1" price="120000" visibility="1" armour="0" maxSpeed="80" acceleration="3" immobilizedBy="NONE" offroadSpeedModif="0.6" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="12000" terrain="road" patrols="false" waterCapacity="2" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+
+    <!-- MEDICAL UNITS -->
+    <Vehicletype id="ve_medvan" type="MEDICAL" bonuses="INJURED=0.5" price="50000" visibility="1" armour="0" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="3" transportSeats="2" upkeep="5000" terrain="road" patrols="false" spawnChance="1" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_medtrans" type="MEDICAL" bonuses="NONE" price="50000" visibility="1" armour="0" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="3" transportSeats="3" upkeep="5000" terrain="road" patrols="false" spawnChance="0.5" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_medheli" type="MEDICAL" bonuses="SEARCH=0.5" price="300000" visibility="1" armour="0" maxSpeed="250" acceleration="9" immobilizedBy="Wind=15" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="1" upkeep="30000" terrain="air" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_medheli_yellow" type="MEDICAL" bonuses="SEARCH=0.5" price="300000" visibility="1" armour="0" maxSpeed="250" acceleration="9" immobilizedBy="Wind=15" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="1" upkeep="30000" terrain="air" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="8"/>
+    <Vehicletype id="ve_medcar" type="MEDICAL" bonuses="NONE" price="80000" visibility="1" armour="0" maxSpeed="150" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="1" upkeep="8000" terrain="road" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_medbike" type="MEDICAL" bonuses="NONE" price="20000" visibility="1" armour="0" maxSpeed="180" acceleration="7" immobilizedBy="Rain=7,Snow=5" offroadSpeedModif="0.25" trafficSpeedModif="0.5" teammembersSeats="2" transportSeats="0" upkeep="2000" terrain="road" patrols="false" spawnChance="0" allDrive="true" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_bicycle" type="MEDICAL" bonuses="SEARCH=0.5" price="3500" visibility="1" armour="0" maxSpeed="35" acceleration="20" immobilizedBy="Rain=7,Snow=5" offroadSpeedModif="1" trafficSpeedModif="1" teammembersSeats="2" transportSeats="0" upkeep="500" terrain="offroad" patrols="true" spawnChance="0" allDrive="true" chaseProficiency="0" unlockOnDuty="3"/>
+
+    <!-- POLICE UNITS -->
+    <Vehicletype id="ve_polcar" type="POLICE" bonuses="NONE" price="50000" visibility="1" armour="0.2" maxSpeed="150" acceleration="5" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="2" upkeep="5000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="15" unlockOnDuty="1"/>
+    <Vehicletype id="ve_polcar_METP" type="POLICE" bonuses="NONE" price="50000" visibility="1" armour="0.2" maxSpeed="150" acceleration="5" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="2" upkeep="5000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="15" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+    <Vehicletype id="ve_polvan" type="POLICE" bonuses="NONE" price="80000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="4" upkeep="8000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="13" unlockOnDuty="1"/>
+    <Vehicletype id="ve_polvan_METP" type="POLICE" bonuses="NONE" price="80000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="4" upkeep="8000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="13" unlockOnDuty="1" onsiteModel="ve_polvan"/>
+    <Vehicletype id="ve_smallpolvan" type="POLICE" bonuses="NONE" price="60000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="3" transportSeats="3" upkeep="6000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="13" unlockOnDuty="1" onsiteModel="ve_polvan"/>
+    <Vehicletype id="ve_smallpolvan_METP" type="POLICE" bonuses="NONE" price="60000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="3" transportSeats="3" upkeep="6000" terrain="road" patrols="true" spawnChance="1" allDrive="false" chaseProficiency="13" unlockOnDuty="1" onsiteModel="ve_polvan"/>
+    <Vehicletype id="ve_polheli" type="POLICE" bonuses="SEARCH=1" price="200000" visibility="1" armour="0.3" maxSpeed="260" acceleration="10" immobilizedBy="Wind=15" offroadSpeedModif="1" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="20000" terrain="air" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_speedcar" type="POLICE" bonuses="NONE" price="180000" visibility="1" armour="0.2" maxSpeed="300" acceleration="10" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="18000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="20" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_swatvan" type="POLICE" bonuses="NONE" price="150000" visibility="1" armour="0.9" maxSpeed="100" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="4" upkeep="20000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="13" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_polhelibig" type="POLICE" bonuses="SEARCH=1" price="350000" visibility="1" armour="0.3" maxSpeed="230" acceleration="10" immobilizedBy="Wind=15" offroadSpeedModif="1" trafficSpeedModif="0" teammembersSeats="3" transportSeats="2" upkeep="35000" terrain="air" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_polcannon" type="POLICE" bonuses="FIRE=0.25" price="70000" visibility="1" armour="0.3" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="0" upkeep="7000" terrain="road" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="10" unlockOnDuty="-1"/>
+    <Vehicletype id="ve_polcannongrey" type="POLICE" bonuses="FIRE=0.25" price="70000" visibility="1" armour="0.3" maxSpeed="100" acceleration="2" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="0" upkeep="7000" terrain="road" patrols="false" spawnChance="0" allDrive="false" chaseProficiency="10" unlockOnDuty="6" onsiteModel="ve_polcannon"/>
+
+<!-- ARMY UNITS (reinforcements) -->
+
+    <!-- CIVILIAN UNITS -->
+
+
+
+
+
+
+
+</ArrayOfVehicletype>
