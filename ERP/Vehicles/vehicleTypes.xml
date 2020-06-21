@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="windows-1250"?>
-<ArrayOfVehicletype>
-    
-	<Vehicletype id="ve_poltandem" type="POLICE" bonuses="SEARCH=0.5" price="3800" visibility="1" armour="0" maxSpeed="40" acceleration="20" immobilizedBy="Rain=7,Snow=5" offroadSpeedModif="1" trafficSpeedModif="1" teammembersSeats="2" transportSeats="0" upkeep="500" terrain="offroad" patrols="true" spawnChance="0" allDrive="true" chaseProficiency="10" unlockOnDuty="1" onsiteModel="ve_bicycle"/>
-
-	<Vehicletype id="ve_poltowtruck" type="POLICE"/>
-
-</ArrayOfVehicletype>
