@@ -1,0 +1,6 @@
+{
+
+  "text.names.ve_erp_a_team_van": "GMC A Team Van",
+  "text.descriptions.ve_erp_a_team_van": "",
+
+}
