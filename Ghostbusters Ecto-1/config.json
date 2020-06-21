@@ -1,10 +1,11 @@
 {
     "title": "Ghostbusters Ecto-1",
-    "desc": "",
+    "desc": "The Ectomobile, or Ecto-1 is a 1959 Cadillac Miller-Meteor Futura Duplex limo-style endloader combination car (ambulance conversion) used in the 1984 film Ghostbusters and other Ghostbusters fiction.\n\nThis vehicle has identical stats to the standard police car, except that team member seats are up to 3 and transport seats are down to 0.",
     "language": "English",
-    "visibility": "private",
-    "itemId": ,
+    "visibility": "public",
+    "itemId": 2137693546,
     "modTypes": [
+        "LANGUAGES",
         "VEHICLES"
     ],
     "order": 0
