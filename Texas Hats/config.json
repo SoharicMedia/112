@@ -1,0 +1,11 @@
+{
+    "title": "Texas Hats",
+    "desc": "Change the police hats for USA cities only to Texas Sheriff hats. Also changes the fire hats to default 911 Operator hats.",
+    "language": "English",
+    "visibility": "private",
+    "itemId": ,
+    "modTypes": [
+        "HATS"
+    ],
+    "order": 0
+}
