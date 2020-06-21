@@ -6,7 +6,7 @@
 maximumOpinionEffect=2;
 opinionOnSuccess=6;
 opinionOnIgnore=-6;
-timeToReact=1500;
+timeToReact=1500;x
 " background="CarBumpBackground" id="crash" texten="Crash"  >
       <suspect properties="personBuilder.sex=MALE;
 personBuilder.race=WHITE;

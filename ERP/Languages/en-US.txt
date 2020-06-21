@@ -1,4 +1,5 @@
 {
+<!-- Languages -->
   "lang.aa-AA": "English (Alternate)",
   "lang.cs-CZ": "Čeština",
   "lang.da-DK": "Dansk",
@@ -30,18 +31,21 @@
   "lang.zh-CN": "中文",
   "lang.zh-TW": "中文 (Traditional)",
 
+<!-- Vehicles -->
   "text.names.ve_poltandem": "Police tandem",
   "text.descriptions.ve_poltandem": "Like two regular bicycles... but better.",
 
   "text.names.ve_erp_poltowtruck": "Police Tow Truck",
   "text.descriptions.ve_erp_poltowtruck": "Useful for road traffic accidents.",
-  
+
+<!-- Incidents -->
   "incident.rep_crazy_modder.rep_crazy_modder": "CRAZY MODDER",
   "incident.rep_crazy_modder.description": "SOMEONE REPORTED A MAN WHO SENDS A HUGE NUMBER OF MODS TO THE 112 OPERATOR WORKSHOP",
   "incident.rep_crazy_modder.house.modder": "Crazy modder",
   "incident.rep_crazy_modder.house.pc": "PC",
   "incident.rep_crazy_modder.aar.pcDone": "Modder's PC was secured",
 
+<!-- Calls -->
   "call.c_erp_bank_robbery1.title": "Bank Hostage",
   "call.c_erp_bank_robbery1.scene.sceneElem_1": "Caller",
   "call.c_erp_bank_robbery1.scene.sceneElem_2": "",
@@ -92,10 +96,15 @@
   "call.c_erp_home_invasion.dialog.reminder2": "Hello?",
   "call.c_erp_home_invasion.aar.story_1": "A woman's house was invaded by at least 3 men with guns. She's trapped in the toilet.",
 
+<!-- Workshop Mods -->
   "text.names.ve_nightfurypol": "Police officer Alpha",
   "text.descriptions.ve_nightfurypol": "Toothless assist you with flame. Don't worry. If you don't do anything wrong, he won't blow the flames to you. =D"
   "text.names.ve_nightfuryfire": "Firefighter Alpha",
   "text.descriptions.ve_nightfuryfire": "Toothless assist you with professional fire equipment. Sometimes, may be fish in the bucket. XD"
   "text.names.ve_nightfurymedic": "Ambulance Alpha",
   "text.descriptions.ve_nightfurymedic": "Toothless assist you with fast move. he can't learn first aid for human. but he can help to move patients quickly!",
+
+<!-- Loading Screens -->
+  "text.descriptions.tips_evac": "Never ignore a fire alarm - do not assume it is a practice or a false alarm!\n• Do not waste time looking for things you do not have within immediate reach.\n• Find the escape route signs and follow them.\n• Use the stairs, <b> NOT </b> the elevator.\n• If there is a lot of smoke in the air, you should move near the walls in a bent position, or even on your knees \n• <b> DO NOT OPEN THE WINDOWS! </b>\n• If the emergency exit is blocked, close the door and seal it with a wet towel to open the window. Wait for the firemen's arrival or take the fire escape stairs if available.",
+
 }
