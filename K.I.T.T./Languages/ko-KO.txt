@@ -1,0 +1,6 @@
+{
+
+  "text.names.ve_erp_kitt": "K.I.T.T.",
+  "text.descriptions.ve_erp_kitt": "",
+
+}
