@@ -1,0 +1,12 @@
+{
+    "title": "Gadgetmobile",
+    "desc": "",
+    "language": "English",
+    "visibility": "private",
+    "itemId":,
+    "modTypes": [
+        "LANGUAGES",
+        "VEHICLES"
+    ],
+    "order": 0
+}
