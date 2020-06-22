@@ -1,6 +1,12 @@
 {
-
-  "text.names.ve_erp_kitt": "K.I.T.T.",
-  "text.descriptions.ve_erp_kitt": "",
-
+    "title": "K.I.T.T. Knight Industries Two Thousand",
+    "desc": "",
+    "language": "English",
+    "visibility": "private",
+    "itemId":,
+    "modTypes": [
+        "LANGUAGES",
+        "VEHICLES"
+    ],
+    "order": 0
 }
