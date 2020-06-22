@@ -1,9 +1,9 @@
 {
-    "title": "Back to the Future",
-    "desc": "",
+    "title": "Back to the Future DeLoreans",
+    "desc": "Add four new police vehicles in the form of variants of the 1982 DeLorean built by DMC (DeLorean Motor Company) in Northern Ireland, later made famous by its use as the Time Machine in the Back to the Future movie trilogy. Each variant has unique costs and stats.\n\n[list]\n[*]DMC DeLorean - Factory DeLorean\n[*]Time Machine DeLorean - Basic Back to the Future DeLorean\n[*]Off Road DeLorean - Off Road Back to the Future DeLorean with whitewall tires\n[*]Flying DeLorean - Back to the Future flying DeLorean with the wheels up\n[/list]\n\n-- Mod by Soharic. Visit www.soharicmedia.com/112/vehicle-mods#back-to-the-future for more information.",
     "language": "English",
-    "visibility": "private",
-    "itemId":,
+    "visibility": "public",
+    "itemId": 2138890807,
     "modTypes": [
         "LANGUAGES",
         "VEHICLES"
