@@ -23,6 +23,9 @@
 <p></p>
 <h3>Hat Mods</h3>
 <ul>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/CA%20Hats">Canadian Hats</a></li>
   <li>Christmas Hats</li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/Texas%20Hats">Texas Hats</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/UK%20Hats">UK Hats</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/US%20Hats">USA Hats</a></li>
 </ul>
