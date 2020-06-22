@@ -1,0 +1,6 @@
+{
+
+  "text.names.ve_erp_a_team_van": "A-Team Vandura",
+  "text.descriptions.ve_erp_a_team_van": "B.A. Baracus' 1983 GMC Vandura as used by The A-Team.",
+
+}
