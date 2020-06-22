@@ -1,0 +1,18 @@
+{
+
+  "text.names.ve_erp_delorean": "DMC DeLorean",
+  "text.descriptions.ve_erp_delorean": "A 1982 DeLorean built by DMC (DeLorean Motor Company) in Northern Ireland, later made famous by its use as the Time Machine in the movie trilogy Back to the Future.",
+
+  "text.names.ve_erp_delorean_timemachine": "Time Machine DeLorean",
+  "text.descriptions.ve_erp_delorean_timemachine": "One of the many DeLorean variants from the Back to the Future movie trilogy. Works best on roads and moving through space and time.",
+
+  "text.names.ve_erp_delorean_whitewalls": "Off Road DeLorean",
+  "text.descriptions.ve_erp_delorean_whitewalls": "One of the many DeLorean variants from the Back to the Future movie trilogy. Works best off-road and moving through space and time.",
+
+  "text.names.ve_erp_delorean_flight": "Flying DeLorean",
+  "text.descriptions.ve_erp_delorean_flight": "One of the many DeLorean variants from the Back to the Future movie trilogy. Works best flying and moving through space and time.",
+
+  "text.names.ve_erp_delorean_train": "Railroad DeLorean",
+  "text.descriptions.ve_erp_delorean_train": "",
+
+}
