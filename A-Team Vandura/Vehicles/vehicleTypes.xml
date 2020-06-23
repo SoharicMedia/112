@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1250"?>
 <ArrayOfVehicletype>
 
-    <Vehicletype id="ve_erp_a_team_van" type="POLICE" bonuses="NONE" price="80000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="2" upkeep="8000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="13" unlockOnDuty="1" onsiteModel="ve_polvan"/>
+    <Vehicletype id="ve_erp_a_team_van" type="POLICE" bonuses="TECH=0.25" price="80000" visibility="1" armour="0.4" maxSpeed="120" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="4" transportSeats="2" upkeep="8000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="13" unlockOnDuty="1" onsiteModel="ve_polvan"/>
 
 </ArrayOfVehicletype> 
