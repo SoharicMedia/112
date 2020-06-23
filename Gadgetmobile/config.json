@@ -1,9 +1,9 @@
 {
     "title": "Gadgetmobile",
-    "desc": "",
+    "desc": "The Gadgetmobile is Gadget's trusty car that he uses when he is on cases in nearly every episode of Inspector Gadget. It closely resembles a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2138890807]DeLorean[/url].\n\nAdds the Gadgetmobile to the game as an additional police vehicle.\n\nGo-Go Gadgetmobile!\n\n[h1]Languages[/h1]\nEnglish\n\n[h1]Feedback[/h1]\nPlease leave constructive feedback either in the comments or email contact@soharicmedia.com\n\n[h1]Credits[/h1]\nwww.soharicmedia.com/112/vehicle-mods#gadgetmobile\n\n[h1]Business Enquires[/h1]\ncontact@soharicmedia.com",
     "language": "English",
-    "visibility": "private",
-    "itemId":,
+    "visibility": "public",
+    "itemId": 2138927027,
     "modTypes": [
         "LANGUAGES",
         "VEHICLES"
