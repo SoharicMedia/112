@@ -1,0 +1,12 @@
+{
+    "title": "Vending Machine Call",
+    "desc": null,
+    "language": null,
+    "visibility": null,
+    "itemId": null,
+    "modTypes": [
+        "CALLS",
+        "LANGUAGES"
+    ],
+    "order": 0
+}
