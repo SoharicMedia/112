@@ -1,11 +1,12 @@
-<data><conversations>
-<conversation elementProperties="type=generableonce;" id="c_erp_vending_machine" texten="Vending Machine">
-	<scene>
-	<witness elementProperties="sex=M;
-	type=White;" id="caller" texten="Caller" />
-	</scene>
-	<dialog>
-	<dialogOption id="1" operator="Operator:" texten="Police emergency." default="2" actionOnEnd="opinionEffect = -1;" />
+<!-- Call from On the Line, a mod for 911 Operator -->
+
+<data>
+    <incident properties="callLevel=0;" id="c_erp_vending_machine" texten="Vending Machine" >
+      <scene properties="isCallerScene=true; opinionOnSuccess=3; opinionOnIgnore=-3;" background="" id="vendingmachine" poi="BUILDING" >
+	<suspect properties="personBuilder.sex=MALE; personBuilder.race=AFAM; spawnArea=inside; bill=200;" id="caller" texten="Caller" />
+      </scene>
+      <dialog>
+	<dialogOption id="1" operator="Operator:" texten="Police emergency." default="2" />
 	<dialogOption id="2" operator="Caller:" texten="Yeah, I want the police please." default="3" option2="13" />
 	<dialogOption id="3" operator="Operator:" texten="What's the problem?" default="4" />
 	<dialogOption id="4" operator="Caller:" texten="I've put some money in this vending machine and they're refusing to give me the money back." default="5" />
@@ -21,9 +22,9 @@
 	<dialogOption id="14" operator="Caller:" texten="Oh f*** off." actionOnEnd="actionHangup" addtoAAR="story" />
 	<dialogOption id="reminder" operator="Caller:" texten="....." />
 	<dialogOption id="reminder2" operator="Caller:" texten="....." />
-	</dialog>
-	<aar>
+      </dialog>
+      <aar>
 	<reportElement id="story" texten="The caller was using the emergency line for a vending machine problem." />
-	</aar>
-</conversation>
-</conversations></data>
+      </aar>
+    </incident>
+</data>
