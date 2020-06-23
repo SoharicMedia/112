@@ -1,0 +1,23 @@
+{
+
+	"call.btl01.title": "Máquina expendedora",
+	"call.btl01.scene.caller": "Autor de la llamada",
+	"call.btl01.dialog.1": "Emergencias 112.",
+	"call.btl01.dialog.2": "Hola, necesito a la policía por favor.",
+	"call.btl01.dialog.3": "¿Cuál es el problema?",
+	"call.btl01.dialog.4": "He metido dinero en una máquina expendedora y no me devuelve el dinero.",
+	"call.btl01.dialog.5": "Necesito ese dinero para hacer una llamada de emergencia...",
+	"call.btl01.dialog.6": "{SEGUIR ESCUCHANDO}¿Llamas a la policía porque has metido dinero en una máquina expendedora y no te lo devuelve?",
+	"call.btl01.dialog.7": "Exacto, no me lo dan en el hospital.",
+	"call.btl01.dialog.8": "Tendrás que venir a solucionarlo.",
+	"call.btl01.dialog.9": "{CONTACTA CON OTRO}Tiene que contactar con el hospital - esto no es un problema para la línea de emergencias.",
+	"call.btl01.dialog.10": "Has metido dinero en una máquina expendedora en el hospital...",
+	"call.btl01.dialog.11": "(Interrumpe) Sí, y no me lo quieren devolver, no quieren, no quieren devolvérmelo.",
+	"call.btl01.dialog.12": "{CONTACTA CON LA EMPRESA}Tiene que contactar con la empresa de máquinas expendedoras.",
+	"call.btl01.dialog.13": "{COLGAR}Voy a tener que cortar la conversación porque está bloqueando la línea para gente que tiene auténticas emergencias.",
+	"call.btl01.dialog.14": "Oh, vete a la mierda.",
+	"call.btl01.dialog.reminder": ".....",
+	"call.btl01.dialog.reminder2": ".....",
+	"call.btl01.aar.story": "El autor de la llamada estaba usando la lína de emergencias por un problema con una máquina expendedora.",
+
+}
