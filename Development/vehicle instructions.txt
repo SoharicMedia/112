@@ -1,2 +1,0 @@
-Icon 200x200 - 180 wide
-Vehicle 135x98 - 90 wide

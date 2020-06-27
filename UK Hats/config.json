@@ -1,12 +1,11 @@
 {
-    "title": "K.I.T.T.",
+    "title": "British Hats",
     "desc": "",
     "language": "English",
     "visibility": "private",
-    "itemId": 2139847670,
+    "itemId": 2139844991,
     "modTypes": [
-        "LANGUAGES",
-        "VEHICLES"
+        "HATS"
     ],
     "order": 0
 }

@@ -2,7 +2,7 @@
     "title": "No Medic Hats",
     "desc": "This is a universal mod which simply removes the Medic and Doctor hats revealing the top of their heads.\n\nAs this item is universal, it is not compatible with any other hat mods.\n\n-- Mod by Soharic. Visit www.soharicmedia.com/112/hat-mods#no-medic-hats for more information.",
     "language": "English",
-    "visibility": "public",
+    "visibility": "private",
     "itemId": 2138874724,
     "modTypes": [
         "HATS"

@@ -1,12 +1,11 @@
 {
-    "title": "K.I.T.T.",
+    "title": "Canadian Hats (CA)",
     "desc": "",
     "language": "English",
     "visibility": "private",
-    "itemId": 2139847670,
+    "itemId": 2139844454,
     "modTypes": [
-        "LANGUAGES",
-        "VEHICLES"
+        "HATS"
     ],
     "order": 0
 }
