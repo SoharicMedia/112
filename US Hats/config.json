@@ -1,8 +1,8 @@
 {
     "title": "American Hats (US)",
-    "desc": "",
+    "desc": "Change the police hats (112 Operator assets) and the fire hats to the default 911 Operator hats. This mod will only effect US towns/cities and may not function correctly if installed with other mods that also change US hats.\r\n\r\n-- Mod by Soharic. Visit www.soharicmedia.com/112/hat-mods#canadian-hats for more information.",
     "language": "English",
-    "visibility": "private",
+    "visibility": "public",
     "itemId": 2139844723,
     "modTypes": [
         "HATS"
