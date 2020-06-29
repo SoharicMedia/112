@@ -1,0 +1,73 @@
+<!-- DO NOT MODIFY THIS FILE DIRECTLY, imported by JutsuXmlImporter -->
+<!--   source: OnAqbs -->
+  <incidentTypes id="builtin_incidents"  >
+    <incident id="rep_bigfire" properties="type=bigfire;
+popularity=0; "  >
+      <scene id="bigfire" properties="scripted=1;
+ignorable=0;
+delayedSpawn=1;"  >
+      </scene>
+    </incident>
+    <incident id="rep_concert" properties="popularity=0;
+visibility=0; isScenario=1"  >
+      <scene id="main" background="ConcertBackground" properties="timeToReact=900;
+ignorable=false; scripted=1;"  >
+      </scene>
+    </incident>
+    <incident id="rep_nuclearewaste" properties="popularity=0;
+visibility=0; isScenario=1"  >
+      <scene id="main" background="NuclearewasteEventBackground" properties="timeToReact=900;
+ignorable=false; scripted=1;"  >
+        <techWork id="tech" properties="workAmount=1000; spawnArea=biohazard;"  />
+        <techWork id="tech" properties="workAmount=1000; spawnArea=radioactive;"  />
+      </scene>
+    </incident>
+    <incident id="rep_plane" properties="popularity=0;
+visibility=0; isScenario=1; isSolvable=0;"  >
+      <scene id="main" properties="timeToReact=900;
+ignorable=false; scripted=1;"  >
+        <techWork id="tech" properties="workAmount=100;"  />
+      </scene>
+    </incident>
+    <incident id="rep_riot" properties="popularity=0;
+visibility=0; isScenario=1;"  >
+      <scene id="main" properties="timeToReact=900;
+ignorable=false; scripted=1; vehicle=ve_civil_walk;"  >
+      </scene>
+    </incident>
+    <incident id="rep_buried_in_snow" properties="type+=technical; type+=snow;
+popularity=0;
+visibility=1;"  >
+      <scene id="scene" properties="timeToReact=120000;
+iconMap=snow;
+ignorable=false;" actionOnEnd="AAR+=done;"  >
+        <techWork id="work" properties="workAmount=[100,300];"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_final_chase_injured" properties="popularity=0;"  >
+      <scene id="incident"  >
+        <injured id="injured_president
+" properties="hp=50;
+hpchange=-1;"  />
+      </scene>
+    </incident>
+    <incident id="generic_scenes" properties="type+=crime;
+popularity=0;
+visibility=1;"  >
+      <scene id="rep_run_away" properties="onMove=1;
+timeToReact=120;" actionOnEnd="AAR+=done;"  >
+      </scene>
+      <scene id="final_chase" properties="ignorable=false;
+vehicle=ve_civil_finalchase;
+timeToReact=10000;
+onMove=1;
+avoidPolice=1;"  >
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+  </incidentTypes>
