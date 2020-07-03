@@ -1,6 +1,0 @@
-{
-
-  "text.names.ve_erp_flintmobile": "Flintmobile",
-  "text.descriptions.ve_erp_flintmobile": "",
-
-}

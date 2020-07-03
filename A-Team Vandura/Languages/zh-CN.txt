@@ -1,6 +1,0 @@
-{
-
-  "text.names.ve_erp_a_team_van": "天龍特攻隊雪佛蘭貨車",
-  "text.descriptions.ve_erp_a_team_van": "天龍特攻隊裡波斯可·亞伯特·巴拉克斯使用的雪佛蘭貨車",
-
-}
