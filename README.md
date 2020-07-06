@@ -3,6 +3,7 @@
 <h3>Mod Packages</h3>
 <ul>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/ACP">Additional Calls Package (ACP)</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/ACP">Additional Incidents Package (AIP)</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/ERP">European Response Package (ERP)</a></li>
 </ul>
 <p></p>
@@ -10,17 +11,18 @@
 <h4>Movie Vehicles</h4>
   <ul>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/A-Team%20Vandura">A-Team Vandura</a></li>
+    <li><a href="https://github.com/SoharicMedia/112/tree/master/Air%20Wolf">Air Wolf</a></li>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/Back%20to%20the%20Future">Back to the Future DeLoreans</a></li>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/Flintmobile">Flintmobile</a></li>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/Gadgetmobile">Gadgetmobile</a></li>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/Ghostbusters%20Ecto-1">Ghostbusters Ecto-1</a></li>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/Herbie">Herbie</a></li>
-    <li><a href="https://github.com/SoharicMedia/112/tree/master/K.I.T.T.">K.I.T.T. Knight Industries Two Thousand</a></li>
+    <li><a href="https://github.com/SoharicMedia/112/tree/master/KITT">K.I.T.T.</a></li>
   </ul>
 <h4>Vehicle Packs</h4>
   <ul>
     <li><a href="https://github.com/SoharicMedia/112/tree/master/UK%20Vehicles">UK Vehicles</a></li>
-    <li><a href="https://github.com/SoharicMedia/112/tree/master/UK%20Police%20Vehicles">US Police Vehicles</a></li>
+    <li><a href="https://github.com/SoharicMedia/112/tree/master/US%20Vehicles">US Vehicles</a></li>
   </ul>
 <p></p>
 <h3>Hat Mods</h3>
@@ -36,6 +38,7 @@
   <li>Korean Hats (KR)</li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/No%20Medic%20Hats">No Medic Hats</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/Texas%20Hats">Texas Hats</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/Star%20Wars%20Hats">Star Wars Hats</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/UK%20Hats">UK Hats (GB)</a></li>
 </ul>
 <h3>Operator Mods</h3>
