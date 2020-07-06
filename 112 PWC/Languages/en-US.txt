@@ -1,0 +1,46 @@
+{
+<!-- Languages -->
+  "lang.aa-AA": "English (Alternate)",
+  "lang.cs-CZ": "Čeština",
+  "lang.da-DK": "Dansk",
+  "lang.de-DE": "Deutsch",
+  "lang.dx-DX": "Deutsch (Alternate)",
+  "lang.en-CA": "English (CA)",
+  "lang.en-CL": "English (Alternate)",
+  "lang.en-CU": "English (Alternate)",
+  "lang.en-UK": "English",
+  "lang.en-US": "English (US)",
+  "lang.es-ES": "Español",
+  "lang.fr-FR": "Français",
+  "lang.hu-HU": "Magyar",
+  "lang.it-IT": "Italiano",
+  "lang.ja-JP": "日本語 (Alternate)",
+  "lang.jp-JP": "日本語",
+  "lang.ka-GE": "ქართული",
+  "lang.ka-KA": "ქართული (Alternate)",
+  "lang.ko-KO": "한국어",
+  "lang.nl-AP": "Nederlands (Alternate)",
+  "lang.nl-NL": "Nederlands",
+  "lang.no-NO": "Norsk",
+  "lang.pl-PL": "Polski",
+  "lang.pt-BR": "Português-Brasil",
+  "lang.ru-RU": "Pусский",
+  "lang.sr-RS": "Српски",
+  "lang.sv-SE": "Svensk",
+  "lang.tr-TR": "Türk",
+  "lang.zh-CN": "中文",
+  "lang.zh-HK": "中文 (Traditional)"
+  "lang.zh-TW": "中文 (Traditional)",
+
+<!-- Workshop Mods -->
+  "text.names.ve_nightfurypol": "Police officer Alpha",
+  "text.descriptions.ve_nightfurypol": "Toothless assist you with flame. Don't worry. If you don't do anything wrong, he won't blow the flames to you. =D"
+  "text.names.ve_nightfuryfire": "Firefighter Alpha",
+  "text.descriptions.ve_nightfuryfire": "Toothless assist you with professional fire equipment. Sometimes, may be fish in the bucket. XD"
+  "text.names.ve_nightfurymedic": "Ambulance Alpha",
+  "text.descriptions.ve_nightfurymedic": "Toothless assist you with fast move. he can't learn first aid for human. but he can help to move patients quickly!",
+
+<!-- Loading Screens -->
+  "text.descriptions.tips_evac": "Never ignore a fire alarm - do not assume it is a practice or a false alarm!\n• Do not waste time looking for things you do not have within immediate reach.\n• Find the escape route signs and follow them.\n• Use the stairs, <b> NOT </b> the elevator.\n• If there is a lot of smoke in the air, you should move near the walls in a bent position, or even on your knees \n• <b> DO NOT OPEN THE WINDOWS! </b>\n• If the emergency exit is blocked, close the door and seal it with a wet towel to open the window. Wait for the firemen's arrival or take the fire escape stairs if available.",
+
+}

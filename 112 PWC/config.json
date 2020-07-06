@@ -1,0 +1,11 @@
+{
+    "title": "112 Operator Patches and Workshop Compatibility Mod (112 PWC)",
+    "desc": "A mod for 112 Operator.",
+    "language": "English",
+    "visibility": "private",
+    "itemId": ,
+    "modTypes": [
+        "LANGUAGES"
+    ],
+    "order": 0
+}
