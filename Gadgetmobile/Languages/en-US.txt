@@ -1,0 +1,6 @@
+{
+
+  "text.names.ve_erp_gadgetmobile": "Gadgetmobile",
+  "text.descriptions.ve_erp_gadgetmobile": "Go-Go Gadgetmobile!",
+
+}

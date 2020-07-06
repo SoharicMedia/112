@@ -1,0 +1,464 @@
+<!-- DO NOT MODIFY THIS FILE DIRECTLY, imported by JutsuXmlImporter -->
+<!--   source: wjvkEc -->
+  <mails id="mailTypes"  >
+    <mail id="mail_start" properties="priority=3;
+chance=100;
+important=1;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_wiferep"  >
+      <body  />
+    </mail>
+    <mail id="mail_threats" properties="priority=2;
+chance=0;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+      <option1  />
+      <option2 actionOnSend="remove ( TEAMMEMBER, 0 );
+cancelMission(movetmember)"  />
+      <option3 actionOnSend="remove ( TEAMMEMBER, 3 )
+send( mail_threatsrep, 3);
+"  />
+    </mail>
+    <mail id="mail_threatsrep" properties="priority=2;
+chance=30;
+"  >
+      <from actionOnSend="cancelMission(movetmember)"  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_mother" properties="priority=2;
+chance=30;
+"  >
+      <content id="v1"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v2"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+    </mail>
+    <mail id="mail_kiafamily" properties="priority=2;
+chance=30;
+"  >
+      <content id="v1"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v2"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v3"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v4"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v5"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v6"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+    </mail>
+    <mail id="mail_joke" properties="priority=1;
+chance=5;
+"  >
+      <content id="v1"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v2"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+      <content id="v3"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+      </content>
+    </mail>
+    <mail id="mail_beer" properties="priority=1;
+chance=10;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+      <option1 actionOnSend="Delay(SendReply(mail_beer2))"  />
+      <option2  />
+    </mail>
+    <mail id="mail_beer2" properties="priority=1;
+chance=10;
+"  >
+      <body  />
+    </mail>
+    <mail id="mail_weatherrain" properties="priority=2;
+chance=25;
+iconId=weather_center_icon;
+important=1;
+repeat=true;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_weatherheat" properties="priority=2;
+chance=25;
+iconId=weather_center_icon;
+important=1;
+repeat=true;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_promote" properties="priority=1;
+chance=10;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_emptyunits" properties="priority=2;
+chance=80;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_deathincident" properties="priority=2;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_needgear" properties="priority=2;
+chance=15;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_ignore" properties="priority=2;
+chance=15;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_hired" properties="priority=2;
+chance=30;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_goodjob" properties="priority=2;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_badjob" properties="priority=2;
+chance=100;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_suicidesorry" properties="priority=2;
+chance=100;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_foundold" properties="priority=2;
+chance=15;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_fakebomb" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_fired" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_injuredman" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_outnumbered" properties="priority=1;
+chance=5;
+important=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_bored" properties="priority=1;
+chance=30;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_hospitalbored" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_citizenmad" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_citizenbrutal" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_placeholder" properties="priority=1;
+chance=100;
+iconId=center_icon;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_dev_congrats" properties="priority=3;
+chance=100;
+iconId=jutsu_icon;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_fire_it_crowd" properties="priority=1;
+chance=5;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_vehicle_unlocked" properties="priority=3;
+chance=100;
+repeat=true;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_vehicle_unlocked_single" properties="priority=3;
+chance=100;
+repeat=true;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_gear_unlocked" properties="priority=3;
+chance=100;
+repeat=true;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_gear_unlocked_single" properties="priority=3;
+chance=100;
+repeat=true;
+"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_skynet" properties="priority=1;
+chance=1;"  >
+      <from  />
+      <to  />
+      <title  />
+      <body  />
+    </mail>
+    <mail id="mail_tip" properties="priority=2;
+chance=100;
+iconId=jutsu_icon;"  >
+      <content id="_areafire"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="areafire.jpg"  />
+      </content>
+      <content id="_grouping"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="grouping.jpg"  />
+      </content>
+      <content id="_lonelyinjured"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="injured.jpg"  />
+      </content>
+      <content id="_waterlimit"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="water.jpg"  />
+      </content>
+      <content id="_queue"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="queue.jpg"  />
+      </content>
+      <content id="_doubleclick"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="signal.jpg"  />
+      </content>
+      <content id="_search"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="search.jpg"  />
+      </content>
+      <content id="_traffic"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="traffic.jpg"  />
+      </content>
+      <content id="_multiselect"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="multiselect.jpg"  />
+      </content>
+      <content id="_dispatchers"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="dispatcher.jpg"  />
+      </content>
+      <content id="_management"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="manage.jpg"  />
+      </content>
+      <content id="_f14"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="gamespeed.jpg"  />
+      </content>
+      <content id="_reinforcements"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="reinforcements_temp.jpg"  />
+      </content>
+      <content id="_pursuit"  >
+        <from  />
+        <to  />
+        <title  />
+        <body  />
+        <attachment id="pursuit.jpg"  />
+      </content>
+    </mail>
+  </mails>

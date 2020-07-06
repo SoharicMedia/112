@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<ArrayOfVehicletype>
+
+    <Vehicletype id="ve_erp_delorean" type="POLICE" bonuses="NONE" price="60000" visibility="1" armour="0.3" maxSpeed="135" acceleration="4" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="5000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="15" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+
+    <Vehicletype id="ve_erp_delorean_timemachine" type="POLICE" bonuses="NONE" price="120000" visibility="1" armour="0.3" maxSpeed="240" acceleration="8" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="11000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="15" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+
+    <Vehicletype id="ve_erp_delorean_whitewalls" type="POLICE" bonuses="NONE" price="120000" visibility="1" armour="0.3" maxSpeed="150" acceleration="8" immobilizedBy="NONE" offroadSpeedModif="0.75" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="11000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="15" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+
+    <Vehicletype id="ve_erp_delorean_flight" type="POLICE" bonuses="SEARCH=1" price="230000" visibility="1" armour="0.3" maxSpeed="260" acceleration="10" immobilizedBy="NONE" offroadSpeedModif="1" trafficSpeedModif="0" teammembersSeats="2" transportSeats="0" upkeep="20000" terrain="air" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="0" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+
+</ArrayOfVehicletype> 

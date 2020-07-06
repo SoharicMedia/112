@@ -1,0 +1,20 @@
+{
+
+	"call.c_erp_vending_machine.title": "Vending Machine",
+	"call.c_erp_vending_machine.scene.caller": "Caller",
+	"call.c_erp_vending_machine.dialog.1": "Police emergency.",
+	"call.c_erp_vending_machine.dialog.2": "Yeah, I want the police please.",
+	"call.c_erp_vending_machine.dialog.3": "What's the problem?",
+	"call.c_erp_vending_machine.dialog.4": "I've put some money in this vending machine and they're refusing to give me the money back. ... I need that money to make an emergency call...",
+	"call.c_erp_vending_machine.dialog.6": "{HEAR MORE}You've called the police emergency line because you've put some money in a vending machine and it's not given it you back?",
+	"call.c_erp_vending_machine.dialog.7": "Yeah, they've not given it me at the hospital. ... You'll have to come and sort it out.",
+	"call.c_erp_vending_machine.dialog.9": "{CONTACT SOMEONE ELSE}You need to contact the hospital - this is absolutely not a police emergency line issue. ... You've put some money in a vending machine in the hospital...",
+	"call.c_erp_vending_machine.dialog.11": "(Cuts in) Yeah, they're not giving it me back, they're not, they're not giving it me back.",
+	"call.c_erp_vending_machine.dialog.12": "{MAKE POINT}You need to contact the vending machine company. ... I'm going to clear the line now because you're holding it up for people who have genuine emergencies.",
+	"call.c_erp_vending_machine.dialog.pivot": "{HANG UP}I'm going to clear the line now because you're holding it up for people who have genuine emergencies.",
+	"call.c_erp_vending_machine.dialog.end": "Oh f*** off.",
+	"call.c_erp_vending_machine.dialog.reminder": ".....",
+	"call.c_erp_vending_machine.dialog.reminder2": ".....",
+	"call.c_erp_vending_machine.aar.story": "The caller was using the emergency line for a vending machine problem.",
+
+}

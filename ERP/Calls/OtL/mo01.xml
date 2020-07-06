@@ -1,0 +1,33 @@
+<data>
+  <conversations>
+    <conversation id="mo01" texten="Funny Drug" elementProperties="type=generableonce;">
+      <scene>
+        <suspect id="sceneElem_1" texten="Caller" elementProperties="sex=m;hp=100;prisonchance=1;type=AfAm;bill=500;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="Drug Dealer" elementProperties="hp=100;sex=m;weapon=e_pistol;fightrisk=0.5;prisonchance=1;bill=1000;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Yo man. Somebody stole my drugs. Can you send the popo out here?" elementProperties="option=what;option=where;option=who;option=when;" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} Excuse me sir? What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} Sir, what is your location?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} Can I get your name sir?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="when" texten="{WHEN?} When did you get robbed?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="I said, my drug dealer stole my drugs! I gave him the money for my weed, then he pulled out a .45 and said get outta here!" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="Yeah, we at ummm... [[ADDRESS]]. He's just across the street from me." elementProperties="option=back;option=6;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="4" texten="The names Durell." elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="Bro like ten minutes ago. Can you come get my weed back or get me some money or something?" elementProperties="option=back;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="Sir, your realize you called 911 right?" elementProperties="option=7;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="7" texten="Yeah man. I called you, remember? You gonna do something about this guy?" elementProperties="option=8;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="8" texten="Uhhh yeah.... We are sending a unit out right now to help you. Just stay put, the police are going to want your statement." elementProperties="option=9;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="9" texten="Ight cool, I'll be waitin." elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Yo bro? You there? You gonna get this motherfucker or what?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Dude, where the pigs at?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="Caller reported being robbed of his money and weed, by his drug dealer." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

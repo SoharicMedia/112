@@ -1,0 +1,20 @@
+{
+
+	"call.c_erp_vending_machine.title": "Distributore automatico",
+	"call.c_erp_vending_machine.scene.caller": "Chiamante",
+	"call.c_erp_vending_machine.dialog.1": "Emergenza di polizia.",
+	"call.c_erp_vending_machine.dialog.2": "Si, vorrei la polizia per favore.",
+	"call.c_erp_vending_machine.dialog.3": "Qual è il problema?",
+	"call.c_erp_vending_machine.dialog.4": "Ho messo dei soldi in questo distributore automatico e si rifiuta di restituirmi i soldi. ... Ho bisogno di quei soldi per fare una chiamata di emergenza...",
+	"call.c_erp_vending_machine.dialog.6": "{ASCOLTA ANCORA}Hai chiamato la linea di emergenza della polizia perché hai messo dei soldi in un distributore automatico e non li ha restituiti?",
+	"call.c_erp_vending_machine.dialog.7": "Sì, non me li hanno dati all'ospedale. ... Devi venire a risolvere il problema.",
+	"call.c_erp_vending_machine.dialog.9": "{CONTATTI QUALCUN'ALTRO}Deve contattare l'ospedale - questo non è assolutamente un problema di emergenza della polizia. ... Hai messo dei soldi in un distributore automatico in ospedale...",
+	"call.c_erp_vending_machine.dialog.11": "(Cuts in) Sì, non le sta restituendo, non le sta restituendo.",
+	"call.c_erp_vending_machine.dialog.12": "{CONCLUDI}Dovete contattare l'azienda del distributore automatico. ... Devo riaggianciare ora perchè sta occupando la linea per persone che hanno vere emergenze.",
+	"call.c_erp_vending_machine.dialog.pivot": "{RIAGGIANCIA}Devo riaggianciare ora perchè sta occupando la linea per persone che hanno vere emergenze.",
+	"call.c_erp_vending_machine.dialog.end": "Oh fanculo.",
+	"call.c_erp_vending_machine.dialog.reminder": ".....",
+	"call.c_erp_vending_machine.dialog.reminder2": ".....",
+	"call.c_erp_vending_machine.aar.story": "Il chiamante stava usando la linea di emergenza per un problema con il distributore automatico.",
+
+}

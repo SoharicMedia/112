@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<ArrayOfVehicletype>
+
+    <Vehicletype id="ve_erp_kitt" type="POLICE" bonuses="NONE" price="250000" visibility="1" armour="0.5" maxSpeed="320" acceleration="10" immobilizedBy="NONE" offroadSpeedModif="0.25" trafficSpeedModif="0" teammembersSeats="1" transportSeats="2" upkeep="20000" terrain="road" patrols="true" spawnChance="0" allDrive="false" chaseProficiency="20" unlockOnDuty="1" onsiteModel="ve_polcar"/>
+
+</ArrayOfVehicletype> 

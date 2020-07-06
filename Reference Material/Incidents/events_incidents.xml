@@ -1,0 +1,860 @@
+<!-- DO NOT MODIFY THIS FILE DIRECTLY, imported by JutsuXmlImporter -->
+<!--   source: OnAqbs -->
+  <incidentTypes id="events_incidents"  >
+    <incident id="rep_vip_protest" properties="popularity=0;
+visibility=0;"  >
+      <scene id="main" properties="timeToReact=1200;
+ignorable=false;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="main.AAR+=done;
+"  >
+        <policeWork id="crowd" properties="workAmount=300;
+workChange=1;
+icon=OnSitePic_Protests;"  />
+        <suspect id="susp1" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp2" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp3" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp4" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp5" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp6" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp7" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_vip_riot" properties="popularity=0;
+visibility=0;"  >
+      <scene id="main" properties="timeToReact=2400;
+ignorable=false;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="main.AAR+=done;
+"  >
+        <policeWork id="crowd" properties="workAmount=300;
+workChange=1;
+icon=OnSitePic_Riots;"  />
+        <suspect id="susp1" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp2" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp3" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp4" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp5" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp6" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp7" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.1: e_pistol | 0.4: e_fist | 0.3: e_baseball | 0.2: e_knife];
+willRun=NEVER;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_vip_civdiv_1" properties="popularity=0;
+visibility=0;
+tag+=event_vip_civdivided{15};"  >
+      <scene id="main" properties="timeToReact=1200;
+ignorable=false;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="main.AAR+=done;
+"  >
+        <suspect id="susp1" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=prawilne_chlopaki_korwina;
+willRun=NEVER;"  />
+        <suspect id="susp2" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=prawilne_chlopaki_korwina;
+willRun=NEVER;"  />
+        <suspect id="susp3" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=prawilne_chlopaki_korwina;
+willRun=NEVER;"  />
+        <suspect id="susp4" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=prawilne_chlopaki_korwina;
+isActive=0.5;
+willRun=NEVER;"  />
+        <suspect id="susp5" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=prawilne_chlopaki_korwina;
+isActive=0.5;
+willRun=NEVER;"  />
+        <suspect id="susp6" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=lewackie_sily_agaty_chaber;
+willRun=NEVER;"  />
+        <suspect id="susp7" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=lewackie_sily_agaty_chaber;
+willRun=NEVER;"  />
+        <suspect id="susp8" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=lewackie_sily_agaty_chaber;
+willRun=NEVER;"  />
+        <suspect id="susp9" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=lewackie_sily_agaty_chaber;
+isActive=0.5;
+willRun=NEVER;"  />
+        <suspect id="susp10" properties="reprimandWork=[100,400];
+aggressiveness=0.4;
+prison=0.1;
+weapon=[0.05: e_pistol | 0.45: e_fist | 0.3: e_baseball | 0.1: e_knife];
+faction=lewackie_sily_agaty_chaber;
+isActive=0.5;
+willRun=NEVER;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_vip_civagg_1" properties="popularity=0;
+visibility=0;
+tag+=event_vip_civaggressive{20}; "  >
+      <scene id="main" properties="timeToReact=1200;
+ignorable=false;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="main.AAR+=done;"  >
+        <policeWork id="crowd" properties="workAmount=500;
+icon=OnSitePic_Riots;"  />
+        <suspect id="susp1" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp2" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp3" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp4" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp5" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+        <suspect id="susp6" properties="reprimandWork=[100,400];
+aggressiveness=0.3;
+prison=0.2;
+weapon=[0.05: e_pistol | 0.65: e_fist | 0.2: e_baseball | 0.1: e_knife];
+willRun=NEVER;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_vip_normal_1" properties="popularity=0;
+visibility=0;
+tag+=event_vip_normal{33};"  >
+      <scene id="main" properties="timeToReact=900;
+ignorable=false;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="main.AAR+=done;"  >
+        <policeWork id="crowd" properties="workAmount=200;
+workChange=1;
+icon=OnSitePic_Protests;"  />
+        <suspect id="susp1" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp2" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp3" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp4" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp5" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp6" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp7" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+        <suspect id="susp8" properties="reprimandWork=[100,400];
+aggressiveness=0;
+prison=0.1;
+willRun=NEVER;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_prepare_block" properties="popularity=0;
+visibility=0;
+isScenario=1;
+tag+=event_vip_normal{100};
+tag+=event_vip_civdivided{85};
+tag+=event_vip_civaggressive{80}; "  >
+      <scene id="vip" properties="timeToReact=40000;
+ignorable=false;
+iconMap=important;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;" actionOnEnd="vip.AAR+=done;"  >
+        <policeWork id="work" properties="workAmount=600;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_injured_vip" properties="popularity=0;
+visibility=0;
+isScenario=1;
+"  >
+      <scene id="vip" properties="timeToReact=40000;
+ignorable=false;
+iconMap=important;
+opinionOnSuccess=10;
+opinionOnIgnore=-10;"  >
+        <injured id="injured_vip" properties="workAmount=600;"  />
+      </scene>
+    </incident>
+    <incident id="rep_hidden_antique_false" properties="popularity=0;
+visibility=0;"  >
+      <scene id="scene_first" properties="
+timeToReact=1000;
+opinionOnSuccess=1;
+opinionOnIgnore=-1;"  >
+        <suspect id="suspect1" properties="reprimandWork=[30,70];"  />
+        <suspect id="suspect2" properties="reprimandWork=[30,70];"  />
+        <suspect id="suspect3" properties="reprimandWork=[30,70];"  />
+        <policeWork id="falseegg" properties="workAmount=[100,300];" actionOnEnd="AAR+=done;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_arsonist_fakesearch" properties="type+=search;
+popularity=0;
+visibility=0;
+"  >
+      <scene id="searching1" properties="searchWork=60;
+searchArea=[1:3 | 1: 4 | 1: 5];
+timeToReact=1000;
+opinionOnSuccess=4;
+opinionOnIgnore=-5"  >
+      </scene>
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;
+Location = Near ($searching1.Location);
+needRestartLocationOnSpawn=true;"  >
+        <fireWork id="burning" properties="workAmount=[40,120];
+workChange=[2,3];
+"  />
+      </scene>
+    </incident>
+    <incident id="rep_arsonist_truesearch" properties="type+=search;
+popularity=0;
+visibility=0;
+"  >
+      <scene id="searching1" properties="searchWork=50;
+searchArea=5;
+timeToReact=1000;
+searchSceneId=suspectfound;
+opinionOnSuccess=4;
+opinionOnIgnore=-2;" actionOnEnd="AAR+=searchdone;"  >
+      </scene>
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;
+Location = Near ($searching1.Location);
+needRestartLocationOnSpawn=true;"  >
+        <fireWork id="burning" properties="workAmount=[40,120];
+workChange=[2,3];
+"  />
+      </scene>
+      <scene id="suspectfound" properties="onMove=1;
+vehicle=ve_car;
+timeToReact=250;
+opinionOnSuccess=30;
+opinionOnIgnore=-2;
+delayedSpawn=true;
+avoidPolice=1;"  >
+        <suspect id="suspect1" properties="prison=1;
+reprimandWork=200;
+personBuilder.sex=MALE;" actionOnEnd="MissionSuccess(mission_arsonist_call);"  />
+      </scene>
+      <aar  >
+        <reportElement id="searchdone"  />
+      </aar>
+    </incident>
+    <incident id="rep_planecrash_success_secure" properties="popularity=0;
+visibility=0;
+tag+=event_planecrash_on_success{10};"  >
+      <scene id="plane" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <medicalWork id="med1" properties="workAmount=600;"  />
+        <injured id="inj1" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj2" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj3" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj4" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj5" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+      </scene>
+    </incident>
+    <incident id="rep_planecrash_fail" properties="popularity=0;
+visibility=0;
+tag+=event_planecrash_on_failed{10};"  >
+      <scene id="plane" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;"  >
+        <fireWork id="firewing" properties="workAmount=400;
+workChange=5;"  />
+        <techWork id="tech" properties="workAmount=1000;
+icon=OnSitePic_EvacuationArea;"  />
+        <medicalWork id="med1" properties="workAmount=600;"  />
+        <injured id="inj1" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj2" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj3" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj4" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj5" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj6" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj7" properties="needsHospital=true;
+hp=[40, 90];
+hpchange=[-0.1, -0.3];
+"  />
+        <injured id="inj8" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj9" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj10" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj11" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <injured id="inj12" properties="needsHospital=0.5;
+hp=[70, 90];
+hpchange=[-0.0, -0.1];
+"  />
+        <dead id="dead1"  />
+        <dead id="dead2"  />
+        <dead id="dead3"  />
+      </scene>
+    </incident>
+    <incident id="rep_planecrash_panic" properties="type=medical;
+popularity=0;
+tag+=event_planecrash_on_failed{10};"  >
+      <scene id="scene_first" properties="timeToReact=600;
+opinionOnSuccess=2;
+opinionOnIgnore=0;"  >
+        <injured id="inj_first" properties="hp=90;"  />
+      </scene>
+    </incident>
+    <incident id="rep_planecrash_crowd" properties="type=medical;
+popularity=0;
+tag+=event_planecrash_on_failed{10};"  >
+      <scene id="crowd" properties="timeToReact=600;
+opinionOnSuccess=2;
+opinionOnIgnore=0;"  >
+        <policeWork id="inj_first" actionOnEnd="AAR+=done;"  />
+        <suspect id="susp1" properties="reprimandWork=[100, 300];"  />
+        <suspect id="susp2" properties="reprimandWork=[100, 300];"  />
+        <suspect id="susp3" properties="reprimandWork=[100, 300];"  />
+        <suspect id="susp4" properties="reprimandWork=[100, 300];"  />
+        <suspect id="susp5" properties="reprimandWork=[100, 300];"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_lifesupport" properties="popularity=0;
+tag+=event_blackout_1{30};
+tag+=event_blackout_2{300};"  >
+      <scene id="main" properties="timeToReact=750;
+opinionOnSuccess=3;
+opinionOnIgnore=-5;"  >
+        <injured id="injured1" properties="hp=70;
+hpchange=-0.1;
+needsHospital=true;"  />
+      </scene>
+    </incident>
+    <incident id="rep_blackout_cooler" properties="popularity=0;
+tag+=event_blackout_1{30};
+tag+=event_blackout_2{300};"  >
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=1;
+opinionOnIgnore=0;" actionOnEnd="AAR+=done;" actionOnIgnore="AAR+=ignore;"  >
+        <techWork id="cooler" properties="workAmount=50;
+icon=OnSitePic_Electrobox;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+        <reportElement id="ignore"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_angrypeople" properties="popularity=0;
+tag+=event_blackout_1{50};
+tag+=event_blackout_2{150};"  >
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=0;
+opinionOnIgnore=0;" actionOnEnd="AAR+=done;" actionOnIgnore="AAR+=ignore;
+"  >
+        <techWork id="nosupply" properties="workAmount=50;
+icon=OnSitePic_Electrobox;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+        <reportElement id="ignore"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_fridge" properties="popularity=0;
+tag+=event_blackout_1{50};
+tag+=event_blackout_2{150};"  >
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=0;
+opinionOnIgnore=0;" actionOnEnd="AAR+=done;" actionOnIgnore="AAR+=ignore;
+"  >
+        <techWork id="nosupply" properties="workAmount=50;
+icon=OnSitePic_Electrobox;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+        <reportElement id="ignore"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_watersupply" properties="popularity=0;
+tag+=event_blackout_1{25};
+tag+=event_blackout_2{250};"  >
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=0;
+opinionOnIgnore=0;" actionOnEnd="AAR+=done;" actionOnIgnore="AAR+=ignore;
+"  >
+        <techWork id="nosupply" properties="workAmount=50;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+        <reportElement id="ignore"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_sewers" properties="popularity=0;
+tag+=event_blackout_1{10};
+tag+=event_blackout_2{300};"  >
+      <scene id="main" properties="timeToReact=1500;
+opinionOnSuccess=5;
+opinionOnIgnore=-5;" actionOnEnd="AAR+=done;" actionOnIgnore="AAR+=ignore;
+"  >
+        <techWork id="sewers" properties="workAmount=100;
+workChange=2;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+        <reportElement id="ignore"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_fuel" properties="popularity=0;
+tag+=event_blackout_1{10};
+tag+=event_blackout_2{150};"  >
+      <scene id="main" properties="timeToReact=750;
+opinionOnSuccess=3;
+opinionOnIgnore=-3;"  >
+        <suspect id="suspect" properties="reprimandWork=[30,150];
+prison=1;"  />
+        <techWork id="distributor" properties="workAmount=[600,1000];" actionOnEnd="AAR+=done;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_blackout_search" properties="type+=search;
+popularity=0;
+visibility=0;
+isScenario=0;
+"  >
+      <scene id="search_scene" properties="searchWork=30;
+searchArea=10;
+timeToReact=1500;
+searchSceneId=line;
+opinionOnSuccess=15;
+opinionOnIgnore=0;
+iconMap=important;"  >
+      </scene>
+      <scene id="line" background="PowerDownBackground" properties="delayedSpawn=true;
+opinionOnSuccess=20;
+opinionOnIgnore=0;"  >
+        <techWork id="brokenline" properties="workAmount=[4000,6000];
+spawnArea=work;
+icon=OnSitePic_Electrobox;"  />
+      </scene>
+    </incident>
+    <incident id="rep_blackout_line" properties="popularity=0;
+visibility=0;
+isScenario=0;"  >
+      <scene id="line" background="PowerDownBackground" properties="timeToReact=2000;
+iconMap=important;"  >
+        <techWork id="brokenline" properties="workAmount=[6000,8000];
+spawnArea=work;
+icon=OnSitePic_Electrobox;"  />
+      </scene>
+    </incident>
+    <incident id="rep_vip" properties="popularity=0;
+visibility=0;
+isScenario=1; isSolvable=0;"  >
+      <scene id="vip" properties="timeToReact=400000;"  >
+      </scene>
+    </incident>
+    <incident id="rep_cooling_gates" properties="type=coolinggates;
+popularity=0;
+visibility=0;
+stage = 2;"  >
+      <scene id="gates" poi="BUILDING" background="HouseBackground" properties="timeToReact=1000;
+opinionOnSuccess=3;
+opinionOnIgnore=-2;
+iconMap=important;"  >
+        <techWork id="work1" properties="workAmount=[1200,2000];
+spawnArea=infront;" actionOnEnd="AAR+=done;"  />
+      </scene>
+      <aar  >
+        <reportElement id="done"  />
+      </aar>
+    </incident>
+    <incident id="rep_train_personhit" properties="popularity=0;"  >
+      <scene id="rep_train_personhit" poi="RAIL_CROSSING" background="RailcrossBackground" properties="timeToReact=600;
+roadBlock=0.05;"  >
+        <injured id="injured" properties="isActive=1;
+hp=1;
+needsHospital=true;
+spawnArea=leftof;" actionOnEnd="
+opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="driver" properties="isActive=1;
+reprimandWork=200;
+spawnArea=leftof;" actionOnEnd="AAR+=police;
+opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <techWork id="cleaning" properties="isActive=1;
+workAmount=250;
+spawnArea=leftof;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnSuccess+=5;
+opinionOnIgnore+=5;" actionOnIgnore="opinionOnSuccess+=5;
+opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+    <incident id="rep_train_personhit2" properties="popularity=0;"  >
+      <scene id="rep_train_personhit2" poi="RAIL_CROSSING" background="RailcrossBackground" properties="timeToReact=600;
+roadBlock=0.05;
+opinionOnSuccess=2;
+opinionOnIgnore=-2;"  >
+        <dead id="dead" properties="isActive=1;
+spawnArea=leftof;" actionOnEnd="AAR+=dead;
+opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="driver" properties="isActive=1;
+reprimandWork=200;
+spawnArea=leftof;" actionOnEnd="AAR+=police;
+opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <techWork id="cleaning" properties="isActive=1;
+workAmount=250;
+spawnArea=leftof;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnSuccess+=5;
+opinionOnIgnore+=5;" actionOnIgnore="opinionOnSuccess+=5;
+opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+    <incident id="rep_train_derailment" properties="popularity=0;"  >
+      <scene id="rep_train_derailment" poi="RAIL_CROSSING" background="RailcrossBackground" properties="timeToReact=600;
+roadBlock=0.05;" actionOnEnd="AAR+=solved;
+"  >
+        <injured id="injured1" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured2" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured3" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured4" properties="isActive=1;
+hp=[5,75];
+spawnArea=workCar;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured5" properties="isActive=1;
+hp=[5,75];
+spawnArea=workBarriers;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured7" properties="isActive=0.5;
+hp=[5,75];
+spawnArea=callerDead;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured8" properties="isActive=0.5;
+hp=[5,75];
+spawnArea=workCar;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="driver" properties="isActive=1;
+spawnArea=workCar;
+reprimandWork=200;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="witness1" properties="isActive=1;
+spawnArea=callerDead;
+reprimandWork=120;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <techWork id="cleaning" properties="isActive=1;
+spawnArea=inside;
+workAmount=700;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnSuccess+=10;
+opinionOnIgnore+=10;" actionOnIgnore="opinionOnSuccess+=10;
+opinionOnIgnore+=-10;"  />
+      </scene>
+    </incident>
+    <incident id="rep_train_othertrain" properties="popularity=0;"  >
+      <scene id="rep_train_othertrain" poi="RAIL_CROSSING" background="RailcrossBackground" properties="timeToReact=600;
+roadBlock=0.05;" actionOnEnd="AAR+=solved;
+"  >
+        <injured id="injured1" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured2" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured3" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured4" properties="isActive=1;
+hp=[5,75];
+spawnArea=workCar;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured5" properties="isActive=1;
+hp=[5,75];
+spawnArea=workBarriers;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured6" properties="isActive=1;
+hp=[5,75];
+spawnArea=workBarriers;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured7" properties="isActive=0.5;
+hp=[5,75];
+spawnArea=callerDead;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured8" properties="isActive=0.5;
+hp=[5,75];
+spawnArea=workCar;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured9" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured10" properties="isActive=0.5;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="driver" properties="isActive=1;
+spawnArea=workCar;
+reprimandWork=200;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="witness1" properties="isActive=1;
+spawnArea=callerDead;
+reprimandWork=120;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <techWork id="cleaning" properties="isActive=1;
+spawnArea=inside;
+workAmount=1100;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnSuccess+=10;
+opinionOnIgnore+=10;" actionOnIgnore="opinionOnSuccess+=10;
+opinionOnIgnore+=-10;"  />
+      </scene>
+    </incident>
+    <incident id="rep_train_carhit" properties="popularity=0;"  >
+      <scene id="rep_train_carhit" poi="RAIL_CROSSING" background="RailcrossBackground" properties="timeToReact=600;
+roadBlock=0.05;"  >
+        <injured id="injured1" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <injured id="injured2" properties="isActive=1;
+hp=[5,75];
+spawnArea=leftof;
+needsHospital=0.7;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="driver" properties="isActive=1;
+spawnArea=workCar;
+reprimandWork=200;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <suspect id="witness1" properties="isActive=1;
+spawnArea=callerDead;
+reprimandWork=120;" actionOnEnd="opinionOnSuccess+=2;
+opinionOnIgnore+=2;" actionOnIgnore="opinionOnSuccess+=2;
+opinionOnIgnore+=-2;"  />
+        <techWork id="cleaning" properties="isActive=1;
+spawnArea=inside;
+workAmount=500;
+icon=OnSitePic_Rubble;" actionOnEnd="opinionOnSuccess+=5;
+opinionOnIgnore+=5;" actionOnIgnore="opinionOnSuccess+=5;
+opinionOnIgnore+=-5;"  />
+      </scene>
+    </incident>
+  </incidentTypes>

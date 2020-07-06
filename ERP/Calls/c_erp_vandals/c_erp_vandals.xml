@@ -1,0 +1,23 @@
+<!---
+The call related with vandalism. It’s a rather short, not very serious case, but good response requires sending proper emergency unit. Might have some funny elements.
+Example: teenagers are turning road signs to mislead drivers (you may write about this issue, change it a bit or use your own).
+--->
+<data>
+  <conversations>
+	<conversation id="c_erp_vandals" texten="Vandals" elementProperties="type=generable">
+	<scene>
+		<witness id="caller;" texten="Person" elementProperties="hp=100; sex=W;" />
+	</scene>
+	<dialog>
+		<DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" operator="Operator" />
+		
+		<DialogOption id="reminder" texten="Text" operator="Caller" />
+		<DialogOption id="reminder2" texten="Tex" operator="Caller" />
+		<DialogOption id="back" texten="Back Error" operator="Operator" />
+	</dialog>
+	<aar>
+		<reportElement id="aar" texten="Text" />
+	</aar>
+	</conversation>
+	</conversations>
+</data>

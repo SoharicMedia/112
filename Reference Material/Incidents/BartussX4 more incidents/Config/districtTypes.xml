@@ -1,0 +1,64 @@
+
+  <districtTypes id="districtTypes"  >
+    <incident id="rep_schoolshooter" residential="1.2" buisness="1.4" />
+	<incident id="rep_bonfire" park="3"  />
+	<incident id="rep_factoryfire" industrial="4" />
+	<incident id="rep_animalabuse" residential="1" />
+	<incident id="rep_aggressive_personshop" residential="1" buisness="2" />
+	<incident id="rep_aggressive_persongas" residential="1.2" buisness="1.4" />	
+    <incident id="rep_pershoot" residential="1.2" buisness="0.4" park="0.3" slums="2" />
+	<incident id="rep_forestfire" residential="2" buisness="0.9" park="0.3" slums="0.1" />
+	<incident id="rep_sootfire" residential="2" buisness="0.9" park="0.3" slums="0.1" />
+	<incident id="rep_collbuilding" residential="2" buisness="0.5" slums="3" />
+	<incident id="rep_collbuilding2" residential="2" buisness="0.5" slums="3" />
+	<incident id="rep_theft_escape" residential="2" buisness="1.5" />
+	<incident id="rep_oilleak" residential="1" buisness="0.5" industrial="1.5" />
+	<incident id="rep_fakemoney" residential="0.1" buisness="3" />
+	<incident id="rep_unconsciouschild" residential="2" />
+	<incident id="rep_sawwound" residential="1"  />
+	<incident id="rep_allergicreaction" residential="1.2" park="0,5"  />
+	<incident id="rep_gasleakage" residential="3" buisness="2" slums="2" />
+	<incident id="rep_gasleakagetall" residential="3" buisness="2" slums="2" />
+	<incident id="rep_pedophile" residential="2" />
+	<incident id="rep_stomachache" residential="3" />
+	<incident id="rep_stoner" residential="1" buisness="1" slums="4" />
+	<incident id="rep_refusal" buisness="3" />
+	<incident id="rep_electricshock" residential="1" buisness="0.5" slums="1" />
+	<incident id="rep_shop_robbery" buisness="3" slums="0.5" />
+	<incident id="rep_stuck_in_swamps" park="2" />
+	<incident id="rep_disappearanceintheforest" park="2" />
+	<incident id="rep_littering" residential="0.3" park="0.3" slums="1" />
+	<incident id="rep_shortnessofbreath" residential="2" buisness="0.5" slums="0.5" />
+	<incident id="rep_drug_plantation" residential="1" slums="3" />
+	<incident id="rep_arsonist" residential="1" buisness="0.8" slums="1" />
+	<incident id="rep_bigcrash" residential="3" />
+	<incident id="rep_burningvancar" residential="1.2" buisness="0.4" />
+	<incident id="rep_blockofflatsfire" residential="2" buisness="1" slums="0.1" />
+	<incident id="rep_vacancy" slums="3" />
+	<incident id="rep_slaughterhouse_fire" buisness="0.9"/>
+	<incident id="rep_garage_fire" residential="2"  slums="1" />
+	<incident id="rep_forest_litter_fire" park="1.5" />
+	<incident id="rep_garden_fire" residential="2" park="0.2" />
+	<incident id="rep_bower_fire" residential="2" />
+	<incident id="rep_tree_limb" park="0.5"/>
+	<incident id="rep_destruction_of_property" residential="1.5" buisness="1" slums="0.6" />
+	<incident id="rep_minor" residential="0.8"slums="2" />
+	<incident id="rep_fraud" residential="2"/>
+	<incident id="rep_vomiting_blood" residential="1.2"/>
+	<incident id="rep_medicines_overdose" residential="2" />
+	<incident id="rep_high_altitude" residential="1.5" buisness="0.5"/>
+	<incident id="rep_abduction" residential="1" park="2" slums="2" />
+	<incident id="rep_5g" residential="0.2" buisness="0.2" park="2" slums="0.5" />
+	<incident id="rep_christmas_tree" residential="2" buisness="1"/>
+	<incident id="rep_substance" park="0.5" industrial="1.5"  />
+	<incident id="rep_impersonating" residential="1.5" buisness="1" slums="0.6" />
+	<incident id="rep_snake" slums="2" park="2" />
+	<incident id="rep_dangerous_driving" residential="1" buisness="0.5" slums="0.5"/>
+	<incident id="rep_animal_transport_accident" residential="1.2"/>
+	<incident id="rep_rollercoaster_accident" buisness="0.5" />
+	<incident id="rep_atmfire" buisness="1"/>
+	<incident id="rep_avalanche" park="2" slums="2" />
+	<incident id="rep_corpse" residential="2" />
+	<incident id="rep_shop_fire" buisness="2"/>
+	<incident id="rep_substance2" park="0.5" industrial="1.5"  />
+  </districtTypes>

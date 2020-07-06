@@ -1,0 +1,25 @@
+{
+
+  "text.names.ve_medbicycle": "Medical Bicycle",
+  "text.descriptions.ve_medbicycle": "A bicycle for the medical service"
+
+  "text.names.ve_medheli_yellow": "Yellow Air Ambulance",
+  "text.descriptions.ve_medheli_yellow": "Using a helicopter is the fastest way to get over larger distances, but it has poor acceleration and is very expensive. Has a small capacity. Yellow ALT Skin."
+
+  "text.names.ve_polvan_METP": "Met Police Van",
+  "text.descriptions.ve_polvan_METP": "Van can be used to transport larger groups of suspects, but it is not as fast as other vehicles. Met Police ALT Skin."
+
+  "text.names.ve_polcar_METP": "Met Police Car",
+  "text.descriptions.ve_polcar_METP": "A basic police vehicle. Can get to the place of the incident fast and can be used to transport suspects. Met Police ALT Skin."
+
+  "text.names.ve_polcannongrey": "Grey Water Cannon",
+  "text.descriptions.ve_polcar_METP": "A unit with a water cannon. Efficient for crowd control, but can't transport suspects. Grey ALT skin"
+
+
+  "text.names.ve_smallpolvan_METP": "Small Met Police Van",
+  "text.descriptions.ve_smallpolvan_METP": "A van half way between a large van and a car. Carries 3 crew and 3 suspects. Met Police ALT Skin."
+
+  "text.names.ve_smallpolvan": "Small Police Van",
+  "text.descriptions.ve_smallpolvan": "A van half way between a large van and a car. Carries 3 crew and 3 suspects. Met Police ALT Skin."
+
+}
