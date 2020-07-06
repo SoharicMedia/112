@@ -44,7 +44,7 @@
 </ul>
 <h3>Language Mods</h3>
 <ul>
-  <li><a href="https://github.com/SoharicMedia/112/tree/Portuguese/Portuguese%20Translation">Portuguese Translation</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/Portuguese/Portuguese%20Translation">Portuguese Translation (Português-Brasil)</a></li>
 </ul>
 <h3>Operator Mods</h3>
 <ul>
