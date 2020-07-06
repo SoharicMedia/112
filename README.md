@@ -1,8 +1,8 @@
 <h1>Mods for 112 Operator</h1>
-<p></p>
+<p>This repository contains multiple mods for the game, 112 Operator, as listed below. Each item should be listed below and for more details on any of these items including full credits, visit <a href="https://soharicmedia.com" target="_blank">Soharic Media Website</a>.</p>
 <h3>Mod Packages</h3>
 <ul>
-  <li><a href="https://github.com/SoharicMedia/112/tree/master/112%20PWC">112 Operator Patches and Workshop Compatability Mod (112 PWC)</a></li>
+  <li><a href="https://github.com/SoharicMedia/112/tree/master/112%20PWC">112 Operator Patches and Workshop Compatibility Mod (112 PWC)</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/ACP">Additional Calls Package (ACP)</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/ACP">Additional Incidents Package (AIP)</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/ERP">European Response Package (ERP)</a></li>
