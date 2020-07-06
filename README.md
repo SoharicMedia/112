@@ -41,6 +41,10 @@
   <li><a href="https://github.com/SoharicMedia/112/tree/master/Star%20Wars%20Hats">Star Wars Hats</a></li>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/UK%20Hats">UK Hats (GB)</a></li>
 </ul>
+<h3>Language Mods</h3>
+<ul>
+  <li><a href="https://github.com/SoharicMedia/112/tree/Portuguese/Portuguese%20Translation">Portuguese Translation</a></li>
+</ul>
 <h3>Operator Mods</h3>
 <ul>
   <li><a href="https://github.com/SoharicMedia/112/tree/master/Operator%20112">Operator 112</a></li>
