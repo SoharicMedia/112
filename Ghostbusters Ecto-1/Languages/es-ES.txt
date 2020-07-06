@@ -1,6 +1,0 @@
-{
-
-  "text.names.ve_erp_ecto1": "Cazafantasmas Ecto-1",
-  "text.descriptions.ve_erp_ecto1": "El ectomóvil también conocido como Ecto-1 es un Cadillac Miller-Meteor Futura Duplex de 1959 de tipo ranchera (versión ambulancia) usado en la película de 1984 'Los Cazafantasmas' y otras ficciones relacionadas.",
-
-}

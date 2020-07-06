@@ -1,9 +1,0 @@
-
-  <districtTypes id="districtTypes"  >
-    <incident id="rep_symptoms" residential="3" buisness="1" />
-	<incident id="rep_confirmation" slums="3" residential="3"  />
-	<incident id="rep_mask" buisness="3" />
-	<incident id="rep_place" buisness="3" />
-	<incident id="rep_cough" buisness="3" />
-	<incident id="rep_hospital" residential="1" buisness="1" />	
-	</districtTypes>

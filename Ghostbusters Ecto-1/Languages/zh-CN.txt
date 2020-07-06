@@ -1,6 +1,0 @@
-{
-
-  "text.names.ve_erp_ecto1": "捉鬼敢死队 Ecto-1",
-  "text.descriptions.ve_erp_ecto1": "Ectomobile 或Ecto-1 是一台1959凱迪拉克米勒流星Futura Duplex豪華轎車式端部裝載機風格拼湊成的捉鬼車(救護車)",
-
-}

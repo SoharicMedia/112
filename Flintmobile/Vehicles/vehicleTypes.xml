@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="windows-1250"?>
-<ArrayOfVehicletype>
-
-    <Vehicletype id="ve_erp_flintmobile" type="POLICE" bonuses="SEARCH=0.5" price="4500" visibility="1" armour="0" maxSpeed="40" acceleration="25" immobilizedBy="Rain=7,Snow=5" offroadSpeedModif="1" trafficSpeedModif="1" teammembersSeats="1" transportSeats="0" upkeep="350" terrain="road" patrols="true" spawnChance="0" allDrive="true" chaseProficiency="10" unlockOnDuty="1" onsiteModel="ve_bicycle"/>
-
-</ArrayOfVehicletype> 
