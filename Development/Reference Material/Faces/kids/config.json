@@ -1,0 +1,10 @@
+{
+    "title": "Angry kids",
+    "desc": "Simple mod, that changes most of armed suspects in the scenes into kids. Example of incidents overriding mod.",
+    "language": "",
+    "visibility": "public",
+    "itemId": 2101794658,
+    "modTypes": [
+        "INCIDENTS"
+    ]
+}

@@ -1,0 +1,35 @@
+<data><conversations>
+<conversation elementProperties="type=generable;" id="otl24" texten="Gun Shot">
+	<scene>
+		<witness elementProperties="sex=W;" id="caller" texten="Caller"/>
+		<injuried elementProperties="hp=20; sex=W;" id="victim" texten="Victim"/>
+		<criminal elementProperties="fightRisk=0; weapon=e_pistol; sex=M;" id="shooter" texten="Shooter"/>
+	</scene>
+	<dialog>
+		<dialogOption id="1" operator="Operator:" texten="Police emergency." default="2" actionOnEnd="opinionEffect=3;"/>
+		<dialogOption id="2" operator="Caller:" texten="Police, yes, please help!" default="3" option2="hangup"/>
+		<dialogOption id="3" operator="Operator:" texten="Okay ma'am I need you to try and remain calm and tell me what exactly has happened." default="4" option2="5"/>
+		<dialogOption id="4" operator="Caller:" texten="There's a man here. He's-he's came into the flats, kicked in a door and I hear-I heard a shot - I ran." default="6" option2="9"/>
+		<dialogOption id="5" operator="Caller:" texten="Erm, a male, maybe in his twenties, he came in to our flats at [[ADDRESS]], bust into my neighbours apartment. She's only 19. Then I heard an arguement and two shots rang out." default="7" actionOnEnd="actionSetLocation;"/>
+		<dialogOption id="6" operator="Operator:" texten="Do you know who lives there?" default="8"/>
+		<dialogOption id="7" operator="Operator:" texten="Okay ma'am, where are you now? Are you safe?" default="10"/>
+		<dialogOption id="8" operator="Caller:" texten="Yes, she's my neighbour, only 19." default="9" option2="11"/>
+		<dialogOption id="9" operator="Operator:" texten="What's the address you're at ma'am?" default="address"/>
+		<dialogOption id="address" operator="Caller:" texten="[[ADDRESS]]" default="back" actionOnEnd="actionSetLocation;"/>
+		<dialogOption id="10" operator="Caller:" texten="Yes, yes, I'm safe. Most people have left the building but the shooter's inside still. Please hurry." default="end"/>
+		<dialogOption id="11" operator="Operator:" texten="Is everybody else out of the building? Is the shooter still there?" default="12"/>
+		<dialogOption id="12" operator="Caller:" texten="Yes, I think most of us are out and haven't seen him leave, please hurry!" actionOnEnd="actionHangup" addtoAAR="storyb"/>
+		<dialogOption id="hangup" operator="Operator:" texten="Sorry, I don't have time for this! I've got more calls to answer." default="hangup2"/>
+		<dialogOption id="hangup2" operator="Caller:" texten="NO! Wait, this is an actual emergen..." actionOnEnd="actionHangup" addtoAAR="fail"/>		
+		<dialogOption id="end" operator="Operator:" texten="Okay, the police and medical services are on their way and should be there shortly." actionOnEnd="actionHangup" addtoAAR="storya"/>
+		<dialogOption id="reminder" operator="Caller:" texten="Hello? Hello, are you there still?"/>
+		<dialogOption id="reminder2" operator="Caller:" texten="Have I lost signal?!"/>
+		<DialogOption id="back" texten="This call is part of OtL. Please visit github.com/SoharicMedia/OtL/issues to report this issue."operator="Operator" />
+	</dialog>
+	<aar>
+		<reportElement id="fail" texten="The Operator hungup on a genuine emergency."/>
+		<reportElement id="storya" texten="The Operator ensured the safety of the caller and obtained an address. Emergency services were correctly dispatched."/>
+		<reportElement id="storyb" texten="The Operator ensured the safety of the caller but failed to obtain an address. Emergency services were dispatched once the trace completed."/>
+	</aar>
+</conversation>
+</conversations></data>

@@ -1,0 +1,12 @@
+{
+    "title": "London Vehicle Pack",
+    "desc": "Adds new skins for the base vehicles, and adds alternate versions of some vehicles",
+    "language": "",
+    "visibility": "public",
+    "itemId": 2136097385,
+    "modTypes": [
+        "LANGUAGES",
+        "VEHICLES"
+    ],
+    "order": 0
+}

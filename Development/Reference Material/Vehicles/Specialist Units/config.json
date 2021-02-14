@@ -1,0 +1,12 @@
+{
+    "title": "Specialist Units pack (aka wilderness & off-roader pack)",
+    "desc": "A mod that adds vehicles based around offroading and rural areas.\nCurrently has:\n-Police Cart\n-Medical Cart\n-Wildfire Truck\n-Wildfire Responder\n-Wildfire Tender\n-Police Watchman\n-Police Buggy\n-Medic Quad\n-Police Land Rover Defender\n-Police Land Rover Tangi\n-Medical Land Rover Defender\n-Medical Land Rover Discovery\n-Large Medical Heli\n-Special Fire ATV (ARGO Frontier)",
+    "language": "",
+    "visibility": "public",
+    "itemId": 2132530954,
+    "modTypes": [
+        "LANGUAGES",
+        "VEHICLES"
+    ],
+    "order": 2
+}

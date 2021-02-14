@@ -1,0 +1,111 @@
+{
+
+  "text.names.ve_argo_ESB": "ARGO Frontier",
+  "text.descriptions.ve_argo_ESB": "A strange fire vehicle, with 6 wheels and nearly no water on board, it works really well off the roads. However, it isnt the fastest vehicle."
+
+  "text.names.ve_heliblackhawk_ESB": "Black Hawk",
+  "text.descriptions.ve_heliblackhawk_ESB": "A somewhat armoured helicopter with four officers. Cannot carry suspects."
+
+  "text.names.ve_coastguard_ESB": "Coast Guard Car",
+  "text.descriptions.ve_coastguard_ESB": "A car for the Coast Guard."
+
+  "text.names.ve_firequick_ESB": "Quick Fire Car",
+  "text.descriptions.ve_firequick_ESB": "A quick response car for the fire department."
+
+  "text.names.ve_guardianAIRP": "Airport Jankel Guardian",
+  "text.descriptions.ve_guardianAIRP": "A slightly older version of the Jankel Guardian, with slightly less armour. Quite quick. Perfect for airports."
+
+  "text.names.ve_guardianHC": "Handling Cell Jankel Guardian",
+  "text.descriptions.ve_guardianHC": "A Jankel Guardian with a two person handling cell."
+
+  "text.names.ve_guardianMETP": "Riot Jankel Guardian",
+  "text.descriptions.ve_guardianMETP": "A standart Jankel Guardian with very good armour"
+
+  "text.names.ve_heliarmour_ESB": "Armoured Helicopter",
+  "text.descriptions.ve_heliarmour_ESB": "A very armoured helicopter. Carries two crew members and two suspects"
+
+  "text.names.ve_helichinook_ESB": "Chinook",
+  "text.descriptions.ve_helichinook_ESB": "A large helicopter, with lots of crew and space for suspects. It is very expensive, however."
+
+  "text.names.ve_helimedbig_ESB": "Large Air Ambulance",
+  "text.descriptions.ve_helimedbig_ESB": "A larger version of the Air Ambulance,able to carry two passengers instead of one."
+
+  "text.names.ve_helisar_ESB": "SAR Helicopter",
+  "text.descriptions.ve_helisar_ESB": "A special helicopter for Search operations."
+
+  "text.names.ve_heliseaking_ESB": "Westland Sea King",
+  "text.descriptions.ve_heliseaking_ESB": "A slower version of the standard SAR helicopter, but is stronger against wind."
+
+  "text.names.ve_heliunmarked_ESB": "Unmarked Eurocopter Dauphin",
+  "text.descriptions.ve_heliunmarked_ESB": "An unmarked helicopter. Carries three crew and one suspect"
+
+  "text.names.ve_medcart_ESB": "Medical Cart",
+  "text.descriptions.ve_medcart_ESB": "A cart designed for medical Purposes."
+
+  "text.names.ve_medhorse_ESB": "Medical Horse",
+  "text.descriptions.ve_medhorse_ESB": "A horse for paramedics and doctors. Useful in forests and parks."
+
+  "text.names.ve_medicdefender_ESB": "Medic Land Rover Defender",
+  "text.descriptions.ve_medicdefender_ESB": "A Land Rover Defender. Quick when off road and great for quick response."
+
+  "text.names.ve_medicdiscovery_ESB": "Medic Land Rover Discovery"
+  "text.descriptions.ve_medicdiscovery_ESB": "A Land Rover Discovery. The Defender's better counterpart."
+
+  "text.names.ve_medquad_ESB": "Medical Quadbike",
+  "text.descriptions.ve_medquad_ESB": "A quadbike for paramedics and doctors."
+
+  "text.names.ve_medspecvan_ESB": "Specialist Medical Van",
+  "text.descriptions.ve_medspecvan_ESB": "A special van with medical equipment. Cannot Carry Patients."
+
+  "text.names.ve_medspeed_ESB": "Quick Fly Car",
+  "text.descriptions.ve_medspeed_ESB": "A really quick medical car."
+
+  "text.names.ve_MRAP_ESB": "MRAP",
+  "text.descriptions.ve_MRAP_ESB": "A Military vehicle for the police, useful for dangerous situations."
+
+  "text.names.ve_offambulance_ESB": "Off Road Ambulance",
+  "text.descriptions.ve_offambulance_ESB": "An ambulance better equipped for parks and rural areas."
+
+  "text.names.ve_polbuggy_ESB": "Police Beach Buggy",
+  "text.descriptions.ve_polbuggy_ESB": "A worse, but cheaper version of a police cart."
+
+  "text.names.ve_polcart_ESB": "Police Cart",
+  "text.descriptions.ve_polcart_ESB": "A cart designed for Policing."
+
+  "text.names.ve_poldefender_ESB": "Police Land Rover Defender"
+  "text.descriptions.ve_poldefender_ESB": "A Land Rover Defender for the police force. Quick when off road and great for quick response."
+
+  "text.names.ve_poltangi_ESB": "Land Rover Tangi",
+  "text.descriptions.ve_poltangi_ESB": "A modified Land Rover Defender, modified for dangerous situations."
+
+  "text.names.ve_poltechvan_ESB": "Police Technician Van",
+  "text.descriptions.ve_poltechvan_ESB": "A modified fire engine to include police equipment and a small holding cell at the back."
+
+  "text.names.ve_poltvan_ESB": "Police Transit Van",
+  "text.descriptions.ve_poltvan_ESB": "A smaller van for the police service."
+
+  "text.names.ve_surveyvan_ESB": "Surveillance Van",
+  "text.descriptions.ve_surveyvan_ESB": "A van with 4 crew members. Has no space for suspects, and is good at spotting road crimes."
+
+  "text.names.ve_techvan_ESB": "Technician Van",
+  "text.descriptions.ve_techvan_ESB": "A small van with technical equipment."
+
+  "text.names.ve_vipcar_ESB": "VIP Protection Car",
+  "text.descriptions.ve_vipcar_ESB": "A car good for protection of VIPs. Somewhat armoured and quick."
+
+  "text.names.ve_vipvan_ESB": "VIP Protection Van",
+  "text.descriptions.ve_vipvan_ESB": "A van good for protection of VIPs. Somewhat armoured and somewhat quick."
+
+  "text.names.ve_watch_ESB": "Police Watchman",
+  "text.descriptions.ve_watch_ESB": "A single police officer with equipment for searching."
+
+  "text.names.ve_wildfireresponder_ESB": "Wildfire Responder",
+  "text.descriptions.ve_wildfireresponder_ESB": "A quick-response fire engine for off-roading."
+
+  "text.names.ve_wildfiretender_ESB": "Wildfire Tender",
+  "text.descriptions.ve_wildfiretender_ESB": "Like the wildfire responder, this vehicle is designed for off-roading. It has more water than the responder."
+
+  "text.names.ve_wildfiretruck_ESB": "Wildfire Truck",
+  "text.descriptions.ve_wildfiretruck_ESB": "A specialist fire engine for fighting wildfires."
+
+}

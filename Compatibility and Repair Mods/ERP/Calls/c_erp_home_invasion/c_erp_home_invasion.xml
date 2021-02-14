@@ -1,0 +1,31 @@
+<data>
+  <conversations>
+    <conversation id="c_erp_home_invasion" texten="House Invasion" elementProperties="type=generable;">
+      <scene>
+        <witness id="sceneElem_1" texten="" elementProperties="hp=60;sex=W;isActive=true;type=White;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_2" texten="" elementProperties="fightRisk=0.5;weapon=e_pistol;prisonChance=1;sex=M;type=White;isActive=true;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_3" texten="" elementProperties="fightRisk=1;weapon=e_pistol;prisonChance=1;sex=M;type=AfAm;isActive=true;" addToAAR="" blockedBy="" />
+        <suspect id="sceneElem_4" texten="" elementProperties="fightRisk=1;weapon=e_pistol;prisonChance=1;sex=M;type=AfAm;isActive=true;" addToAAR="" blockedBy="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="112, what's your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="They've invaded my house!" elementProperties="option=what;option=where;option=hurt;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="what" texten="{WHAT?} What happened?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="where" texten="{WHERE?} What's your adress?" elementProperties="option=addressa0;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="hurt" texten="{HURT?}Are you hurt?" elementProperties="option=5;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="I was getting ready to sleep and they broke the entrance door! I ran to the toilet and locked myself here!" elementProperties="option=where;option=hurt;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="addressa0" texten="My home is at [[ADDRESS]]" elementProperties="option=back;option=what;option=hurt;option=who;" actionOnEnd="actionSetLocation" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="I passed out for a while I guess... but... I am fine" elementProperties="option=what;option=where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="who" texten="{WHO?} Who has invaded your house?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="I don't know. They are searching for something, there are at least 3 men here! ... Oh no, they heard me! *Gunshot*" elementProperties="option=end;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="end" texten="... *Hang up*" elementProperties="" actionOnEnd="actionHangup;" addToAAR="story_1" operator="Caller" emotions="" />
+        <DialogOption id="reminder" texten="Please, reply me!" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="reminder2" texten="Hello?" elementProperties="" addToAAR="" operator="Caller" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="A woman's house was invaded by at least 3 men with guns. She's trapped in the toilet." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
